@@ -5,45 +5,14 @@ const jsonwebtoken = require('jsonwebtoken');
 
 export default {
   Query: {
-    login(_, { email, password }) {
-      const user = async function () {
-        try {
-          return await User.findOne({ where: { email } });
-        } catch (error) {
-          console.log('could not find user', error);
-          return await null;
-        }
-      }
-
+    async me(_, args, { user }) {
+      // make sure user is logged in
       if (!user) {
-        throw new Error('No user with that email');
+        throw new Error('You are not authenticated!')
       }
 
-      const valid = async function () {
-        try {
-          return await bcrypt.compare(password, user.password);
-        } catch (error) {
-          console.log('bcrypt error', error);
-          return await null;
-        }
-      }
-
-      if (!valid || !user) {
-        throw new Error('Incorrect username or password!');
-      }
-
-      // return json web token
-      return jsonwebtoken.sign({
-        id: user.id,
-        email: user.email
-      }, process.env.JOEYDBSECRET, { expiresIn: '1y' });
-    },
-    user: (root, args) => {
-      return new Promise((resolve, reject) => {
-        User.findOne(args).exec((err, res) => {
-          err ? reject(err) : resolve(res);
-        });
-      });
+      // user is authenticated
+      return await User.findById(user.id)
     },
     users: () => {
       return new Promise((resolve, reject) => {
@@ -80,6 +49,26 @@ export default {
           err ? reject(err) : resolve(res);
         });
       });
+    },
+    async login(_, { email, password }) {
+      const user = await User.findOne({ where: { email } })
+
+      if (!user) {
+        throw new Error('No user with that email')
+      }
+
+      const valid = await bcrypt.compare(password, user.password)
+
+      if (!valid) {
+        throw new Error('Incorrect password')
+      }
+
+      // return json web token
+      return jsonwebtoken.sign(
+        { id: user.id, email: user.email },
+        process.env.JOEYDBSECRET,
+        { expiresIn: '1d' }
+      )
     }
   }
 };
