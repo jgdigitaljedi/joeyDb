@@ -1,5 +1,6 @@
+import { gql } from 'apollo-server-express';
 
-export default `
+export default gql`
 type User {
   id: Int!
   name: String!
@@ -9,7 +10,7 @@ type Query {
   me: User
 }
 type Mutation {
-  addUser(id: String!, name: String!, email: String!): User
+  signup (name: String!, email: String!, password: String!): String
   editUser(id: String, name: String, email: String): User
   deleteUser(id: String, name: String, email: String): User
   login (email: String!, password: String!): String

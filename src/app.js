@@ -1,18 +1,17 @@
 import express from 'express';
 import mongoose from 'mongoose';
-import bodyParser from 'body-parser';
-import graphqlHTTP from 'express-graphql';
 const jwt = require('express-jwt');
 const helmet = require('helmet');
 
-import schema from './graphql/';
+import SERVER from './graphql';
 
 const app = express();
 const PORT = 3000;
 const db = 'mongodb://localhost:27017/joeyDb';
 
 const authMiddleware = jwt({
-  secret: process.env.JOEYDBSECRET
+  secret: process.env.JOEYDBSECRET,
+  credentialsRequired: false
 })
 
 // Connect to MongoDB with Mongoose.
@@ -28,14 +27,14 @@ mongoose
   .catch(err => console.log(err));
 
 app.use(
-  '/graphql',
+  '/api',
   authMiddleware,
   helmet(),
-  bodyParser.json(),
-  graphqlHTTP({
-    graphiql: true,
-    schema
-  }));
+);
+
+SERVER.applyMiddleware({
+  app
+});
 
 app.listen(PORT, () => {
   console.log(`Server is running at PORT ${PORT}`);

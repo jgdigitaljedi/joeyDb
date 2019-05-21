@@ -1,11 +1,17 @@
-import { makeExecutableSchema } from "graphql-tools";
+import { ApolloServer } from 'apollo-server-express';
 
 import typeDefs from "./types/";
 import resolvers from "./resolvers/";
 
-const schema = makeExecutableSchema({
+const SERVER = new ApolloServer({
   typeDefs,
-  resolvers
+  resolvers,
+  playground: {
+    endpoint: `http://localhost:3000/graphql`,
+    settings: {
+      'editor.theme': 'dark'
+    }
+  }
 });
 
-export default schema;
+export default SERVER;

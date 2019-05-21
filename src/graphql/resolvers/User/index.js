@@ -1,5 +1,5 @@
 // The User schema.
-import User from '../User';
+import User from '../User/index';
 const bcrypt = require('bcrypt');
 const jsonwebtoken = require('jsonwebtoken');
 
@@ -13,27 +13,9 @@ export default {
 
       // user is authenticated
       return await User.findById(user.id)
-    },
-    users: () => {
-      return new Promise((resolve, reject) => {
-        User.find({})
-          .populate()
-          .exec((err, res) => {
-            err ? reject(err) : resolve(res);
-          });
-      });
     }
   },
   Mutation: {
-    addUser: (root, { id, name, email }) => {
-      const newUser = new User({ id, name, email });
-
-      return new Promise((resolve, reject) => {
-        newUser.save((err, res) => {
-          err ? reject(err) : resolve(res);
-        });
-      });
-    },
     editUser: (root, { id, name, email }) => {
       return new Promise((resolve, reject) => {
         User.findOneAndUpdate({ id }, { $set: { name, email } }).exec(
@@ -50,17 +32,38 @@ export default {
         });
       });
     },
+    async signup(_, { name, email, password }) {
+      console.log('name', name);
+      console.log('email', email);
+      console.log('password', password);
+      try {
+        const user = await User.create({
+          name,
+          email,
+          password: await bcrypt.hash(password, 10)
+        });
+        console.log('user', user);
+        // return json web token
+        return jsonwebtoken.sign(
+          { id: user.id, email: user.email },
+          process.env.JOEYDBSECRET,
+          { expiresIn: '1d' }
+        );
+      } catch (error) {
+        return error;
+      }
+    },
     async login(_, { email, password }) {
-      const user = await User.findOne({ where: { email } })
+      const user = await User.findOne({ where: { email } });
 
       if (!user) {
-        throw new Error('No user with that email')
+        throw new Error('No user with that email');
       }
 
-      const valid = await bcrypt.compare(password, user.password)
+      const valid = await bcrypt.compare(password, user.password);
 
       if (!valid) {
-        throw new Error('Incorrect password')
+        throw new Error('Incorrect password');
       }
 
       // return json web token
@@ -68,7 +71,7 @@ export default {
         { id: user.id, email: user.email },
         process.env.JOEYDBSECRET,
         { expiresIn: '1d' }
-      )
+      );
     }
   }
 };
