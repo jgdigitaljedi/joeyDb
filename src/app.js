@@ -12,7 +12,7 @@ const db = 'mongodb://localhost:27017/joeyDb';
 const authMiddleware = jwt({
   secret: process.env.JOEYDBSECRET,
   credentialsRequired: false
-})
+});
 
 // Connect to MongoDB with Mongoose.
 mongoose
@@ -27,13 +27,13 @@ mongoose
   .catch(err => console.log(err));
 
 app.use(
-  '/api',
   authMiddleware,
   helmet(),
 );
 
 SERVER.applyMiddleware({
-  app
+  app,
+  path: '/api'
 });
 
 app.listen(PORT, () => {
