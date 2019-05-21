@@ -1,9 +1,7 @@
 import mongoose from 'mongoose';
 
-const Schema = mongoose.Schema;
-
 // Create the User Schema.
-const UserSchema = new Schema({
+const UserSchema = new mongoose.Schema({
   id: {
     type: mongoose.Schema.Types.ObjectId,
     index: true,
@@ -20,7 +18,8 @@ const UserSchema = new Schema({
     unique: true
   },
   password: {
-    type: String
+    type: String,
+    required: true
   }
 });
 
@@ -31,4 +30,5 @@ const User = mongoose.model('User', UserSchema);
 //   return User.find()
 // };
 
-export default User;
+// export default User;
+module.exports = User;

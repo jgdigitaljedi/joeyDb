@@ -1,5 +1,6 @@
 // The User schema.
-import User from '../User/index';
+// import User from '../User';
+const User = require('../../models/User');
 const bcrypt = require('bcrypt');
 const jsonwebtoken = require('jsonwebtoken');
 
@@ -13,6 +14,10 @@ export default {
 
       // user is authenticated
       return await User.findById(user.id)
+    },
+    async users(_) {
+      const users = await User.find({});
+      return users;
     }
   },
   Mutation: {
@@ -33,16 +38,13 @@ export default {
       });
     },
     async signup(_, { name, email, password }) {
-      console.log('name', name);
-      console.log('email', email);
-      console.log('password', password);
       try {
         const user = await User.create({
           name,
           email,
           password: await bcrypt.hash(password, 10)
+          // password: password
         });
-        console.log('user', user);
         // return json web token
         return jsonwebtoken.sign(
           { id: user.id, email: user.email },
@@ -54,7 +56,7 @@ export default {
       }
     },
     async login(_, { email, password }) {
-      const user = await User.findOne({ where: { email } });
+      const user = await User.findOne({ email });
 
       if (!user) {
         throw new Error('No user with that email');
