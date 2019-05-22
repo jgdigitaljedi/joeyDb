@@ -30,5 +30,5 @@ const User = mongoose.model('User', UserSchema);
 //   return User.find()
 // };
 
-// export default User;
-module.exports = User;
+export default User;
+// module.exports = User;

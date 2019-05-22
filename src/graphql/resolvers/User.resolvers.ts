@@ -1,8 +1,6 @@
-// The User schema.
-// import User from '../User';
-const User = require('../../models/User');
-const bcrypt = require('bcrypt');
-const jsonwebtoken = require('jsonwebtoken');
+import User from '../../models/User';
+import bcrypt from 'bcrypt';
+import jsonwebtoken from 'jsonwebtoken';
 
 export default {
   Query: {

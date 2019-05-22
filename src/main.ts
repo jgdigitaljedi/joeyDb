@@ -14,6 +14,8 @@ const authMiddleware = jwt({
   credentialsRequired: false
 });
 
+
+
 // Connect to MongoDB with Mongoose.
 mongoose
   .connect(
@@ -39,3 +41,9 @@ SERVER.applyMiddleware({
 app.listen(PORT, () => {
   console.log(`Server is running at PORT ${PORT}`);
 });
+
+// Hot Module Replacement
+if (module.hot) {
+  module.hot.accept();
+  module.hot.dispose(() => console.log('Module disposed. '));
+}
