@@ -1,5 +1,11 @@
-import User from './User.resolvers';
+import { UserQuery, UserMutation } from './User/User.resolvers';
+import { IResolvers } from 'graphql-tools';
 
-const resolvers = [User];
+const Resolvers = {
+  Query: { ...UserQuery },
+  Mutation: { ...UserMutation }
+}
+
+const resolvers: IResolvers = Resolvers;
 
 export default resolvers;

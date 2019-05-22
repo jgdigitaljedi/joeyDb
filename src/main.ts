@@ -1,7 +1,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
-const jwt = require('express-jwt');
-const helmet = require('helmet');
+import jwt from 'express-jwt';
+import helmet from 'helmet';
 
 import SERVER from './graphql';
 
@@ -41,9 +41,3 @@ SERVER.applyMiddleware({
 app.listen(PORT, () => {
   console.log(`Server is running at PORT ${PORT}`);
 });
-
-// Hot Module Replacement
-if (module.hot) {
-  module.hot.accept();
-  module.hot.dispose(() => console.log('Module disposed. '));
-}

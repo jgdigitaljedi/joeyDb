@@ -1,9 +1,10 @@
-import mongoose from 'mongoose';
+import { Schema, Model, model } from 'mongoose';
+import { IUserDocument } from '../graphql/resolvers/User/User.model';
 
 // Create the User Schema.
-const UserSchema = new mongoose.Schema({
+const UserSchema = new Schema({
   id: {
-    type: mongoose.Schema.Types.ObjectId,
+    type: Schema.Types.ObjectId,
     index: true,
     auto: true,
     required: true
@@ -23,13 +24,6 @@ const UserSchema = new mongoose.Schema({
   }
 });
 
-
-// userSchema.set('toObject', { virtuals: true });
-
-const User = mongoose.model('User', UserSchema);
-// var fetchData = () => {
-//   return User.find()
-// };
+const User: Model<IUserDocument> = model<IUserDocument>('User', UserSchema);
 
 export default User;
-// module.exports = User;

@@ -10,7 +10,8 @@
     "outDir": "dist",
     "rootDir": "src",
     "removeComments": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "suppressImplicitAnyIndexErrors": true
   },
   "exclude": [
     "node_modules"
