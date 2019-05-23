@@ -13,7 +13,8 @@ const queries = {
     // user is authenticated
     return await User.findById(user.id)
   },
-  async users(_) {
+  async users(_, args, context) {
+    console.log('token', context.token);
     const users = await User.find({});
     return users;
   }
