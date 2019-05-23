@@ -14,8 +14,6 @@ const authMiddleware = jwt({
   credentialsRequired: false
 });
 
-
-
 // Connect to MongoDB with Mongoose.
 mongoose
   .connect(
@@ -29,8 +27,22 @@ mongoose
   .catch(err => console.log(err));
 
 app.use(
-  authMiddleware,
   helmet(),
+  authMiddleware,
+  (err, req, res, next) => {
+    if (err) {
+      console.log('ERROR FROM MAIN', err.name);
+      try {
+        switch (err.name) {
+          case 'UnauthorizedError':
+            res.status(err.status).json({ error: err.message, message: 'Invalid token! You must be logged in to do that!' });
+            break;
+        }
+      } catch (error) {
+        res.status(500).json({ error, message: 'Server error. Something went wrong!' });
+      }
+    }
+  }
 );
 
 SERVER.applyMiddleware({

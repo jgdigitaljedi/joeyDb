@@ -21,7 +21,8 @@
     "graphql",
     "JWT",
     "mongoDB",
-    "express"
+    "express",
+    "typescript"
   ],
   "author": "Joey Gauthier",
   "license": "ISC",

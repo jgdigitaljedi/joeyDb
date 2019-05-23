@@ -2,21 +2,30 @@ import User from '../../../models/User';
 import bcrypt from 'bcrypt';
 import jsonwebtoken from 'jsonwebtoken';
 import { IUserDocument } from './User.model';
+import { AuthenticationError, ForbiddenError, UserInputError } from 'apollo-server-express';
+import { IContext } from '../../globalModels/context.model';
 
 const queries = {
-  async me(_, args, { user }) {
+  async me(_, args, { user }: IContext) {
     // make sure user is logged in
     if (!user) {
-      throw new Error('You are not authenticated!')
+      throw new ForbiddenError('You are not authenticated!');
     }
-
     // user is authenticated
-    return await User.findById(user.id)
+    try {
+      const found = await User.find({ id: user.id });
+      return found[0];
+    } catch (error) {
+      throw new UserInputError('Something in the request is invalid!');
+    }
   },
-  async users(_, args, context) {
-    console.log('token', context.token);
-    const users = await User.find({});
-    return users;
+  async users(_, args, { user }: IContext) {
+    if (user && user.id) {
+      const users = await User.find({});
+      return users;
+    } else {
+      throw new ForbiddenError('Invalid token! You must be logged in to do that!');
+    }
   }
 };
 
@@ -43,7 +52,6 @@ const mutations = {
         name,
         email,
         password: await bcrypt.hash(password, 10)
-        // password: password
       });
       // return json web token
       return jsonwebtoken.sign(
@@ -59,13 +67,13 @@ const mutations = {
     const user = await User.findOne({ email });
 
     if (!user) {
-      throw new Error('No user with that email');
+      throw new AuthenticationError('User not found or password incorrect! Please try again.');
     }
 
     const valid = await bcrypt.compare(password, user.password);
 
     if (!valid) {
-      throw new Error('Incorrect password');
+      throw new AuthenticationError('User not found or password incorrect! Please try again.');
     }
 
     // return json web token
