@@ -26,3 +26,9 @@ To run production build (after build task is run):
 ```
 npm start:prod
 ```
+
+Experimental:
+```
+npm run watch
+```
+I want hot reloading because the current start task is slower than I'd like. What I've found so far with every ts-node-dev or webpack solution I've tried is that the playground is unstable when using those solutions. I use npm start right now but am actively seeking a faster solution.

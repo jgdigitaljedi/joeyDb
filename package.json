@@ -11,7 +11,8 @@
     "start": "nodemon --watch src -e ts,ejs --exec npm run dev:start",
     "start:env": "node --require dotenv/config dist/main",
     "dev:start": "npm-run-all build start:env",
-    "clean": "rimraf dist/*"
+    "clean": "rimraf dist/*",
+    "watch": "ts-node-dev src/main.ts"
   },
   "repository": {
     "type": "git",
@@ -42,6 +43,7 @@
     "rimraf": "^2.6.3",
     "ts-loader": "^6.0.1",
     "ts-node": "^8.1.0",
+    "ts-node-dev": "^1.0.0-pre.39",
     "typescript": "^3.4.5"
   },
   "dependencies": {
