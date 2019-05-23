@@ -1,7 +1,7 @@
 import User from '../../../models/User';
 import bcrypt from 'bcrypt';
 import jsonwebtoken from 'jsonwebtoken';
-import { IUserDocument } from './User.model';
+import { IUserDocument, IUser } from './User.model';
 import { AuthenticationError, ForbiddenError, UserInputError } from 'apollo-server-express';
 import { IContext } from '../../globalModels/context.model';
 
@@ -30,7 +30,7 @@ const queries = {
 };
 
 const mutations = {
-  editUser: (root, { id, name, email }) => {
+  editUser: (root, { id, name, email }, { user }: IContext) => {
     return new Promise((resolve, reject) => {
       User.findOneAndUpdate({ id }, { $set: { name, email } }).exec(
         (err, res) => {
@@ -39,14 +39,14 @@ const mutations = {
       );
     });
   },
-  deleteUser: (root, args) => {
+  deleteUser: (root, args, { user }: IContext) => {
     return new Promise((resolve, reject) => {
       User.findOneAndRemove(args).exec((err, res) => {
         err ? reject(err) : resolve(res);
       });
     });
   },
-  async signup(_, { name, email, password }) {
+  async signup(_, { name, email, password }: IUser) {
     try {
       const user: IUserDocument = await User.create({
         name,
@@ -63,7 +63,7 @@ const mutations = {
       return error;
     }
   },
-  async login(_, { email, password }) {
+  async login(_, { email, password }: IUser) {
     const user = await User.findOne({ email });
 
     if (!user) {

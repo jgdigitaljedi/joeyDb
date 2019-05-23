@@ -5,3 +5,10 @@ export interface IUserDocument extends Document {
   id?: string;
   password: string;
 }
+
+export interface IUser {
+  name?: string;
+  id?: string;
+  email: string;
+  password?: string;
+}
