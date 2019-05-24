@@ -35,6 +35,12 @@ I want hot reloading because the current start task is slower than I'd like. Wha
 
 ** Note: While server is running, at any time it can be restarted by typing `rs` and pressing 'Enter'
 
+## Playground
+Once the server is started, you can run queries and mutations via the Playground at http://localhost:3000/api/graphql.
+
+While running any start task (even in production mode), the api runs at http://localhost:3000/api unless the port is changed in the .env file.
+
+
 ## TODOS
 - add admin functionality to users
 - finish user methods

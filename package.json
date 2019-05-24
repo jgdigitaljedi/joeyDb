@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "tsc": "tsc || echo done.",
     "build": "npm-run-all clean tsc",
-    "start:prod": "node dist/main",
+    "start:prod": "NODE_ENV=production node dist/main",
     "start": "nodemon --watch src -e ts,ejs --exec npm run dev:start",
     "start:env": "node --require dotenv/config dist/main JoeyDB",
     "dev:start": "npm-run-all build start:env",
