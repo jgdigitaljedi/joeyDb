@@ -6,7 +6,7 @@ import { AuthenticationError, ForbiddenError, UserInputError } from 'apollo-serv
 import { IContext } from '../../globalModels/context.model';
 
 const queries = {
-  async me(_, args, { user }: IContext) {
+  async me(_, args: any[], { user }: IContext) {
     // make sure user is logged in
     if (!user) {
       throw new ForbiddenError('You are not authenticated!');
@@ -19,7 +19,7 @@ const queries = {
       throw new UserInputError('Something in the request is invalid!');
     }
   },
-  async users(_, args, { user }: IContext) {
+  async users(_, args: any[], { user }: IContext) {
     if (user && user.id) {
       const users = await User.find({});
       return users;
@@ -39,7 +39,7 @@ const mutations = {
       );
     });
   },
-  deleteUser: (root, args, { user }: IContext) => {
+  deleteUser: (root, args: any[], { user }: IContext) => {
     return new Promise((resolve, reject) => {
       User.findOneAndRemove(args).exec((err, res) => {
         err ? reject(err) : resolve(res);
@@ -48,11 +48,18 @@ const mutations = {
   },
   async signup(_, { name, email, password }: IUser) {
     try {
-      const user: IUserDocument = await User.create({
-        name,
-        email,
-        password: await bcrypt.hash(password, 10)
-      });
+      const usr = new User();
+      usr.name = name;
+      usr.email = email;
+      usr.password = await bcrypt.hash(password, 10);
+      usr.createdTimestamp();
+      usr.updatedTimestamp();
+      const user: IUserDocument = await usr.save();
+      // const user: IUserDocument = await User.create({
+      //   name,
+      //   email,
+      //   password: await bcrypt.hash(password, 10)
+      // });
       // return json web token
       return jsonwebtoken.sign(
         { id: user.id, email: user.email },

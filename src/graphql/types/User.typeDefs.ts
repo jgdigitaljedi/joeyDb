@@ -4,7 +4,9 @@ export default gql`
 type User {
   id: String!
   name: String!
-  email: String!
+  email: String!,
+  created: String!,
+  updated: String!
 }
 type Query {
   me: User,

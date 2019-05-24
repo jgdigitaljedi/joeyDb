@@ -4,6 +4,11 @@ export interface IUserDocument extends Document {
   email: string;
   id?: string;
   password: string;
+  name?: string;
+  createdTimestamp?: Function;
+  updatedTimestamp?: Function;
+  updated?: string;
+  created?: string;
 }
 
 export interface IUser {
@@ -11,4 +16,7 @@ export interface IUser {
   id?: string;
   email: string;
   password?: string;
+  created?: string;
+  updated?: string;
+
 }

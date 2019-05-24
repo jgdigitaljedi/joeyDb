@@ -9,10 +9,11 @@
     "build": "npm-run-all clean tsc",
     "start:prod": "node dist/main",
     "start": "nodemon --watch src -e ts,ejs --exec npm run dev:start",
-    "start:env": "node --require dotenv/config dist/main",
+    "start:env": "node --require dotenv/config dist/main JoeyDB",
     "dev:start": "npm-run-all build start:env",
     "clean": "rimraf dist/*",
-    "watch": "ts-node-dev src/main.ts"
+    "watch": "ts-node-dev src/main.ts",
+    "stop": "pkill --signal SIGINT JoeyDB"
   },
   "repository": {
     "type": "git",
@@ -49,6 +50,7 @@
   "dependencies": {
     "apollo-server-express": "^2.5.0",
     "bcrypt": "^3.0.6",
+    "chalk": "^2.4.2",
     "express": "^4.17.0",
     "express-graphql": "^0.8.0",
     "express-jwt": "^5.3.1",
@@ -56,6 +58,7 @@
     "graphql-tools": "^4.0.4",
     "helmet": "^3.18.0",
     "jsonwebtoken": "^8.5.1",
+    "moment": "^2.24.0",
     "mongoose": "^5.5.9"
   }
 }
