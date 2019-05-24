@@ -44,6 +44,9 @@ app.use(
           case 'UnauthorizedError':
             res.status(err.status).json({ error: err.message, message: 'Invalid token! You must be logged in to do that!' });
             break;
+          default:
+            res.status(err.status).json({ error: err.message, message: err.name });
+            break;
         }
       } catch (error) {
         res.status(500).json({ error, message: 'Server error. Something went wrong!' });
@@ -66,7 +69,7 @@ const server = app.listen(PORT, () => {
   log(chalk.cyan(`Server is running at PORT ${PORT}`));
 });
 
-// here for hot module reloading if I ever get that working the way I want (seems unstable)
+// here for hot module reloading if I ever get that working the way I want (seems unstable in previous attempts)
 declare const module: any;
 if (module.hot) {
   log(chalk.yellow('reloading module'));
