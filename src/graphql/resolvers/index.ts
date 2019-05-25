@@ -1,10 +1,11 @@
-import { UserQuery, UserMutation } from './User/User.resolvers';
-import { GameQuery, GameMutation } from './Game/Game.resolvers';
+// import { UserQuery, UserMutation } from './User/User.resolvers';
+import { UserClass } from './User/User.resolvers';
+import { GameClass } from './Game/Game.resolvers';
 import { IResolvers } from 'graphql-tools';
 
 const Resolvers = {
-  Query: { ...UserQuery, ...GameQuery },
-  Mutation: { ...UserMutation, ...GameMutation }
+  Query: { ...UserClass.queries(), ...GameClass.queries() },
+  Mutation: { ...UserClass.mutations(), ...GameClass.mutations() }
 }
 
 const resolvers: IResolvers = Resolvers;

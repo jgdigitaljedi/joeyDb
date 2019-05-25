@@ -6,7 +6,8 @@ type User {
   name: String!
   email: String!,
   created: String!,
-  updated: String!
+  updated: String!,
+  admin: Boolean!
 }
 type Query {
   me: User,
@@ -14,8 +15,8 @@ type Query {
 }
 type Mutation {
   signup (name: String!, email: String!, password: String!): String
-  editUser(id: String, name: String, email: String): User
-  deleteUser(id: String, name: String, email: String): User
+  editUser(name: String, email: String, password: String): User
+  # deleteUser(id: String, name: String, email: String): User
   login (email: String!, password: String!): String
 }
 `;

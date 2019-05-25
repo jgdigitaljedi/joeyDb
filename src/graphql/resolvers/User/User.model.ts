@@ -7,8 +7,10 @@ export interface IUserDocument extends Document {
   name?: string;
   createdTimestamp?: Function;
   updatedTimestamp?: Function;
+  isAdmin?: Function;
   updated?: string;
   created?: string;
+  admin?: boolean;
 }
 
 export interface IUser {
@@ -18,5 +20,5 @@ export interface IUser {
   password?: string;
   created?: string;
   updated?: string;
-
+  admin?: boolean;
 }

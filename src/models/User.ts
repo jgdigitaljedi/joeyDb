@@ -28,6 +28,10 @@ const UserSchema = new Schema({
   },
   updated: {
     type: String
+  },
+  admin: {
+    type: Boolean,
+    default: false
   }
 });
 
@@ -38,6 +42,13 @@ UserSchema.methods.createdTimestamp = function () {
 
 UserSchema.methods.updatedTimestamp = function () {
   this.updated = moment().format(process.env.DATE_FORMAT);
+};
+
+UserSchema.methods.isAdmin = function (email) {
+  const adminEmails = process.env.MYEMAILS;
+  const aeSplit = adminEmails.split(',');
+  console.log('aeSplit', aeSplit);
+  this.admin = aeSplit.indexOf(email) >= 0;
 };
 
 const User: Model<IUserDocument> = model<IUserDocument>('User', UserSchema);

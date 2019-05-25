@@ -107,6 +107,10 @@ const GameSchema = new Schema({
     type: String,
     default: 'US'
   },
+  notes: {
+    type: String,
+    default: null
+  },
   created: {
     type: String
   },

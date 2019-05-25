@@ -3,13 +3,12 @@ import { IGameDocument } from './Game.model';
 import { ForbiddenError, UserInputError } from 'apollo-server-express';
 import { IContext } from '../../globalModels/context.model';
 
-const queries = {
+export class GameClass {
+  public static queries() {
+    return {};
 
-};
-
-const mutations = {
-
-};
-
-export const GameQuery = queries;
-export const GameMutation = mutations;
+  }
+  public static mutations() {
+    return {};
+  }
+}
