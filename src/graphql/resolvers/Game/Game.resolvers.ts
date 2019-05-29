@@ -14,19 +14,26 @@ export class GameClass {
         if (user) {
           const urlName = encodeURI(name);
           const gbData = await that._giantBombLookup(urlName, platform);
+          console.log('gbData', gbData);
           return gbData;
+          // return { name: '', id: '', platform: '' };
         }
       }
     };
   }
   public static mutations() {
-    return {};
+    return {
+      async addGame(_, args, { user }) {
+        return true;
+      }
+    };
   }
 
   private static _giantBombLookup(name, platform) {
-    axios
+    return axios
       .get(
-        `https://api.giantbomb.com/games/?api_key=${gbKey}&filter=name:${name},platforms:${platform}&format=json`
+        // `https://api.giantbomb.com/games/?api_key=${gbKey}&filter=name:${name},platforms:${platform}&format=json`
+        `https://api.giantbomb.com/games/?api_key=${gbKey}&filter=name:${name}&format=json`
       )
       .then(result => {
         if (result && result.data && result.data.results) {
@@ -40,7 +47,7 @@ export class GameClass {
             return err;
           }
         } else {
-          return SpeechRecognitionResultList;
+          return result;
         }
       })
       .catch(error => {

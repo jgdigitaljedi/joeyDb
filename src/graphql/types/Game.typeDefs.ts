@@ -4,10 +4,12 @@ export default gql`
 type Game {
   id: String!
   name: String!
-  platform: String!
+  deck: String
 }
-type Query {
-  gameLookup(name: String!, platform: String!): any
+extend type Query {
+  gameLookup (name: String!, platform: String!): [Game]
 }
-type Mutation {}
+extend type Mutation {
+  addGame(name: String!): Boolean
+}
 `;
