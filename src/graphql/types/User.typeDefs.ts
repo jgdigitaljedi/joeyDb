@@ -10,7 +10,7 @@ type User {
   admin: Boolean!
 }
 type Query {
-  me: User,
+  me: User
   users: [User]
 }
 type Mutation {

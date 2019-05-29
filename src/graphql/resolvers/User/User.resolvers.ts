@@ -2,7 +2,7 @@ import User from '../../../models/User';
 import bcrypt from 'bcrypt';
 import jsonwebtoken from 'jsonwebtoken';
 import { IUserDocument, IUser } from './User.model';
-import { AuthenticationError, ForbiddenError, UserInputError, delegateToSchema } from 'apollo-server-express';
+import { AuthenticationError, ForbiddenError, UserInputError } from 'apollo-server-express';
 import { IContext } from '../../globalModels/context.model';
 
 export class UserClass {
