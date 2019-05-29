@@ -16,7 +16,8 @@ type Query {
 type Mutation {
   signup (name: String!, email: String!, password: String!): String
   editUser(name: String, email: String, password: String): User
-  # deleteUser(id: String, name: String, email: String): User
+  deleteMe(name: String, email: String, password: String): User
+  deleteUser(key: String, value: String): User
   login (email: String!, password: String!): String
 }
 `;
