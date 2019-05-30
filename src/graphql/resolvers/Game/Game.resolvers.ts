@@ -1,4 +1,3 @@
-import User from '../../../models/User';
 import { IGameDocument } from './Game.model';
 import { ForbiddenError, UserInputError } from 'apollo-server-express';
 import { IContext } from '../../globalModels/context.model';
@@ -11,11 +10,16 @@ export class GameClass {
   public static queries() {
     const that = this;
     return {
-      async gameLookup(_, { name, platform }, { user }) {
+      async igdbGameLookup(_, { name, platform }, { user }) {
+        if (user) {
+          const igbData = await that._igdbLookup(name, platform);
+          return igbData.data;
+        }
+      },
+      async gbGameLookup(_, { name, platform }, { user }) {
         if (user) {
           const urlName = encodeURI(name);
-          // const gbData = await that._giantBombLookup(urlName, platform);
-          const gbData = await that._igdbLookup(name, platform);
+          const gbData = await that._giantBombLookup(urlName, platform);
           return gbData;
         }
       }
@@ -56,32 +60,18 @@ export class GameClass {
   }
 
   private static _igdbLookup(name, platform) {
-    return axios({
-      url: "https://api-v3.igdb.com/games",
+    const requestOptions = {
       method: 'POST',
+      baseURL: 'https://api-v3.igdb.com',
       headers: {
         'Accept': 'application/json',
         'user-key': process.env.IGDBV3KEY
       },
-      data: `fields *; search name = "${name}"; where game.platforms = ${platform}`
-    });
-    // const requestOptions = {
-    //   // queryMethod: 'body',
-    //   // method: 'POST',
-    //   baseURL: 'https://api-v3.igdb.com',
-    //   headers: {
-    //     'Accept': 'application/json',
-    //     'user-key': process.env.IGDBV3KEY
-    //   },
-    //   // data: `search "${name}"; fields *; limit 50; where game.platforms = ${platform}; offset 0;`
-    // };
-    // // return apicalypse(requestOptions).request('/games');
-    // return apicalypse(requestOptions)
-    //   // .fields(`age_ratings,alternative_names,category,cover,dlcs,first_release_date,game_engines,genres.name,name,platforms,release_dates,summary`)
-    //   .fields('*')
-    //   // .limit(50)
-    //   .search(name)
-    //   .where(`platform = ${platform}`)
-    //   .request('/games');
+    };
+    return apicalypse(requestOptions)
+      .fields(`age_ratings.rating,aggregated_rating,aggregated_rating_count,alternative_names.name,collection.name,cover.url,first_release_date,game_engines,genres.name,name,platforms.name,summary`)
+      .search(name)
+      .where(`platforms = [${platform}]`)
+      .request('/games');
   }
 }
