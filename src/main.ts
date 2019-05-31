@@ -8,13 +8,17 @@ import morgan from 'morgan';
 
 // app module imports
 import SERVER from './graphql';
-import logger from './util/logger';
+import { ApiLogger } from './util/logger';
+import { Helpers } from './util/helpers';
 
 // variables
 const app = express();
 const PORT = process.env.PORT;
 const db = 'mongodb://localhost:27017/joeyDb';
 const log = console.log;
+const apiLogger = new ApiLogger();
+const helpers = new Helpers();
+const logger = apiLogger.getLogger();
 
 // JWT middleware to automatically send user decoded from token in request
 const authMiddleware = jwt({
@@ -40,12 +44,20 @@ app.use(
   authMiddleware,
   morgan('dev', {
     skip: function (req, res) {
-      return res.statusCode < 400
+      const error = res.statusCode < 400;
+      if (error && res.statusCode >= 300) {
+        logger.info(`code: ${res.statusCode} | message: ${res.statusMessage} | client: ${req.headers['user-agent']} | body: ${helpers.jsonToString(req.body.query)}`);
+      }
+      return error;
     }, stream: process.stderr
   }),
   morgan('dev', {
     skip: function (req, res) {
-      return res.statusCode >= 400
+      const error = res.statusCode >= 400;
+      if (error) {
+        logger.error(`code: ${res.statusCode} | message: ${res.statusMessage} | client: ${req.headers['user-agent']} | body: ${helpers.jsonToString(req.body.query)}`);
+      }
+      return error;
     }, stream: process.stdout
   }),
   (err, req, res, next) => {
@@ -53,15 +65,16 @@ app.use(
       try {
         switch (err.name) {
           case 'UnauthorizedError':
-            logger.info('Unauthorized request', err.name);
+            logger.info(`Unauthorized request: ${err.name}`);
             res.status(err.status).json({ error: err.message, message: 'Invalid token! You must be logged in to do that!' });
             break;
           default:
-            logger.error('Server error', err);
+            logger.error(`Server error: ${err.name}`);
             res.status(err.status).json({ error: err.message, message: err.name });
             break;
         }
       } catch (error) {
+        logger.error(`Server error: ${error}`);
         res.status(500).json({ error, message: 'Server error. Something went wrong!' });
       }
     }

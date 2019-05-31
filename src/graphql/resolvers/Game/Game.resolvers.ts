@@ -14,6 +14,8 @@ export class GameClass {
         if (user) {
           const igbData = await that._igdbLookup(name, platform);
           return igbData.data;
+        } else {
+          throw new ForbiddenError('Invalid token! You do not have permission to do that!');
         }
       },
       async gbGameLookup(_, { name, platform }, { user }) {
@@ -21,6 +23,8 @@ export class GameClass {
           const urlName = encodeURI(name);
           const gbData = await that._giantBombLookup(urlName, platform);
           return gbData;
+        } else {
+          throw new ForbiddenError('Invalid token! You do not have permission to do that!');
         }
       }
     };
@@ -33,7 +37,7 @@ export class GameClass {
     };
   }
 
-  private static _giantBombLookup(name, platform) {
+  private static _giantBombLookup(name: string, platform: number) {
     return axios
       .get(
         `https://api.giantbomb.com/games/?api_key=${gbKey}&filter=name:${name},platforms:${platform}&format=json`
@@ -58,7 +62,7 @@ export class GameClass {
       });
   }
 
-  private static _igdbLookup(name, platform) {
+  private static _igdbLookup(name: string, platform: number) {
     const requestOptions = {
       method: 'POST',
       baseURL: 'https://api-v3.igdb.com',

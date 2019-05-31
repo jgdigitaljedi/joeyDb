@@ -17,7 +17,8 @@ if (!fs.existsSync(logDir)) {
 // });
 
 
-export default createLogger({
+// export default createLogger({
+const logger = createLogger({
   level,
   format: format.combine(
     format.timestamp({
@@ -38,3 +39,55 @@ export default createLogger({
     new transports.File({ filename })
   ]
 });
+
+export class ApiLogger {
+  logger: Logger;
+  constructor() {
+    this.logger = createLogger({
+      level,
+      format: format.combine(
+        format.timestamp({
+          format: 'YYYY-MM-DD HH:mm:ss'
+        }),
+        format.printf(info => `${info.timestamp} ${info.level}: ${info.message}`)
+      ),
+      transports: [
+        new transports.Console({
+          level: 'info',
+          format: format.combine(
+            format.colorize(),
+            format.printf(
+              info => `${info.timestamp} ${info.label} ${info.level}: ${info.message}`
+            )
+          )
+        }),
+        new transports.Console({
+          level: 'error',
+          format: format.combine(
+            format.colorize(),
+            format.printf(
+              info => `${info.timestamp} ${info.label} ${info.level}: ${info.message}`
+            )
+          )
+        }),
+        new transports.Console({
+          level: 'warning',
+          format: format.combine(
+            format.colorize(),
+            format.printf(
+              info => `${info.timestamp} ${info.label} ${info.level}: ${info.message}`
+            )
+          )
+        }),
+        new transports.File({ filename })
+      ]
+    });
+  }
+  write(text: string, level?: string): void {
+    const eLevel = level || 'info';
+    logger[eLevel](text);
+  }
+  getLogger(): Logger {
+    return logger;
+  }
+}

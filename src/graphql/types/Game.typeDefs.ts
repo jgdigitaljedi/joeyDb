@@ -87,7 +87,7 @@ type GbGame {
   site_detail_url: String
 }
 extend type Query {
-  igdbGameLookup (name: String!, platform: String!): [IgdbGame]
+  igdbGameLookup (name: String!, platform: Int!): [IgdbGame]
   gbGameLookup (name: String!, platform: Int!): [GbGame]
 }
 extend type Mutation {
