@@ -4,9 +4,11 @@ import mongoose from 'mongoose';
 import jwt from 'express-jwt';
 import helmet from 'helmet';
 import chalk from 'chalk';
+import morgan from 'morgan';
 
 // app module imports
 import SERVER from './graphql';
+import logger from './util/logger';
 
 // variables
 const app = express();
@@ -36,15 +38,26 @@ mongoose
 app.use(
   helmet(),
   authMiddleware,
+  morgan('dev', {
+    skip: function (req, res) {
+      return res.statusCode < 400
+    }, stream: process.stderr
+  }),
+  morgan('dev', {
+    skip: function (req, res) {
+      return res.statusCode >= 400
+    }, stream: process.stdout
+  }),
   (err, req, res, next) => {
     if (err) {
-      log(chalk.red('ERROR FROM MAIN', err.name));
       try {
         switch (err.name) {
           case 'UnauthorizedError':
+            logger.info('Unauthorized request', err.name);
             res.status(err.status).json({ error: err.message, message: 'Invalid token! You must be logged in to do that!' });
             break;
           default:
+            logger.error('Server error', err);
             res.status(err.status).json({ error: err.message, message: err.name });
             break;
         }
