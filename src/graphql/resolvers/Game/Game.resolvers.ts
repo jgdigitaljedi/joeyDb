@@ -36,8 +36,7 @@ export class GameClass {
   private static _giantBombLookup(name, platform) {
     return axios
       .get(
-        // `https://api.giantbomb.com/games/?api_key=${gbKey}&filter=name:${name},platforms:${platform}&format=json`
-        `https://api.giantbomb.com/games/?api_key=${gbKey}&filter=name:${name}&format=json`
+        `https://api.giantbomb.com/games/?api_key=${gbKey}&filter=name:${name},platforms:${platform}&format=json`
       )
       .then(result => {
         if (result && result.data && result.data.results) {
