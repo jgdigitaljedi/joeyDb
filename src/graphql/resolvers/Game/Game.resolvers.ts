@@ -7,9 +7,11 @@ import apicalypse from 'apicalypse';
 const gbKey = process.env.JGBKEY;
 
 export class GameClass {
-  public static queries() {
+  _queries;
+  _mutations;
+  constructor() {
     const that = this;
-    return {
+    this._queries = {
       async igdbGameLookup(_, { name, platform }, { user }) {
         if (user) {
           const igbData = await that._igdbLookup(name, platform);
@@ -28,16 +30,23 @@ export class GameClass {
         }
       }
     };
-  }
-  public static mutations() {
-    return {
+
+    this._mutations = {
       async addGame(_, args, { user }) {
         return true;
       }
     };
   }
 
-  private static _giantBombLookup(name: string, platform: number) {
+  get queries() {
+    return this._queries;
+  }
+
+  get mutations() {
+    return this._mutations;
+  }
+
+  private _giantBombLookup(name: string, platform: number) {
     return axios
       .get(
         `https://api.giantbomb.com/games/?api_key=${gbKey}&filter=name:${name},platforms:${platform}&format=json`
@@ -62,7 +71,7 @@ export class GameClass {
       });
   }
 
-  private static _igdbLookup(name: string, platform: number) {
+  private _igdbLookup(name: string, platform: number) {
     const requestOptions = {
       method: 'POST',
       baseURL: 'https://api-v3.igdb.com',

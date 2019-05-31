@@ -18,27 +18,27 @@ if (!fs.existsSync(logDir)) {
 
 
 // export default createLogger({
-const logger = createLogger({
-  level,
-  format: format.combine(
-    format.timestamp({
-      format: 'YYYY-MM-DD HH:mm:ss'
-    }),
-    format.printf(info => `${info.timestamp} ${info.level}: ${info.message}`)
-  ),
-  transports: [
-    new transports.Console({
-      level: 'info',
-      format: format.combine(
-        format.colorize(),
-        format.printf(
-          info => `${info.timestamp} ${info.level}: ${info.message}`
-        )
-      )
-    }),
-    new transports.File({ filename })
-  ]
-});
+// const logger = createLogger({
+//   level,
+//   format: format.combine(
+//     format.timestamp({
+//       format: 'YYYY-MM-DD HH:mm:ss'
+//     }),
+//     format.printf(info => `${info.timestamp} ${info.level}: ${info.message}`)
+//   ),
+//   transports: [
+//     new transports.Console({
+//       level: 'info',
+//       format: format.combine(
+//         format.colorize(),
+//         format.printf(
+//           info => `${info.timestamp} ${info.level}: ${info.message}`
+//         )
+//       )
+//     }),
+//     new transports.File({ filename })
+//   ]
+// });
 
 export class ApiLogger {
   logger: Logger;
@@ -57,7 +57,7 @@ export class ApiLogger {
           format: format.combine(
             format.colorize(),
             format.printf(
-              info => `${info.timestamp} ${info.label} ${info.level}: ${info.message}`
+              info => `${info.timestamp} ${info.level}: ${info.message}`
             )
           )
         }),
@@ -66,7 +66,7 @@ export class ApiLogger {
           format: format.combine(
             format.colorize(),
             format.printf(
-              info => `${info.timestamp} ${info.label} ${info.level}: ${info.message}`
+              info => `${info.timestamp} ${info.level}: ${info.message}`
             )
           )
         }),
@@ -85,9 +85,9 @@ export class ApiLogger {
   }
   write(text: string, level?: string): void {
     const eLevel = level || 'info';
-    logger[eLevel](text);
+    this.logger[eLevel](text);
   }
   getLogger(): Logger {
-    return logger;
+    return this.logger;
   }
 }

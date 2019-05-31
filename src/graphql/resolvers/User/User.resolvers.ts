@@ -6,8 +6,11 @@ import { AuthenticationError, ForbiddenError, UserInputError } from 'apollo-serv
 import { IContext } from '../../globalModels/context.model';
 
 export class UserClass {
-  public static queries() {
-    return {
+  _queries;
+  _mutations;
+  constructor() {
+    const that = this;
+    this._queries = {
       async me(_, args: any[], { user }: IContext): Promise<IUser> {
         // make sure user is logged in
         if (!user) {
@@ -30,11 +33,8 @@ export class UserClass {
         }
       }
     };
-  }
 
-  public static mutations() {
-    const that = this;
-    return {
+    this._mutations = {
       async editUser(root, args, { user }: IContext): Promise<IUser> {
         if (user) {
           try {
@@ -120,7 +120,15 @@ export class UserClass {
     };
   }
 
-  private static _jwtSign(user): String {
+  get queries() {
+    return this._queries;
+  }
+
+  get mutations() {
+    return this._mutations;
+  }
+
+  private _jwtSign(user): String {
     return jsonwebtoken.sign(
       { id: user.id, email: user.email, admin: user.admin },
       process.env.JOEYDBSECRET,
@@ -128,7 +136,7 @@ export class UserClass {
     );
   }
 
-  private static _changePassword(password) {
+  private _changePassword(password) {
     return bcrypt.hash(password, 10);
   }
 }
