@@ -46,7 +46,7 @@ app.use(
     skip: function (req, res) {
       const error = res.statusCode < 400;
       if (error && res.statusCode >= 300) {
-        logger.info(`code: ${res.statusCode} | message: ${res.statusMessage} | client: ${req.headers['user-agent']} | body: ${helpers.jsonToString(req.body.query)}`);
+        logger.info(`code: ${res.statusCode} | message: ${res.statusMessage} | client: ${req.headers['user-agent']} | body: ${req.body && req.body.query ? helpers.jsonToString(req.body.query) : ''}`);
       }
       return error;
     }, stream: process.stderr
@@ -55,7 +55,7 @@ app.use(
     skip: function (req, res) {
       const error = res.statusCode >= 400;
       if (error) {
-        logger.error(`code: ${res.statusCode} | message: ${res.statusMessage} | client: ${req.headers['user-agent']} | body: ${helpers.jsonToString(req.body.query)}`);
+        logger.error(`code: ${res.statusCode} | message: ${res.statusMessage} | client: ${req.headers['user-agent']} | body: ${req.body && req.body.query ? helpers.jsonToString(req.body.query) : ''}`);
       }
       return error;
     }, stream: process.stdout

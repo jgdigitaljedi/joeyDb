@@ -2,8 +2,9 @@ import User from '../../../models/User';
 import bcrypt from 'bcrypt';
 import jsonwebtoken from 'jsonwebtoken';
 import { IUserDocument, IUser } from './User.model';
-import { AuthenticationError, ForbiddenError, UserInputError } from 'apollo-server-express';
+import { AuthenticationError, ForbiddenError, UserInputError, ApolloError } from 'apollo-server-express';
 import { IContext } from '../../globalModels/context.model';
+import { Helpers } from '../../../util/helpers';
 
 export class UserClass {
   _queries;
@@ -14,14 +15,14 @@ export class UserClass {
       async me(_, args: any[], { user }: IContext): Promise<IUser> {
         // make sure user is logged in
         if (!user) {
-          throw new ForbiddenError('You are not authenticated!');
+          throw new ForbiddenError(Helpers.forbiddenMessage);
         }
         // user is authenticated
         try {
           const found = await User.find({ id: user.id });
           return found[0];
         } catch (error) {
-          throw new UserInputError('Something in the request is invalid!');
+          throw new ApolloError('Something in the request is invalid!');
         }
       },
       async users(_, args: any[], { user }: IContext): Promise<IUser[]> {
@@ -29,7 +30,7 @@ export class UserClass {
           const users = await User.find({});
           return users;
         } else {
-          throw new ForbiddenError('Invalid token! You do not have permission to do that!');
+          throw new ForbiddenError(Helpers.forbiddenMessage);
         }
       }
     };
@@ -55,7 +56,7 @@ export class UserClass {
             throw new UserInputError('Something went wrong!');
           }
         } else {
-          throw new ForbiddenError('Invalid token! You do not have permission to do that!');
+          throw new ForbiddenError(Helpers.forbiddenMessage);
         }
       },
       async deleteMe(_, args, { user }: IContext): Promise<IUser> {
@@ -65,7 +66,7 @@ export class UserClass {
             const removed = await usr.remove();
             return removed;
           } catch (error) {
-            throw new UserInputError('Something went wrong!');
+            throw new ApolloError('Something went wrong while trying to delete your account!');
           }
         }
       },
@@ -77,13 +78,13 @@ export class UserClass {
               const removed = await usr.remove();
               return removed;
             } else {
-              throw new UserInputError('Something went wrong!');
+              throw new ApolloError('Something went wrong while trying to delete the user!');
             }
           } catch (error) {
-            throw new UserInputError('Something went wrong!');
+            throw new ApolloError('Something went wrong while trying to delete the user!');
           }
         } else {
-          throw new ForbiddenError('Invalid token! You do not have permission to do that!');
+          throw new ForbiddenError(Helpers.forbiddenMessage);
         }
       },
       async signup(_, { name, email, password }: IUser): Promise<String> {
@@ -106,13 +107,13 @@ export class UserClass {
         const user = await User.findOne({ email });
 
         if (!user) {
-          throw new AuthenticationError('User not found or password incorrect! Please try again.');
+          throw new AuthenticationError(Helpers.authMessage);
         }
 
         const valid = await bcrypt.compare(password, user.password);
 
         if (!valid) {
-          throw new AuthenticationError('User not found or password incorrect! Please try again.');
+          throw new AuthenticationError(Helpers.authMessage);
         }
 
         return that._jwtSign(user);

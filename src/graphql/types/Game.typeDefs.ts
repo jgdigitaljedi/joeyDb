@@ -9,6 +9,7 @@ type Game {
 type AgeRating {
   id: Int
   rating: Int
+  translated: String
 }
 type AlternativeName {
   id: Int
@@ -25,7 +26,7 @@ type IgdbGeneral {
 type IgdbGame {
   id: Int!
   age_ratings: [AgeRating]
-  aggregated_rating: Int
+  aggregated_rating: Float
   aggregated_rating_count: Int
   alternative_names: [AlternativeName]
   collection: IgdbGeneral
@@ -65,7 +66,7 @@ type GbImageTags {
   total: Int
 }
 type GbGame {
-  aliases: [String]
+  aliases: String
   api_detail_url: String
   date_added: String
   date_last_updated: String
@@ -89,6 +90,7 @@ type GbGame {
 extend type Query {
   igdbGameLookup (name: String!, platform: Int!): [IgdbGame]
   gbGameLookup (name: String!, platform: Int!): [GbGame]
+  ageRatingsEnum (rating: Int): String
 }
 extend type Mutation {
   addGame(name: String!): Boolean
