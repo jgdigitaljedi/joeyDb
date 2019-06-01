@@ -1,6 +1,7 @@
 import { Schema, Model, model } from 'mongoose';
 import { IGameDocument } from '../graphql/resolvers/Game/Game.model';
 import moment from 'moment';
+import User from './User';
 
 // Create the Game Schema.
 const GameSchema = new Schema({
@@ -10,64 +11,64 @@ const GameSchema = new Schema({
     auto: true,
     required: true
   },
-  igdb: {
-    id: {
-      type: Number,
-      default: 9999
-    },
-    name: {
-      type: String
-    },
-    total_rating: {
-      type: Number,
-      default: null
-    },
-    total_rating_count: {
-      type: Number,
-      default: null
-    },
-    developers: {
-      type: [String],
-      default: []
-    },
-    genres: {
-      type: [String],
-      default: []
-    },
-    first_release_date: {
-      type: String,
-      default: null
-    },
-    esrb: {
-      type: Number,
-      default: null
-    }
+  userId: {
+    type: Schema.Types.ObjectId,
+    ref: 'User'
   },
-  gb: {
-    gbid: {
-      type: Number,
-      default: null
-    },
-    guid: {
-      type: String,
-      default: null
-    },
-    aliases: {
-      type: [String],
-      default: []
-    },
-    image: {
-      type: String,
-      default: null
-    },
-    deck: {
-      type: String,
-      default: null
-    },
-    platforms: {
-      type: [String],
-      default: []
+  igdbId: {
+    type: Number,
+    default: 9999
+  },
+  name: {
+    type: String
+  },
+  ageRating: {
+    type: String,
+    default: null
+  },
+  aggregatedRating: {
+    type: Number,
+    default: null
+  },
+  aggregatedRatingCount: {
+    type: Number,
+    default: null
+  },
+  alternativeNames: {
+    type: [String],
+    default: []
+  },
+  series: {
+    type: String,
+    default: null
+  },
+  cover: {
+    type: String,
+    default: null
+  },
+  summary: {
+    type: String,
+    default: null
+  },
+  platforms: [
+    {
+      name: {
+        type: String,
+        default: null
+      },
+      id: {
+        type: Number,
+        default: null
+      }
     }
+  ],
+  genres: {
+    type: [String],
+    default: []
+  },
+  firstReleaseDate: {
+    type: String,
+    default: null
   },
   pricePaid: {
     type: Number,
@@ -83,7 +84,11 @@ const GameSchema = new Schema({
   condition: {
     type: String
   },
-  cib: {
+  box: {
+    type: Boolean,
+    default: false
+  },
+  manual: {
     type: Boolean,
     default: false
   },

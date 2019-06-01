@@ -22,7 +22,7 @@ export class UserClass {
           const found = await User.find({ id: user.id });
           return found[0];
         } catch (error) {
-          throw new ApolloError('Something in the request is invalid!');
+          throw new ApolloError(error);
         }
       },
       async users(_, args: any[], { user }: IContext): Promise<IUser[]> {
@@ -53,7 +53,7 @@ export class UserClass {
             const saved: IUserDocument = await usr.save();
             return saved;
           } catch (error) {
-            throw new UserInputError('Something went wrong!');
+            throw new ApolloError(error);
           }
         } else {
           throw new ForbiddenError(Helpers.forbiddenMessage);
@@ -66,7 +66,7 @@ export class UserClass {
             const removed = await usr.remove();
             return removed;
           } catch (error) {
-            throw new ApolloError('Something went wrong while trying to delete your account!');
+            throw new ApolloError(error);
           }
         }
       },
@@ -78,10 +78,10 @@ export class UserClass {
               const removed = await usr.remove();
               return removed;
             } else {
-              throw new ApolloError('Something went wrong while trying to delete the user!');
+              throw new ForbiddenError(Helpers.forbiddenMessage);
             }
           } catch (error) {
-            throw new ApolloError('Something went wrong while trying to delete the user!');
+            throw new ApolloError(error);
           }
         } else {
           throw new ForbiddenError(Helpers.forbiddenMessage);

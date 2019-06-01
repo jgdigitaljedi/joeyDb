@@ -4,6 +4,7 @@ import { IContext } from '../../globalModels/context.model';
 import { Helpers } from '../../../util/helpers';
 import axios from 'axios';
 import apicalypse from 'apicalypse';
+import Game from '../../../models/Game';
 
 const gbKey = process.env.JGBKEY;
 
@@ -73,8 +74,21 @@ export class GameClass {
     };
 
     this._mutations = {
-      async addGame(_, args, { user }: IContext) {
-        return true;
+      async addGame(_, data: IGameDocument, { user }: IContext) {
+        if (!user) {
+          throw new ForbiddenError(Helpers.forbiddenMessage);
+        }
+
+        try {
+          const game = new Game(data);
+          game.userId = user.id;
+          game.createdTimestamp();
+          game.updatedTimestamp();
+          const savedGame: IGameDocument = await game.save();
+          return savedGame;
+        } catch (error) {
+          throw new ApolloError(error);
+        }
       }
     };
   }

@@ -87,12 +87,39 @@ type GbGame {
   platforms: [GbPlatform]
   site_detail_url: String
 }
+type UserGame {
+  userId: String!
+  name: String!
+  ageRating: String
+  aggregatedRating: Float
+  aggregatedRatingCount: Int
+  alternativeNames: [String]
+  series: String
+  cover: String
+  summary: String
+  platforms: [IgdbGeneral]
+  genres: [String]
+  firstReleaseDate: String
+  pricePaid: Int
+  physical: Boolean
+  case: String
+  condition: String
+  box: Boolean
+  manual: Boolean
+  pirated: Boolean
+  multiplayerNumber: Int
+  datePurchased: String
+  howAcquired: String
+  region: String
+  updated: String
+  created: String
+}
 extend type Query {
   igdbGameLookup (name: String!, platform: Int!): [IgdbGame]
   gbGameLookup (name: String!, platform: Int!): [GbGame]
   ageRatingsEnum (rating: Int): String
 }
 extend type Mutation {
-  addGame(name: String!): Boolean
+  addGame(name: String!): UserGame
 }
 `;

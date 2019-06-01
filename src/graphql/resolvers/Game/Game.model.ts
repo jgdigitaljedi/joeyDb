@@ -42,13 +42,24 @@ export interface IGameIgdbResponse {
 
 export interface IGameDocument extends Document {
   id?: string;
-  igdb?: IGameIgdbData;
-  gb?: IGameGbData;
+  userId?: string;
+  name: string;
+  ageRating?: string;
+  aggregatedRating?: number;
+  aggregatedRatingCount?: number;
+  alternativeNames?: string[];
+  series?: string;
+  cover?: string;
+  summary?: string;
+  platforms?: IIgdbGeneral[];
+  genres?: string[];
+  firstReleaseDate?: string;
   pricePaid?: number;
   physical?: boolean;
   case: string;
   condition: string;
-  cib?: boolean;
+  box?: boolean;
+  manual?: boolean;
   pirated?: boolean;
   multiplayerNumber?: number;
   datePurchased?: string;
