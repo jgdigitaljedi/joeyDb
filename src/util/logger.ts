@@ -11,35 +11,6 @@ if (!fs.existsSync(logDir)) {
   fs.mkdirSync(logDir);
 }
 
-// const dailyRotateFileTransport = new transports.DailyRotateFile({
-//   filename: `${logDir}/%DATE%-results.log`,
-//   datePattern: 'YYYY-MM-DD'
-// });
-
-
-// export default createLogger({
-// const logger = createLogger({
-//   level,
-//   format: format.combine(
-//     format.timestamp({
-//       format: 'YYYY-MM-DD HH:mm:ss'
-//     }),
-//     format.printf(info => `${info.timestamp} ${info.level}: ${info.message}`)
-//   ),
-//   transports: [
-//     new transports.Console({
-//       level: 'info',
-//       format: format.combine(
-//         format.colorize(),
-//         format.printf(
-//           info => `${info.timestamp} ${info.level}: ${info.message}`
-//         )
-//       )
-//     }),
-//     new transports.File({ filename })
-//   ]
-// });
-
 export class ApiLogger {
   logger: Logger;
   constructor() {
