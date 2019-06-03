@@ -4,6 +4,8 @@ import { Helpers } from '../../../util/helpers';
 import axios from 'axios';
 import apicalypse from 'apicalypse';
 import Platform from '../../../models/Platform';
+import moment from 'moment';
+import { IIgdbPlatform, IIgdbPlatformResponse } from './Platform.model';
 
 export class PlatformClass {
   _queries;
@@ -20,14 +22,36 @@ export class PlatformClass {
   constructor() {
     const that = this;
     this._queries = {
-      async platformLookup(_, { search }, { user }) {
+      async platformLookup(_, { name }, { user }: IContext): Promise<IIgdbPlatform[]> {
         if (!user) {
           throw new ForbiddenError(Helpers.forbiddenMessage);
         }
 
-        const platformResults = await that._igdbLookup(search);
-        console.log('platforms', platformResults.data);
-        return platformResults;
+        try {
+          const platformResults = await that._igdbLookup(name);
+          const resultsData = platformResults.data.map(platform => {
+            if (platform && platform.category) {
+              platform.category = that.platformCategories[platform.category];
+            }
+            if (platform && platform.id) {
+              platform.igdbId = platform.id;
+              delete platform.id;
+            }
+            if (platform && platform.versions && platform.versions.length) {
+              const pvCopy = [...platform.versions];
+              platform.versions = pvCopy.map(version => {
+                if (version.platform_version_release_dates && version.platform_version_release_dates.length && version.platform_version_release_dates[0].hasOwnProperty('date')) {
+                  version.first_release_date = moment(version.platform_version_release_dates[0].date * 1000).format('MM/DD/YYYY');
+                }
+                return version;
+              });
+            }
+            return platform;
+          });
+          return resultsData;
+        } catch (error) {
+          new ApolloError('Something went wrong fetching or parsing IGDB platform call!');
+        }
       }
     };
 
@@ -50,8 +74,7 @@ export class PlatformClass {
     return this._mutations;
   }
 
-  private _igdbLookup(name: string): Promise<any> {
-    console.log('name', name);
+  private _igdbLookup(name: string): Promise<IIgdbPlatformResponse> {
     const requestOptions = {
       method: 'POST',
       baseURL: 'https://api-v3.igdb.com',
@@ -61,9 +84,8 @@ export class PlatformClass {
       },
     };
     return apicalypse(requestOptions)
-      .fields(`alternative_name,category,generation,name,summary,versions.main_manufacturer.company,versions.name,versions.storage,versions.platform_version_release_dates.date`)
+      .fields(`alternative_name,category,generation,name,summary,versions.name,versions.storage,versions.platform_version_release_dates.date`)
       .search(name)
-      // .where(`name = ${name}`)
       .request('/platforms');
   }
 }

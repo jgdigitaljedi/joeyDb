@@ -16,6 +16,77 @@ const PlatformSchema = new Schema({
   igdbId: {
     type: Number,
     default: 9999
+  },
+  name: {
+    type: String
+  },
+  alternative_name: {
+    type: String,
+    default: null
+  },
+  category: {
+    type: String,
+    default: null
+  },
+  generation: {
+    type: Number,
+    default: null
+  },
+  versionName: {
+    type: String,
+    default: null,
+  },
+  first_release_date: {
+    type: String,
+    default: null
+  },
+  storage: {
+    type: String,
+    default: null
+  },
+  pricePaid: {
+    type: Number,
+    default: null
+  },
+  mods: {
+    type: [String],
+    default: []
+  },
+  notes: {
+    type: String,
+    default: null
+  },
+  box: {
+    type: Boolean,
+    default: false
+  },
+  connectedBy: {
+    type: String,
+    default: null
+  },
+  upscaler: {
+    type: Boolean,
+    default: false
+  },
+  datePurchased: {
+    type: String,
+    default: null
+  },
+  region: {
+    type: String,
+    default: 'US'
+  },
+  ghostConsole: {
+    type: Boolean,
+    default: false
+  },
+  createdAt: {
+    type: String,
+    default: null
+  },
+  updatedAt: {
+    type: String,
+    default: null
   }
 });
 

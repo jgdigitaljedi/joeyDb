@@ -1,15 +1,23 @@
 import { gql } from 'apollo-server-express';
 
 export default gql`
-type Platform {
-  id: String!
+type PlatformVersions {
+  id: Int
+  name: String
+  storage: String
+  first_release_date: String
+}
+type IgdbPlatform {
+  igdbId: Int
   userId: String
   alternative_name: String
-  category: Int
+  category: String
   name: String
+  generation: Int
+  versions: [PlatformVersions]
 }
 extend type Query {
-  platformLookup(search: String): [Platform]
+  platformLookup(name: String): [IgdbPlatform]
 }
 extend type Mutation {
   addPlatform(platform: String): Boolean
