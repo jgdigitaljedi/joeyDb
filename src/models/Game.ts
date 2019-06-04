@@ -50,7 +50,7 @@ const GameSchema = new Schema({
     type: String,
     default: null
   },
-  platforms: [
+  platform: [
     {
       name: {
         type: String,
@@ -115,6 +115,10 @@ const GameSchema = new Schema({
   notes: {
     type: String,
     default: null
+  },
+  wishlist: {
+    type: Boolean,
+    default: false
   },
   created: {
     type: String

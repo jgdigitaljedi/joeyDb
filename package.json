@@ -13,7 +13,8 @@
     "dev:start": "npm-run-all build start:env",
     "clean": "rimraf dist/*",
     "watch": "ts-node-dev src/main.ts",
-    "stop": "pkill --signal SIGINT JoeyDB"
+    "stop": "pkill --signal SIGINT JoeyDB",
+    "seed:platforms": "node seed/platforms.js"
   },
   "repository": {
     "type": "git",

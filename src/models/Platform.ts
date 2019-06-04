@@ -44,13 +44,13 @@ const PlatformSchema = new Schema({
     type: String,
     default: null
   },
-  pricePaid: {
-    type: Number,
+  unit: {
+    type: String,
     default: null
   },
   mods: {
     type: [String],
-    default: []
+    default: null
   },
   notes: {
     type: String,
@@ -68,7 +68,19 @@ const PlatformSchema = new Schema({
     type: Boolean,
     default: false
   },
+  condition: {
+    type: String,
+    default: 'Fair'
+  },
   datePurchased: {
+    type: String,
+    default: null
+  },
+  purchasePrice: {
+    type: Number,
+    default: null
+  },
+  howAcquired: {
     type: String,
     default: null
   },
@@ -77,6 +89,10 @@ const PlatformSchema = new Schema({
     default: 'US'
   },
   ghostConsole: {
+    type: Boolean,
+    default: false
+  },
+  wishlist: {
     type: Boolean,
     default: false
   },

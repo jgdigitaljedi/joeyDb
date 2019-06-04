@@ -52,6 +52,20 @@ export class PlatformClass {
         } catch (error) {
           new ApolloError('Something went wrong fetching or parsing IGDB platform call!');
         }
+      },
+      async myPlatforms(_, args, { user }: IContext) {
+        if (!user) {
+          throw new ForbiddenError(Helpers.forbiddenMessage);
+        }
+        const platforms = await Platform.find({ userId: user.id, wishlist: false });
+        return platforms;
+      },
+      async myPlatformsWishlist(_, args, { user }: IContext) {
+        if (!user) {
+          throw new ForbiddenError(Helpers.forbiddenMessage);
+        }
+        const platforms = await Platform.find({ userId: user.id, wishlist: false });
+        return platforms;
       }
     };
 

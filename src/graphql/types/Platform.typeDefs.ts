@@ -16,8 +16,37 @@ type IgdbPlatform {
   generation: Int
   versions: [PlatformVersions]
 }
+type UserPlatform {
+  id: String
+  userId: String
+  igdbId: Int
+  name: String
+  alternative_name: String
+  category: String
+  generation: Int
+  versionName: String
+  first_release_date: String
+  storage: String
+  unit: String
+  purchasePrice: Float
+  mods: [String]
+  notes: String
+  box: Boolean
+  connectedBy: String
+  upscaler: Boolean
+  condition: String
+  datePurchased: String
+  howAcquired: String
+  region: String
+  ghostConsole: Boolean
+  wishlist: Boolean
+  createdAt: String
+  updatedAt: String
+}
 extend type Query {
   platformLookup(name: String): [IgdbPlatform]
+  myPlatforms: [UserPlatform]
+  myPlatformsWishlist: [UserPlatform]
 }
 extend type Mutation {
   addPlatform(platform: String): Boolean
