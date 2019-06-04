@@ -12,6 +12,19 @@
   const consoles = require('../../homeControl/server/db/consoles.json');
   const wishlist = require('../../homeControl/server/db/wlConsoles.json');
 
+  const computers = [15, 75];
+  const handhelds = [33, 22, 35, 120, 57, 123, 57, 24, 38, 20, 37, 130];
+
+  function getCategory(id) {
+    if (computers.indexOf(id) >= 0) {
+      return 'computer';
+    }
+    if (handhelds.indexOf(id) >= 0) {
+      return 'portable console';
+    }
+    return 'console';
+  }
+
   // get admin user
   function seedPlatforms() {
     return new Promise((resolve, reject) => {
@@ -28,7 +41,7 @@
                 igdbId: (item.igdb && item.igdb.id) ? item.igdb.id : 9999,
                 userId: joey.id,
                 name: (item.igdb && item.igdb.name) ? item.igdb.name : '',
-                alternative_name: (item.gb && item.gb.aliases) ? item.gb.aliases : null,
+                alternative_name: (item.gb && item.gb.aliases) ? item.gb.aliases.replace(/(\r\n|\n|\r)/gm, ', ') : null,
                 generation: (item.igdb && item.igdb.generation) ? item.igdb.generation : null,
                 version_name: (item.igdb && item.igdb.version) ? item.igdb.version : null,
                 first_release_date: null,
@@ -46,7 +59,7 @@
                 region: (item.igdb && item.igdb.id === 4) ? 'Japan' : 'US',
                 ghostConsole: item.ghostConsole,
                 wishlist: false,
-                category: 'console'
+                category: getCategory(item.igdb.id)
               };
               const plat = new Platform(newPlatform);
               plat.createdTimestamp();
@@ -64,7 +77,7 @@
                 igdbId: (item.igdb && item.igdb.id) ? item.igdb.id : 9999,
                 userId: joey.id,
                 name: (item.igdb && item.igdb.name) ? item.igdb.name : '',
-                alternative_name: (item.gb && item.gb.aliases) ? item.gb.aliases : null,
+                alternative_name: (item.gb && item.gb.aliases) ? item.gb.aliases.replace(/(\r\n|\n|\r)/gm, ', ') : null,
                 generation: (item.igdb && item.igdb.generation) ? item.igdb.generation : null,
                 version_name: (item.igdb && item.igdb.version) ? item.igdb.version : null,
                 first_release_date: null,
@@ -82,7 +95,7 @@
                 region: (item.igdb && item.igdb.id === 4) ? 'Japan' : 'US',
                 ghostConsole: item.ghostConsole,
                 wishlist: true,
-                category: 'console'
+                category: getCategory(item.igdb.id)
               };
               const plat = new Platform(newPlatform);
               plat.createdTimestamp();
