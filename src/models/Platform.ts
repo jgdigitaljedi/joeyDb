@@ -96,11 +96,11 @@ const PlatformSchema = new Schema({
     type: Boolean,
     default: false
   },
-  createdAt: {
+  created: {
     type: String,
     default: null
   },
-  updatedAt: {
+  updated: {
     type: String,
     default: null
   }

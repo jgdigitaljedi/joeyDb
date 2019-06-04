@@ -40,8 +40,8 @@ type UserPlatform {
   region: String
   ghostConsole: Boolean
   wishlist: Boolean
-  createdAt: String
-  updatedAt: String
+  created: String
+  updated: String
 }
 extend type Query {
   platformLookup(name: String): [IgdbPlatform]

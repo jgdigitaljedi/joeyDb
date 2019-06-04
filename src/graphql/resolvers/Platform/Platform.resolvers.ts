@@ -64,7 +64,7 @@ export class PlatformClass {
         if (!user) {
           throw new ForbiddenError(Helpers.forbiddenMessage);
         }
-        const platforms = await Platform.find({ userId: user.id, wishlist: false });
+        const platforms = await Platform.find({ userId: user.id, wishlist: true });
         return platforms;
       }
     };
