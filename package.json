@@ -14,7 +14,8 @@
     "clean": "rimraf dist/*",
     "watch": "ts-node-dev src/main.ts",
     "stop": "pkill --signal SIGINT JoeyDB",
-    "seed:platforms": "node seed/platforms.js"
+    "seed:platforms": "node seed/platforms.js",
+    "seed:all": "npm-run-all build seed:platforms"
   },
   "repository": {
     "type": "git",

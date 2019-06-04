@@ -45,7 +45,8 @@
                 howAcquired: item.howAcquired,
                 region: (item.igdb && item.igdb.id === 4) ? 'Japan' : 'US',
                 ghostConsole: item.ghostConsole,
-                wishlist: false
+                wishlist: false,
+                category: 'console'
               };
               const plat = new Platform(newPlatform);
               plat.createdTimestamp();
@@ -80,7 +81,8 @@
                 howAcquired: item.howAcquired,
                 region: (item.igdb && item.igdb.id === 4) ? 'Japan' : 'US',
                 ghostConsole: item.ghostConsole,
-                wishlist: true
+                wishlist: true,
+                category: 'console'
               };
               const plat = new Platform(newPlatform);
               plat.createdTimestamp();
