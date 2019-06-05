@@ -5,7 +5,7 @@ import axios from 'axios';
 import apicalypse from 'apicalypse';
 import Platform from '../../../models/Platform';
 import moment from 'moment';
-import { IIgdbPlatform, IIgdbPlatformResponse } from './Platform.model';
+import { IIgdbPlatform, IIgdbPlatformResponse, IUserPlatform, IPlatformDocument, IPlatformReq } from './Platform.model';
 
 export class PlatformClass {
   _queries;
@@ -53,29 +53,49 @@ export class PlatformClass {
           new ApolloError('Something went wrong fetching or parsing IGDB platform call!');
         }
       },
-      async myPlatforms(_, args, { user }: IContext) {
+      async myPlatforms(_, { wl }, { user }: IContext): Promise<IPlatformDocument[]> {
         if (!user) {
           throw new ForbiddenError(Helpers.forbiddenMessage);
         }
-        const platforms = await Platform.find({ userId: user.id, wishlist: false });
-        return platforms;
-      },
-      async myPlatformsWishlist(_, args, { user }: IContext) {
-        if (!user) {
-          throw new ForbiddenError(Helpers.forbiddenMessage);
-        }
-        const platforms = await Platform.find({ userId: user.id, wishlist: true });
+        const wishlist = wl && wl !== {} ? true : false;
+        const platforms = await Platform.find({ userId: user.id, wishlist });
         return platforms;
       }
     };
 
     this._mutations = {
-      async addGame(_, game, { user }) {
+      async addPlatform(_, { platform }: IPlatformReq, { user }: IContext): Promise<IUserPlatform> {
         if (!user) {
           throw new ForbiddenError(Helpers.forbiddenMessage);
         }
-
-        return true;
+        if (!platform) {
+          throw new UserInputError('You must send the required platform data to save a platform!');
+        }
+        try {
+          const newPlatform = new Platform(platform);
+          newPlatform.userId = user.id;
+          newPlatform.createdTimestamp();
+          newPlatform.updatedTimestamp();
+          const saved = await newPlatform.save();
+          return saved;
+        } catch (err) {
+          throw new ApolloError(err);
+        }
+      },
+      async deletePlatform(_, { id }, { user }: IContext): Promise<Number> {
+        if (!user) {
+          throw new ForbiddenError(Helpers.forbiddenMessage);
+        }
+        if (!id) {
+          throw new UserInputError('You must send a platform ID to delete the platform!');
+        }
+        try {
+          const toDelete = Platform.findOne({ userId: user.id, id });
+          const deleted = await toDelete.remove();
+          return deleted.ok;
+        } catch (err) {
+          throw new ApolloError(err);
+        }
       }
     };
   }

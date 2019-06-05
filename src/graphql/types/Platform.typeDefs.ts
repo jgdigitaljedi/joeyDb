@@ -1,6 +1,29 @@
 import { gql } from 'apollo-server-express';
 
 export default gql`
+input UserPlatformReq {
+  igdbId: Int
+  name: String!
+  alternative_name: String
+  category: String
+  generation: Int
+  versionName: String
+  first_release_date: String
+  storage: String
+  unit: String
+  purchasePrice: Float
+  mods: [String]
+  notes: String
+  box: Boolean!
+  connectedBy: String!
+  upscaler: Boolean!
+  condition: String!
+  datePurchased: String
+  howAcquired: String
+  region: String
+  ghostConsole: Boolean!
+  wishlist: Boolean!
+}
 type PlatformVersions {
   id: Int
   name: String
@@ -45,10 +68,10 @@ type UserPlatform {
 }
 extend type Query {
   platformLookup(name: String): [IgdbPlatform]
-  myPlatforms: [UserPlatform]
-  myPlatformsWishlist: [UserPlatform]
+  myPlatforms(wl: Boolean): [UserPlatform]
 }
 extend type Mutation {
-  addPlatform(platform: String): Boolean
+  addPlatform(platform: UserPlatformReq): UserPlatform
+  deletePlatform(id: String): Int
 }
 `;
