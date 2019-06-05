@@ -27,6 +27,12 @@ To run production build (after build task is run):
 npm start:prod
 ```
 
+To seed:<br>
+<em>This requires a private repo of mine to be installed (homeControl) as it simply pulls the info to seed from said repo via the diskDB files. You could in theory create json files to emulate this as long as they were the expected format.</em>
+```
+npm run seed:all
+```
+
 Experimental:
 ```
 npm run watch
@@ -42,13 +48,8 @@ While running any start task (even in production mode), the api runs at http://l
 
 
 ## TODOS
-- add admin functionality to users
-- finish user methods
 - finish everything needed for games to work
-- add logging
-- add thorough error handling
-- add documentation generation
-- create console models and methods
+- seed games
 - create accessory models and methods
 - create clone models and methods
 - create collectibles models and methods
