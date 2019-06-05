@@ -5,6 +5,9 @@ import { IUserDocument, IUser } from './User.model';
 import { AuthenticationError, ForbiddenError, UserInputError, ApolloError } from 'apollo-server-express';
 import { IContext } from '../../globalModels/context.model';
 import { Helpers } from '../../../util/helpers';
+import Platform from '../../../models/Platform';
+
+const logger = Helpers.apiLogger;
 
 export class UserClass {
   _queries;
@@ -22,13 +25,19 @@ export class UserClass {
           const found = await User.find({ id: user.id });
           return found[0];
         } catch (error) {
+          logger.write(`User.queries.me ERROR: ${error}`, 'error');
           throw new ApolloError(error);
         }
       },
       async users(_, args: any[], { user }: IContext): Promise<IUser[]> {
         if (user && user.id && user.admin) {
-          const users = await User.find({});
-          return users;
+          try {
+            const users = await User.find({});
+            return users;
+          } catch (error) {
+            logger.write(`User.queries.users ERROR: ${error}`, 'error');
+            throw new ApolloError('Error fetching users list!');
+          }
         } else {
           throw new ForbiddenError(Helpers.forbiddenMessage);
         }
@@ -53,6 +62,7 @@ export class UserClass {
             const saved: IUserDocument = await usr.save();
             return saved;
           } catch (error) {
+            logger.write(`User.mutations.editUser ERROR: ${error}`, 'error');
             throw new ApolloError(error);
           }
         } else {
@@ -64,8 +74,11 @@ export class UserClass {
           try {
             const usr = await User.findOne({ id: user.id });
             const removed = await usr.remove();
+            const userPlatforms = await Platform.find({ userId: user.id }).remove().exec();
+            console.log('userPlatforms', userPlatforms);
             return removed;
           } catch (error) {
+            logger.write(`User.mutations.deleteMe ERROR: ${error}`, 'error');
             throw new ApolloError(error);
           }
         }
@@ -81,6 +94,7 @@ export class UserClass {
               throw new ForbiddenError(Helpers.forbiddenMessage);
             }
           } catch (error) {
+            logger.write(`User.mutations.deleteUser ERROR: ${error}`, 'error');
             throw new ApolloError(error);
           }
         } else {
@@ -100,7 +114,8 @@ export class UserClass {
           // return json web token
           return that._jwtSign(user);
         } catch (error) {
-          return error;
+          logger.write(`User.mutations.signup ERROR: ${error}`, 'error');
+          throw new ApolloError(error);
         }
       },
       async login(_, { email, password }: IUser): Promise<String> {

@@ -118,9 +118,9 @@
 
   seedPlatforms()
     .then(result => {
-      mongoose.connection.close();
+      helpers.killProcess(true);
     })
     .catch(error => {
-      mongoose.connection.close();
+      helpers.killProcess(true);
     });
 })();

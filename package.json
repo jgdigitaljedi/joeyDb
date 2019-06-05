@@ -15,7 +15,8 @@
     "watch": "ts-node-dev src/main.ts",
     "stop": "pkill --signal SIGINT JoeyDB",
     "seed:platforms": "node seed/platforms.js",
-    "seed:all": "npm-run-all build seed:platforms"
+    "seed:users": "node seed/users.js --all=$ALL",
+    "seed:all": "ALL=true npm-run-all build seed:users seed:platforms"
   },
   "repository": {
     "type": "git",
@@ -59,6 +60,7 @@
     "express-graphql": "^0.8.0",
     "express-jwt": "^5.3.1",
     "graphql": "^14.3.0",
+    "graphql-s2s": "^0.20.0",
     "graphql-tools": "^4.0.4",
     "helmet": "^3.18.0",
     "jsonwebtoken": "^8.5.1",

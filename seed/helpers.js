@@ -14,15 +14,10 @@ async function getAdmin() {
   return user;
 }
 
-// const getAdmin = function () {
-//   return new Promise((resolve) => {
-//     return User.findOne({ email: 'digitaljedi@outlook.com' })
-//       .then(admin => {
-//         resolve(admin);
-//       })
-//   });
-// }
-
-// const joey = getAdmin();
 module.exports.joey = getAdmin();
 module.exports.mongoose = mongoose;
+module.exports.killProcess = function (exit) {
+  if (!process.env.ALL || exit) {
+    mongoose.connection.close();
+  }
+};

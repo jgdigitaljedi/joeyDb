@@ -5,7 +5,9 @@ import axios from 'axios';
 import apicalypse from 'apicalypse';
 import Platform from '../../../models/Platform';
 import moment from 'moment';
-import { IIgdbPlatform, IIgdbPlatformResponse, IUserPlatform, IPlatformDocument, IPlatformReq } from './Platform.model';
+import { IIgdbPlatform, IIgdbPlatformResponse, IUserPlatform, IPlatformDocument, IPlatformReq, IPlatformCategories } from './Platform.model';
+
+const logger = Helpers.apiLogger;
 
 export class PlatformClass {
   _queries;
@@ -50,16 +52,32 @@ export class PlatformClass {
           });
           return resultsData;
         } catch (error) {
-          new ApolloError('Something went wrong fetching or parsing IGDB platform call!');
+          logger.write(`Platform.queries.platformLookup ERROR: ${error}`, 'error');
+          new ApolloError(error);
         }
       },
       async myPlatforms(_, { wl }, { user }: IContext): Promise<IPlatformDocument[]> {
         if (!user) {
           throw new ForbiddenError(Helpers.forbiddenMessage);
         }
-        const wishlist = wl && wl !== {} ? true : false;
-        const platforms = await Platform.find({ userId: user.id, wishlist });
-        return platforms;
+        try {
+          const wishlist = wl && wl !== {} ? true : false;
+          const platforms = await Platform.find({ userId: user.id, wishlist });
+          return platforms;
+        } catch (err) {
+          logger.write(`Platform.queries.myPlatforms ERROR: ${err}`, 'error');
+          throw new ApolloError(err)
+        }
+      },
+      getPlatformCategories(_, args, { user }: IContext): IPlatformCategories[] {
+        if (!user) {
+          throw new ForbiddenError(Helpers.forbiddenMessage);
+        }
+        const keys = Object.keys(that.platformCategories);
+        const pc = keys.map(key => {
+          return { id: parseInt(key), name: that.platformCategories[key] };
+        });
+        return pc;
       }
     };
 
@@ -79,6 +97,7 @@ export class PlatformClass {
           const saved = await newPlatform.save();
           return saved;
         } catch (err) {
+          logger.write(`Platform.resolvers.addPlatform ERROR: ${err}`, 'error');
           throw new ApolloError(err);
         }
       },
@@ -94,6 +113,40 @@ export class PlatformClass {
           const deleted = await toDelete.remove();
           return deleted.ok;
         } catch (err) {
+          logger.write(`Platform.resolvers.deletePlatform ERROR: ${err}`, 'error');
+          throw new ApolloError(err);
+        }
+      },
+      async editPlatform(_, { platform }, { user }: IContext): Promise<IUserPlatform> {
+        if (!user) {
+          throw new ForbiddenError(Helpers.forbiddenMessage);
+        }
+        if (!platform.id) {
+          throw new UserInputError('You must send a platform ID to edit the platform!');
+        }
+        try {
+          const toEdit = await Platform.findOne({ id: platform.id, userId: user.id });
+          const editObj = toEdit.toObject();
+          const keys = Object.keys(platform);
+          const errorArr = [];
+          keys.forEach(key => {
+            if (key !== 'id' && key !== 'created' && key !== 'updated' && key !== 'userId') {
+              if (editObj.hasOwnProperty(key)) {
+                console.log('key', key);
+                toEdit[key] = platform[key];
+              } else {
+                errorArr.push(key)
+              }
+            }
+          });
+          if (errorArr.length) {
+            throw new UserInputError(`No field(s) exist for argument(s): ${errorArr.join(', ')}`);
+          } else {
+            const saved = toEdit.save();
+            return saved;
+          }
+        } catch (err) {
+          logger.write(`Platform.resolvers.editPlatform ERROR: ${err}`, 'error');
           throw new ApolloError(err);
         }
       }

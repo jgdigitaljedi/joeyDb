@@ -87,3 +87,8 @@ export interface IPlatformDocument extends Document {
 export interface IPlatformReq {
   platform: IPlatformDocument;
 }
+
+export interface IPlatformCategories {
+  id: number;
+  name: string;
+}

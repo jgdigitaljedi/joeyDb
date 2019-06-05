@@ -1,6 +1,7 @@
 import { gql } from 'apollo-server-express';
+const { transpileSchema } = require('graphql-s2s').graphqls2s;
 
-export default gql`
+const schema = `
 input UserPlatformReq {
   igdbId: Int
   name: String!
@@ -23,6 +24,16 @@ input UserPlatformReq {
   region: String
   ghostConsole: Boolean!
   wishlist: Boolean!
+}
+input UserPlatformEdit inherits UserPlatformReq {
+  id: String!
+  box: Boolean
+  connectedBy: String
+  upscaler: Boolean
+  condition: String
+  name: String
+  ghostConsole: Boolean
+  wishlist: Boolean
 }
 type PlatformVersions {
   id: Int
@@ -66,12 +77,20 @@ type UserPlatform {
   created: String
   updated: String
 }
+type PlatformCategories {
+  id: Int!
+  name: String!
+}
 extend type Query {
   platformLookup(name: String): [IgdbPlatform]
   myPlatforms(wl: Boolean): [UserPlatform]
+  getPlatformCategories: [PlatformCategories]
 }
 extend type Mutation {
   addPlatform(platform: UserPlatformReq): UserPlatform
   deletePlatform(id: String): Int
+  editPlatform(platform: UserPlatformEdit): UserPlatform
 }
 `;
+const transpiled = transpileSchema(schema);
+export default gql(transpiled);

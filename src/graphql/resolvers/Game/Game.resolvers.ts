@@ -7,6 +7,7 @@ import apicalypse from 'apicalypse';
 import Game from '../../../models/Game';
 
 const gbKey = process.env.JGBKEY;
+const logger = Helpers.apiLogger;
 
 export class GameClass {
   _queries;
@@ -45,6 +46,7 @@ export class GameClass {
             });
             return withAgeRatings;
           } catch (error) {
+            logger.write(`Game.queries.igdbGameLookup ERROR: ${error}`, 'error');
             throw new ApolloError(error);
           }
         } else {
@@ -58,6 +60,7 @@ export class GameClass {
             const gbData = await that._giantBombLookup(urlName, platform);
             return gbData;
           } catch (error) {
+            logger.write(`Game.queries.gbGameLookup ERROR: ${error}`, 'error');
             throw new ApolloError(error);
           }
         } else {
@@ -87,6 +90,7 @@ export class GameClass {
           const savedGame: IGameDocument = await game.save();
           return savedGame;
         } catch (error) {
+          logger.write(`Game.mutations.addGame ERROR: ${error}`, 'error');
           throw new ApolloError(error);
         }
       }
