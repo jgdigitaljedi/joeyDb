@@ -1,6 +1,6 @@
 import { Schema, Model, model } from 'mongoose';
 import { IUserDocument } from '../graphql/resolvers/User/User.model';
-import moment from 'moment';
+import { Helpers } from '../util/helpers';
 
 // Create the User Schema.
 const UserSchema = new Schema({
@@ -37,17 +37,16 @@ const UserSchema = new Schema({
 
 // model methods
 UserSchema.methods.createdTimestamp = function () {
-  this.created = moment().format(process.env.DATE_FORMAT);
+  this.created = Helpers.getTimestamp();
 };
 
 UserSchema.methods.updatedTimestamp = function () {
-  this.updated = moment().format(process.env.DATE_FORMAT);
+  this.updated = Helpers.getTimestamp();
 };
 
 UserSchema.methods.isAdmin = function (email) {
   const adminEmails = process.env.MYEMAILS;
   const aeSplit = adminEmails.split(',');
-  console.log('aeSplit', aeSplit);
   this.admin = aeSplit.indexOf(email) >= 0;
 };
 

@@ -6,10 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "tsc": "tsc || echo done.",
+    "tsc:prod": "tsc --build . --clean || echo done.",
     "build": "npm-run-all clean tsc",
-    "start:prod": "NODE_ENV=production node dist/main",
+    "build:prod": "npm-run-all clean tsc:prod",
     "start": "nodemon --watch src -e ts,ejs --exec npm run dev:start",
     "start:env": "node --require dotenv/config dist/main JoeyDB",
+    "start:prod": "NODE_ENV=production node dist/main",
     "dev:start": "npm-run-all build start:env",
     "clean": "rimraf dist/*",
     "watch": "ts-node-dev src/main.ts",

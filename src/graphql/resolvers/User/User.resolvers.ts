@@ -6,6 +6,7 @@ import { AuthenticationError, ForbiddenError, UserInputError, ApolloError } from
 import { IContext } from '../../globalModels/context.model';
 import { Helpers } from '../../../util/helpers';
 import Platform from '../../../models/Platform';
+import AVDevice from '../../../models/AVDevice';
 
 const logger = Helpers.apiLogger;
 
@@ -75,7 +76,7 @@ export class UserClass {
             const usr = await User.findOne({ id: user.id });
             const removed = await usr.remove();
             const userPlatforms = await Platform.find({ userId: user.id }).remove().exec();
-            console.log('userPlatforms', userPlatforms);
+            const userAVDevices = await AVDevice.find({ userId: user.id }).remove().exec();
             return removed;
           } catch (error) {
             logger.write(`User.mutations.deleteMe ERROR: ${error}`, 'error');
@@ -89,6 +90,8 @@ export class UserClass {
             const usr = await User.findOne({ [args.key]: [args.value] });
             if (usr) {
               const removed = await usr.remove();
+              const userPlatforms = await Platform.find({ userId: user.id }).remove().exec();
+              const userAVDevices = await AVDevice.find({ userId: user.id }).remove().exec();
               return removed;
             } else {
               throw new ForbiddenError(Helpers.forbiddenMessage);

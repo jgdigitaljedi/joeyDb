@@ -1,6 +1,6 @@
 import { Schema, Model, model } from 'mongoose';
-import moment from 'moment';
 import { IPlatformDocument } from '../graphql/resolvers/Platform/Platform.model';
+import { Helpers } from '../util/helpers';
 
 const PlatformSchema = new Schema({
   id: {
@@ -108,11 +108,11 @@ const PlatformSchema = new Schema({
 
 // model methods
 PlatformSchema.methods.createdTimestamp = function () {
-  this.created = moment().format(process.env.DATE_FORMAT);
+  this.created = Helpers.getTimestamp();
 };
 
 PlatformSchema.methods.updatedTimestamp = function () {
-  this.updated = moment().format(process.env.DATE_FORMAT);
+  this.updated = Helpers.getTimestamp();
 };
 
 const Platform: Model<IPlatformDocument> = model<IPlatformDocument>('Platform', PlatformSchema);

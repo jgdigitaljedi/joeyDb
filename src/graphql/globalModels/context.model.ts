@@ -9,3 +9,7 @@ interface IUserContext {
 export interface IContext {
   user: IUserContext;
 }
+
+export interface IId {
+  id: string;
+}

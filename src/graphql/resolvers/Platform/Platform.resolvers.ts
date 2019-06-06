@@ -1,7 +1,6 @@
 import { ForbiddenError, UserInputError, ApolloError } from 'apollo-server-express';
 import { IContext } from '../../globalModels/context.model';
 import { Helpers } from '../../../util/helpers';
-import axios from 'axios';
 import apicalypse from 'apicalypse';
 import Platform from '../../../models/Platform';
 import moment from 'moment';
@@ -97,7 +96,7 @@ export class PlatformClass {
           const saved = await newPlatform.save();
           return saved;
         } catch (err) {
-          logger.write(`Platform.resolvers.addPlatform ERROR: ${err}`, 'error');
+          logger.write(`Platform.mutations.addPlatform ERROR: ${err}`, 'error');
           throw new ApolloError(err);
         }
       },
@@ -113,7 +112,7 @@ export class PlatformClass {
           const deleted = await toDelete.remove();
           return deleted.ok;
         } catch (err) {
-          logger.write(`Platform.resolvers.deletePlatform ERROR: ${err}`, 'error');
+          logger.write(`Platform.mutations.deletePlatform ERROR: ${err}`, 'error');
           throw new ApolloError(err);
         }
       },
@@ -142,11 +141,12 @@ export class PlatformClass {
           if (errorArr.length) {
             throw new UserInputError(`No field(s) exist for argument(s): ${errorArr.join(', ')}`);
           } else {
+            toEdit.updatedTimestamp();
             const saved = toEdit.save();
             return saved;
           }
         } catch (err) {
-          logger.write(`Platform.resolvers.editPlatform ERROR: ${err}`, 'error');
+          logger.write(`Platform.mutations.editPlatform ERROR: ${err}`, 'error');
           throw new ApolloError(err);
         }
       }

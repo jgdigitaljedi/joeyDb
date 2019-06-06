@@ -1,7 +1,6 @@
 import { Schema, Model, model } from 'mongoose';
 import { IGameDocument } from '../graphql/resolvers/Game/Game.model';
-import moment from 'moment';
-import User from './User';
+import { Helpers } from '../util/helpers';
 
 // Create the Game Schema.
 const GameSchema = new Schema({
@@ -130,11 +129,11 @@ const GameSchema = new Schema({
 
 // model methods
 GameSchema.methods.createdTimestamp = function () {
-  this.created = moment().format(process.env.DATE_FORMAT);
+  this.created = Helpers.getTimestamp();
 };
 
 GameSchema.methods.updatedTimestamp = function () {
-  this.updated = moment().format(process.env.DATE_FORMAT);
+  this.updated = Helpers.getTimestamp();
 };
 
 const Game: Model<IGameDocument> = model<IGameDocument>('Game', GameSchema);
