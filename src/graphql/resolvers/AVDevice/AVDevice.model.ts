@@ -12,6 +12,7 @@ export interface IAVDeviceDocument extends Document {
   inputs?: string[];
   output?: string;
   wishlist?: boolean;
+  location: string;
   created?: string;
   updated?: string;
 }
@@ -24,6 +25,7 @@ export interface IAVDeviceReq {
   channels?: string[];
   inputs?: string[];
   output?: string;
+  location: string;
   wishlist?: boolean;
 }
 

@@ -9,7 +9,7 @@
     "sourceMap": true,
     "outDir": "dist",
     "rootDir": "src",
-    "removeComments": true,
+    "removeComments": false,
     "esModuleInterop": true,
     "suppressImplicitAnyIndexErrors": true
   },

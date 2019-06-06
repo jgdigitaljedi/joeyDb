@@ -36,6 +36,9 @@ const AVDeviceSchema = new Schema({
     type: String,
     default: null
   },
+  location: {
+    type: String
+  },
   wishlist: {
     type: Boolean,
     default: false

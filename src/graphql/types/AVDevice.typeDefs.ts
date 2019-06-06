@@ -10,6 +10,7 @@ type AVDevice {
   channels: [String]
   inputs: [String]
   output: String
+  location: String!
   wishlist: Boolean
   created: String
   updated: String
@@ -22,6 +23,7 @@ input AVDeviceReq {
   channels: [String]
   inputs: [String]
   output: String
+  location: String!
   wishlist: Boolean
 }
 extend type Query {
