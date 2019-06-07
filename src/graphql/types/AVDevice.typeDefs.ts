@@ -2,7 +2,7 @@ import { gql } from 'apollo-server-express';
 
 const schema = gql`
 type AVDevice {
-  id: String
+  _id: String
   userId: String!
   name: String!
   brand: String

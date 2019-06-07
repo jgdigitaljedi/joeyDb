@@ -1,4 +1,5 @@
 import { Document } from 'mongoose';
+import { IAVDeviceDevice } from '../AVDevice/AVDevice.model';
 
 interface IIgdbVersions {
   name: string;
@@ -49,6 +50,7 @@ export interface IUserPlatform {
   howAcquired?: string;
   region?: string;
   ghostConsole: boolean;
+  connectionChain?: IAVDeviceDevice[];
   wishlist?: boolean;
   created?: string;
   updated?: string;
@@ -77,6 +79,7 @@ export interface IPlatformDocument extends Document {
   howAcquired?: string;
   region?: string;
   ghostConsole: boolean;
+  connectionChain?: IAVDeviceDevice[];
   wishlist?: boolean;
   created?: string;
   updated?: string;
@@ -86,6 +89,13 @@ export interface IPlatformDocument extends Document {
 
 export interface IPlatformReq {
   platform: IPlatformDocument;
+}
+
+export interface IPlatformConnection {
+  device: string;
+  order: number;
+  channel: string;
+  input: string;
 }
 
 export interface IPlatformCategories {

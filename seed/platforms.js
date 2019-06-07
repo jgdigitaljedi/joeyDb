@@ -6,7 +6,9 @@
   // setup mongoose
   const mongoose = helpers.mongoose;
   require('../dist/models/Platform');
+  require('../dist/models/AVDevice');
   const Platform = mongoose.model('Platform');
+  const AVDevice = mongoose.model('AVDevice');
 
   // import json file from homeControl project
   const consoles = require('../../homeControl/server/db/consoles.json');
@@ -32,85 +34,104 @@
         joey = result;
 
         // remove previous entries
-        Platform.remove({}, err => {
-          if (!err) {
-            // add consoles from other project
-            consoles.forEach((item, index) => {
-              const modsCleaned = item.mods.replace(';', ',').split(',').map(i => i.trim()).filter(i => i !== '');
-              const newPlatform = {
-                igdbId: (item.igdb && item.igdb.id) ? item.igdb.id : 9999,
-                userId: joey.id,
-                name: (item.igdb && item.igdb.name) ? item.igdb.name : '',
-                alternative_name: (item.gb && item.gb.aliases) ? item.gb.aliases.replace(/(\r\n|\n|\r)/gm, ', ') : null,
-                generation: (item.igdb && item.igdb.generation) ? item.igdb.generation : null,
-                version_name: (item.igdb && item.igdb.version) ? item.igdb.version : null,
-                first_release_date: null,
-                storage: item.storage,
-                unit: item.unit,
-                mods: modsCleaned.length ? modsCleaned : null,
-                notes: item.notes,
-                box: item.box,
-                connectedBy: item.connectedBy,
-                upscaler: item.upscaler,
-                condition: item.condition,
-                datePurchased: item.datePurchased,
-                purchasePrice: item.purchasePrice,
-                howAcquired: item.howAcquired,
-                region: (item.igdb && item.igdb.id === 4) ? 'Japan' : 'US',
-                ghostConsole: item.ghostConsole,
-                wishlist: false,
-                category: getCategory(item.igdb.id)
-              };
-              const plat = new Platform(newPlatform);
-              plat.createdTimestamp();
-              plat.updatedTimestamp();
-              plat.save();
-              console.log(chalk.cyan.bold(`Added ${item.igdb.name}`));
-              if ((index + 1) === consoles.length) {
-                console.log(chalk.green.bold(`ADDED ALL PLATFORMS SUCCESSFULLY`));
-                // resolve(true);
-              }
-            });
-            wishlist.forEach((item, index) => {
-              const modsCleaned = item.mods.replace(';', ',').split(',').map(i => i.trim()).filter(i => i !== '');
-              const newPlatform = {
-                igdbId: (item.igdb && item.igdb.id) ? item.igdb.id : 9999,
-                userId: joey.id,
-                name: (item.igdb && item.igdb.name) ? item.igdb.name : '',
-                alternative_name: (item.gb && item.gb.aliases) ? item.gb.aliases.replace(/(\r\n|\n|\r)/gm, ', ') : null,
-                generation: (item.igdb && item.igdb.generation) ? item.igdb.generation : null,
-                version_name: (item.igdb && item.igdb.version) ? item.igdb.version : null,
-                first_release_date: null,
-                storage: item.storage,
-                unit: item.unit,
-                mods: modsCleaned.length ? modsCleaned : null,
-                notes: item.notes,
-                box: item.box,
-                connectedBy: item.connectedBy,
-                upscaler: item.upscaler,
-                condition: item.condition,
-                datePurchased: item.datePurchased,
-                purchasePrice: item.purchasePrice,
-                howAcquired: item.howAcquired,
-                region: (item.igdb && item.igdb.id === 4) ? 'Japan' : 'US',
-                ghostConsole: item.ghostConsole,
-                wishlist: true,
-                category: getCategory(item.igdb.id)
-              };
-              const plat = new Platform(newPlatform);
-              plat.createdTimestamp();
-              plat.updatedTimestamp();
-              plat.save();
-              console.log(chalk.cyan.bold(`Added ${item.igdb.name}`));
-              if ((index + 1) === wishlist.length) {
-                console.log(chalk.green.bold(`ADDED ALL WISHLIST PLATFORMS SUCCESSFULLY`));
-                resolve(true);
-              }
-            });
-          } else {
-            console.log(chalk.red.bold(err));
-            reject(err);
-          }
+        Platform.deleteMany({}, err => {
+          AVDevice.find({}, (err, devices) => {
+            const ports = devices[0]._id;
+            const tv = devices[8]._id;
+            if (!err) {
+              // add consoles from other project
+              consoles.forEach((item, index) => {
+                const modsCleaned = item.mods.replace(';', ',').split(',').map(i => i.trim()).filter(i => i !== '');
+                const newPlatform = {
+                  igdbId: (item.igdb && item.igdb.id) ? item.igdb.id : 9999,
+                  userId: joey.id,
+                  name: (item.igdb && item.igdb.name) ? item.igdb.name : '',
+                  alternative_name: (item.gb && item.gb.aliases) ? item.gb.aliases.replace(/(\r\n|\n|\r)/gm, ', ') : null,
+                  generation: (item.igdb && item.igdb.generation) ? item.igdb.generation : null,
+                  version_name: (item.igdb && item.igdb.version) ? item.igdb.version : null,
+                  first_release_date: null,
+                  storage: item.storage,
+                  unit: item.unit,
+                  mods: modsCleaned.length ? modsCleaned : null,
+                  notes: item.notes,
+                  box: item.box,
+                  connectedBy: item.connectedBy,
+                  upscaler: item.upscaler,
+                  condition: item.condition,
+                  datePurchased: item.datePurchased,
+                  purchasePrice: item.purchasePrice,
+                  howAcquired: item.howAcquired,
+                  region: (item.igdb && item.igdb.id === 4) ? 'Japan' : 'US',
+                  ghostConsole: item.ghostConsole,
+                  wishlist: false,
+                  category: getCategory(item.igdb.id),
+                  connectionChain: [
+                    {
+                      device: ports,
+                      order: 1,
+                      usesInput: 'HDMI',
+                      usesChannel: (Math.floor(Math.random() * (9))).toString()
+                    },
+                    {
+                      device: tv,
+                      order: 2,
+                      usesInput: 'HDMI',
+                      usesChannel: `HDMI${Math.floor(Math.random() * (5))}`
+                    }
+                  ]
+                };
+                const plat = new Platform(newPlatform);
+                plat.createdTimestamp();
+                plat.updatedTimestamp();
+                plat.save();
+                console.log(chalk.cyan.bold(`Added ${item.igdb.name}`));
+                if ((index + 1) === consoles.length) {
+                  console.log(chalk.green.bold(`ADDED ALL PLATFORMS SUCCESSFULLY`));
+                  // resolve(true);
+                }
+              });
+              wishlist.forEach((item, index) => {
+                const modsCleaned = item.mods.replace(';', ',').split(',').map(i => i.trim()).filter(i => i !== '');
+                const newPlatform = {
+                  igdbId: (item.igdb && item.igdb.id) ? item.igdb.id : 9999,
+                  userId: joey.id,
+                  name: (item.igdb && item.igdb.name) ? item.igdb.name : '',
+                  alternative_name: (item.gb && item.gb.aliases) ? item.gb.aliases.replace(/(\r\n|\n|\r)/gm, ', ') : null,
+                  generation: (item.igdb && item.igdb.generation) ? item.igdb.generation : null,
+                  version_name: (item.igdb && item.igdb.version) ? item.igdb.version : null,
+                  first_release_date: null,
+                  storage: item.storage,
+                  unit: item.unit,
+                  mods: modsCleaned.length ? modsCleaned : null,
+                  notes: item.notes,
+                  box: item.box,
+                  connectedBy: item.connectedBy,
+                  upscaler: item.upscaler,
+                  condition: item.condition,
+                  datePurchased: item.datePurchased,
+                  purchasePrice: item.purchasePrice,
+                  howAcquired: item.howAcquired,
+                  region: (item.igdb && item.igdb.id === 4) ? 'Japan' : 'US',
+                  ghostConsole: item.ghostConsole,
+                  wishlist: true,
+                  category: getCategory(item.igdb.id),
+                  connectionChain: []
+                };
+                const plat = new Platform(newPlatform);
+                plat.createdTimestamp();
+                plat.updatedTimestamp();
+                plat.save();
+                console.log(chalk.cyan.bold(`Added ${item.igdb.name}`));
+                if ((index + 1) === wishlist.length) {
+                  console.log(chalk.green.bold(`ADDED ALL WISHLIST PLATFORMS SUCCESSFULLY`));
+                  resolve(true);
+                }
+              });
+            } else {
+              console.log(chalk.red.bold(err));
+              reject(err);
+            }
+          });
         });
       });
     });

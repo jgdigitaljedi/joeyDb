@@ -4,7 +4,6 @@ export interface IAVDeviceDocument extends Document {
   userId?: string;
   createdTimestamp?: Function;
   updatedTimestamp?: Function;
-  id?: string;
   name: string;
   brand?: string;
   image?: string;
@@ -18,7 +17,7 @@ export interface IAVDeviceDocument extends Document {
 }
 
 export interface IAVDeviceReq {
-  id?: String;
+  _id?: String;
   name: string;
   brand?: string;
   image?: string;

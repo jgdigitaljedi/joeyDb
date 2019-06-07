@@ -96,6 +96,22 @@ const PlatformSchema = new Schema({
     type: Boolean,
     default: false
   },
+  connectionChain: [{
+    device: {
+      type: Schema.Types.ObjectId,
+      require: true,
+      ref: 'AVDevice'
+    },
+    order: {
+      type: Number
+    },
+    usesChannel: {
+      type: String
+    },
+    usesInput: {
+      type: String
+    }
+  }],
   created: {
     type: String,
     default: null

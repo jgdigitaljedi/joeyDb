@@ -18,10 +18,11 @@ export class AVDeviceClass {
         }
         try {
           if (id) {
-            const device = await AVDevice.findOne({ userId: user.id, id });
+            const device = await AVDevice.findOne({ userId: user.id, _id: id });
             return [device];
           } else {
             const devices = await AVDevice.find({ userId: user.id });
+            console.log('devices', devices);
             return devices;
           }
         } catch (err) {
@@ -53,7 +54,7 @@ export class AVDeviceClass {
           throw new ForbiddenError(Helpers.forbiddenMessage);
         }
         try {
-          const toEdit = await AVDevice.findOne({ id: device.id, userId: user.id });
+          const toEdit = await AVDevice.findOne({ _id: device._id, userId: user.id });
           const editObj = toEdit.toObject();
           const keys = Object.keys(device);
           const errorArr = [];
@@ -86,7 +87,7 @@ export class AVDeviceClass {
           throw new UserInputError('You must send an AV Device ID to delete the platform!');
         }
         try {
-          const toDelete = AVDevice.findOne({ userId: user.id, id });
+          const toDelete = AVDevice.findOne({ userId: user.id, _id: id });
           const deleted = await toDelete.remove();
           return deleted.ok;
         } catch (err) {

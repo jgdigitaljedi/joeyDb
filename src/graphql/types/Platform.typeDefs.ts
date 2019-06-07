@@ -2,6 +2,12 @@ import { gql } from 'apollo-server-express';
 const { transpileSchema } = require('graphql-s2s').graphqls2s;
 
 const schema = `
+input ConnectionChain {
+  device: String!
+  order: Int!
+  usesChannel: String!
+  usesInput: String!
+}
 input UserPlatformReq {
   igdbId: Int
   name: String!
@@ -24,6 +30,7 @@ input UserPlatformReq {
   region: String
   ghostConsole: Boolean!
   wishlist: Boolean!
+  connectionChain: [ConnectionChain]
 }
 input UserPlatformEdit inherits UserPlatformReq {
   id: String!
@@ -34,6 +41,27 @@ input UserPlatformEdit inherits UserPlatformReq {
   name: String
   ghostConsole: Boolean
   wishlist: Boolean
+  connectionChain: [ConnectionChain]
+}
+type PopulatedAV {
+  _id: String!
+  userId: String!
+  name: String!
+  brand: String
+  image: String
+  channels: [String]
+  inputs: [String]
+  output: String
+  location: String!
+  wishlist: Boolean
+  created: String
+  updated: String
+}
+type PopulatedConnectionChain {
+  device: PopulatedAV
+  order: Int!
+  usesChannel: String!
+  usesInput: String!
 }
 type PlatformVersions {
   id: Int
@@ -74,6 +102,7 @@ type UserPlatform {
   region: String
   ghostConsole: Boolean
   wishlist: Boolean
+  connectionChain: [PopulatedConnectionChain]
   created: String
   updated: String
 }

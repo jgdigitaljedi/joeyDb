@@ -3,12 +3,6 @@ import { IAVDeviceDocument } from '../graphql/resolvers/AVDevice/AVDevice.model'
 import { Helpers } from '../util/helpers';
 
 const AVDeviceSchema = new Schema({
-  id: {
-    type: Schema.Types.ObjectId,
-    index: true,
-    auto: true,
-    required: true
-  },
   userId: {
     type: Schema.Types.ObjectId,
     ref: 'User'
@@ -61,6 +55,10 @@ AVDeviceSchema.methods.createdTimestamp = function () {
 AVDeviceSchema.methods.updatedTimestamp = function () {
   this.updated = Helpers.getTimestamp();
 };
+
+// AVDeviceSchema.virtual('id').get(function () {
+//   return this._id.toHexString();
+// });
 
 const AVDevice: Model<IAVDeviceDocument> = model<IAVDeviceDocument>('AVDevice', AVDeviceSchema);
 

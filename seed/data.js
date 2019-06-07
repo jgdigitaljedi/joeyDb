@@ -78,5 +78,16 @@ module.exports.devices = [
     output: 'HDMI',
     wishlist: false,
     location: 'TV stand bottom shelf on the right'
+  },
+  ,
+  {
+    name: 'TV',
+    brand: 'LG',
+    channels: ['HDMI1', 'HDMI2', 'HDMI3', 'HDMI4'],
+    inputs: ['HDMI'],
+    image: 'https://images-na.ssl-images-amazon.com/images/I/81I3YUc5eqL._SL1500_.jpg',
+    output: 'NA',
+    wishlist: false,
+    location: 'TV stand bottom shelf on the right'
   }
 ];

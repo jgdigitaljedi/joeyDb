@@ -5,6 +5,7 @@ import apicalypse from 'apicalypse';
 import Platform from '../../../models/Platform';
 import moment from 'moment';
 import { IIgdbPlatform, IIgdbPlatformResponse, IUserPlatform, IPlatformDocument, IPlatformReq, IPlatformCategories } from './Platform.model';
+import AVDevice from '../../../models/AVDevice';
 
 const logger = Helpers.apiLogger;
 
@@ -61,7 +62,7 @@ export class PlatformClass {
         }
         try {
           const wishlist = wl && wl !== {} ? true : false;
-          const platforms = await Platform.find({ userId: user.id, wishlist });
+          const platforms = await Platform.find({ userId: user.id, wishlist }).populate('connectionChain.device').exec();
           return platforms;
         } catch (err) {
           logger.write(`Platform.queries.myPlatforms ERROR: ${err}`, 'error');
