@@ -14,7 +14,8 @@ function hashPassword(password) {
 (function () {
   const me = {
     email: 'digitaljedi@outlook.com',
-    name: 'Joey Gauthier'
+    name: 'Joey Gauthier',
+    admin: true
   };
   User.findOne({ email: me.email }).then(result => {
     if (!result) {

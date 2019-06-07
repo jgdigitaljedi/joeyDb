@@ -4,12 +4,6 @@ import { Helpers } from '../util/helpers';
 
 // Create the User Schema.
 const UserSchema = new Schema({
-  id: {
-    type: Schema.Types.ObjectId,
-    index: true,
-    auto: true,
-    required: true
-  },
   name: {
     type: String,
     required: true

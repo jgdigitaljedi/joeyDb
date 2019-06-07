@@ -2,7 +2,6 @@ import { Document } from 'mongoose';
 
 export interface IUserDocument extends Document {
   email: string;
-  id?: string;
   password: string;
   name?: string;
   createdTimestamp?: Function;
@@ -15,7 +14,7 @@ export interface IUserDocument extends Document {
 
 export interface IUser {
   name?: string;
-  id?: string;
+  _id?: string;
   email: string;
   password?: string;
   created?: string;

@@ -23,7 +23,7 @@ export class UserClass {
         }
         // user is authenticated
         try {
-          const found = await User.find({ id: user.id });
+          const found = await User.find({ _id: user.id });
           return found[0];
         } catch (error) {
           logger.write(`User.queries.me ERROR: ${error}`, 'error');
@@ -49,7 +49,7 @@ export class UserClass {
       async editUser(root, args, { user }: IContext): Promise<IUser> {
         if (user) {
           try {
-            const usr = await User.findOne({ id: user.id });
+            const usr = await User.findOne({ _id: user.id });
             const keys = Object.keys(args);
             if (keys.indexOf('password') >= 0) {
               usr.password = await that._changePassword(args.password);
@@ -73,7 +73,7 @@ export class UserClass {
       async deleteMe(_, args, { user }: IContext): Promise<IUser> {
         if (user) {
           try {
-            const usr = await User.findOne({ id: user.id });
+            const usr = await User.findOne({ _id: user.id });
             const removed = await usr.remove();
             const userPlatforms = await Platform.find({ userId: user.id }).remove().exec();
             const userAVDevices = await AVDevice.find({ userId: user.id }).remove().exec();
@@ -149,7 +149,7 @@ export class UserClass {
 
   private _jwtSign(user): String {
     return jsonwebtoken.sign(
-      { id: user.id, email: user.email, admin: user.admin },
+      { id: user._id, email: user.email, admin: user.admin },
       process.env.JOEYDBSECRET,
       { expiresIn: '1d' }
     );
