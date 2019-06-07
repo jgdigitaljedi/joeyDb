@@ -1,76 +1,51 @@
 (function () {
-  const devices = [
-    {
-      name: '8-port HDMI Switch',
-      brand: 'Monoprice',
-      channels: ['1', '2', '3', '4', '5', '6', '7', '8'],
-      inputs: ['HDMI'],
-      image: 'https://images.monoprice.com/productlargeimages/40671.jpg',
-      output: 'HDMI',
-      wishlist: false,
-      location: 'TV stand top shelf'
-    },
-    {
-      name: '4-port HDMI Switch',
-      brand: 'ZettaGuard',
-      channels: ['1', '2', '3', '4'],
-      inputs: ['HDMI'],
-      image: 'https://images-na.ssl-images-amazon.com/images/I/719iPHHsTDL._SX466_.jpg',
-      output: 'HDMI',
-      wishlist: false,
-      location: 'console stand top, left shelf'
-    },
-    {
-      name: '3 port SCART switch',
-      brand: 'Hama',
-      channels: ['A', 'B', 'C'],
-      inputs: ['SCART'],
-      image: 'https://images-na.ssl-images-amazon.com/images/I/71lE8K3HPHL._SX466_.jpg',
-      output: 'SCART',
-      wishlist: false,
-      location: 'console stand top, right shelf'
-    },
-    {
-      name: 'surround receiver',
-      brand: 'Pioneer',
-      channels: ['BD', 'DVR/VCR', 'DVD', 'CD', 'TV'],
-      inputs: ['HDMI', 'Component', 'Composite'],
-      image: 'https://www.pioneerelectronics.com/ephox/StaticFiles/PUSA/Images/VSX-520-K_HERO_LOGOS_WHITE_.jpg',
-      output: 'HDMI',
-      wishlist: false,
-      location: 'TV stand bottom shelf'
-    },
-    {
-      name: '3 port component switch',
-      brand: 'generic',
-      channels: ['1', '2', '3'],
-      inputs: ['Component'],
-      image: 'https://i5.walmartimages.com/asr/efdcb686-81c0-474c-94e8-c4e0dff76b84_1.b976bc214f6190c84ac479c49106ba8c.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF',
-      output: 'HDMI',
-      wishlist: false,
-      location: 'TV stand middle shelf'
-    },
-    {
-      name: 'component upscaler',
-      brand: 'generic',
-      channels: ['NA'],
-      inputs: ['Component'],
-      image: 'http://pmof07aaa.pic22.websiteonline.cn/upload/356_j15v.jpg',
-      output: 'HDMI',
-      wishlist: false,
-      location: 'TV stand middle shelf'
-    },
-    {
-      name: 'SCART upscaler',
-      brand: 'generic',
-      channels: ['NA'],
-      inputs: ['SCART'],
-      image: 'https://ae01.alicdn.com/kf/HTB1oQl0dnnI8KJjy0Ffq6AdoVXaj/1080P-SCART-to-HDMI-Upscaler-Video-Audio-Converter-HDTV-For-XBox-EU-Plug-Upscaler-AV-PAL.jpg_640x640.jpg',
-      output: 'HDMI',
-      wishlist: false,
-      location: 'console stand top, left shelf'
-    }
-  ];
+  const chalk = require('chalk');
+  const helpers = require('./helpers');
+  const devices = require('./data').devices;
 
+  // setup mongoose
+  const mongoose = helpers.mongoose;
+  require('../dist/models/AVDevice');
+  const AVDevice = mongoose.model('AVDevice');
 
+  function seedAVDevices() {
+    return new Promise((resolve, reject) => {
+      helpers.joey.then(result => {
+        joey = result;
+
+        // remove previous entries
+        AVDevice.deleteMany({}, err => {
+          if (!err) {
+            devices.forEach((device, index) => {
+              const newDevice = new AVDevice(device);
+              newDevice.createdTimestamp();
+              newDevice.updatedTimestamp();
+              newDevice.save().then(saved => {
+                if (saved) {
+                  console.log(chalk.cyan.bold(`Added ${device.name}`));
+                  if ((index + 1) === devices.length) {
+                    console.log(chalk.green.bold(`ADDED ALL AV DEVICES SUCCESSFULLY`));
+                    resolve(true);
+                  }
+                } else {
+                  reject(true);
+                }
+              });
+            });
+          } else {
+            console.log(chalk.red.bold(`An error occurred seeding devices: `, err));
+          }
+        });
+      });
+    });
+  }
+
+  seedAVDevices()
+    .then(result => {
+      helpers.killProcess();
+      process.exit();
+    })
+    .catch(error => {
+      throw new Error(error);
+    });
 })();
