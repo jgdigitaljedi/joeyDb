@@ -44,7 +44,7 @@
         login(email: "digitaljedi@outlook.com", password: "8675309")
       }
       ```
-    -deleteMe (returns user):
+    - deleteMe (returns user):
       ```
       mutation {
         deleteMe {
