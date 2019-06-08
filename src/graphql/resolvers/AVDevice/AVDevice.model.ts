@@ -1,7 +1,7 @@
 import { Document } from 'mongoose';
 
 export interface IAVDeviceDocument extends Document {
-  userId?: string;
+  user?: string;
   createdTimestamp?: Function;
   updatedTimestamp?: Function;
   name: string;

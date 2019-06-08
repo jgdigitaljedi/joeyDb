@@ -3,7 +3,7 @@ import { IAVDeviceDocument } from '../graphql/resolvers/AVDevice/AVDevice.model'
 import { Helpers } from '../util/helpers';
 
 const AVDeviceSchema = new Schema({
-  userId: {
+  user: {
     type: Schema.Types.ObjectId,
     ref: 'User'
   },

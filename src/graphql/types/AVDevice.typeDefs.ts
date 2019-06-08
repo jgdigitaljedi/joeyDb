@@ -3,7 +3,7 @@ import { gql } from 'apollo-server-express';
 const schema = gql`
 type AVDevice {
   _id: String
-  userId: String!
+  user: String!
   name: String!
   brand: String
   image: String
@@ -27,7 +27,7 @@ input AVDeviceReq {
   wishlist: Boolean
 }
 extend type Query {
-  userAVDevices(id: String): [AVDevice]
+  userAVDevices(id: String, wl: String): [AVDevice]
 }
 extend type Mutation {
   addAVDevice(device: AVDeviceReq!): AVDevice

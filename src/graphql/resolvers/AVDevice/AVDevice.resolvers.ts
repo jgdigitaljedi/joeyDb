@@ -1,5 +1,5 @@
 import { ForbiddenError, UserInputError, ApolloError } from 'apollo-server-express';
-import { IContext, IId } from '../../globalModels/context.model';
+import { IContext, IId, IGetReq } from '../../globalModels/context.model';
 import { Helpers } from '../../../util/helpers';
 import AVDevice from '../../../models/AVDevice';
 import { IAVDeviceDocument, IAVDeviceDevice } from './AVDevice.model';
@@ -12,17 +12,22 @@ export class AVDeviceClass {
 
   constructor() {
     this._queries = {
-      async userAVDevices(_, { id }: IId, { user }: IContext): Promise<IAVDeviceDocument[]> {
+      async userAVDevices(_, { id, wl }: IGetReq, { user }: IContext): Promise<IAVDeviceDocument[]> {
         if (!user) {
           throw new ForbiddenError(Helpers.forbiddenMessage);
         }
         try {
           if (id) {
-            const device = await AVDevice.findOne({ userId: user.id, _id: id });
+            // return 1 device
+            const device = await AVDevice.findOne({ user: user.id, _id: id });
             return [device];
+          } else if (wl) {
+            // return devices wishlist or owned; wl must be passed as string
+            const devices = await AVDevice.find({ user: user.id, wishlist: JSON.parse(wl) });
+            return devices;
           } else {
-            const devices = await AVDevice.find({ userId: user.id });
-            console.log('devices', devices);
+            // return all user devices both from wishlist and owned
+            const devices = await AVDevice.find({ user: user.id });
             return devices;
           }
         } catch (err) {
@@ -39,7 +44,7 @@ export class AVDeviceClass {
         }
         try {
           const newDevice = new AVDevice(device);
-          newDevice.userId = user.id;
+          newDevice.user = user.id;
           newDevice.createdTimestamp();
           newDevice.updatedTimestamp();
           const added = await newDevice.save();
@@ -54,12 +59,12 @@ export class AVDeviceClass {
           throw new ForbiddenError(Helpers.forbiddenMessage);
         }
         try {
-          const toEdit = await AVDevice.findOne({ _id: device._id, userId: user.id });
+          const toEdit = await AVDevice.findOne({ _id: device._id, user: user.id });
           const editObj = toEdit.toObject();
           const keys = Object.keys(device);
           const errorArr = [];
           keys.forEach(key => {
-            if (key !== 'id' && key !== 'created' && key !== 'updated' && key !== 'userId') {
+            if (key !== 'id' && key !== 'created' && key !== 'updated' && key !== 'user') {
               if (editObj.hasOwnProperty(key)) {
                 toEdit[key] = device[key];
               } else {
@@ -87,7 +92,7 @@ export class AVDeviceClass {
           throw new UserInputError('You must send an AV Device ID to delete the platform!');
         }
         try {
-          const toDelete = AVDevice.findOne({ userId: user.id, _id: id });
+          const toDelete = AVDevice.findOne({ user: user.id, _id: id });
           const deleted = await toDelete.remove();
           return deleted.ok;
         } catch (err) {

@@ -47,7 +47,22 @@
         wishlist,
         created,
         updated,
-        mods
+        mods,
+        connectionChain {
+          device {
+            name,
+            brand,
+            _id,
+            image,
+            inputs,
+            location,
+            output,
+            wishlist
+          },
+          usesInput,
+          usesChannel,
+          order
+        }
       }
     }
     ```

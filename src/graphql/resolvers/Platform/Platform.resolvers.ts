@@ -118,7 +118,6 @@ export class PlatformClass {
         }
       },
       async editPlatform(_, { platform }, { user }: IContext): Promise<IUserPlatform> {
-        console.log('user', user);
         if (!user) {
           throw new ForbiddenError(Helpers.forbiddenMessage);
         }

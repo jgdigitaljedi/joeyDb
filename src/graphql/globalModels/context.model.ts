@@ -13,3 +13,8 @@ export interface IContext {
 export interface IId {
   id: string;
 }
+
+export interface IGetReq {
+  id?: string;
+  wl?: string;
+}

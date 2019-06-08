@@ -18,7 +18,7 @@
           if (!err) {
             devices.forEach((device, index) => {
               const newDevice = new AVDevice(device);
-              newDevice.userId = joey.id;
+              newDevice.user = joey._id;
               newDevice.createdTimestamp();
               newDevice.updatedTimestamp();
               newDevice.save().then(saved => {
