@@ -45,7 +45,7 @@ input UserPlatformEdit inherits UserPlatformReq {
 }
 type PopulatedAV {
   _id: String!
-  userId: String!
+  user: String!
   name: String!
   brand: String
   image: String
@@ -71,7 +71,7 @@ type PlatformVersions {
 }
 type IgdbPlatform {
   igdbId: Int
-  userId: String
+  user: String
   alternative_name: String
   category: String
   name: String
@@ -79,8 +79,8 @@ type IgdbPlatform {
   versions: [PlatformVersions]
 }
 type UserPlatform {
-  id: String
-  userId: String
+  _id: String
+  user: String
   igdbId: Int
   name: String
   alternative_name: String

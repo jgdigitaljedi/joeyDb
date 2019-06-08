@@ -44,7 +44,7 @@
                 const modsCleaned = item.mods.replace(';', ',').split(',').map(i => i.trim()).filter(i => i !== '');
                 const newPlatform = {
                   igdbId: (item.igdb && item.igdb.id) ? item.igdb.id : 9999,
-                  userId: joey.id,
+                  user: joey._id,
                   name: (item.igdb && item.igdb.name) ? item.igdb.name : '',
                   alternative_name: (item.gb && item.gb.aliases) ? item.gb.aliases.replace(/(\r\n|\n|\r)/gm, ', ') : null,
                   generation: (item.igdb && item.igdb.generation) ? item.igdb.generation : null,
@@ -94,7 +94,7 @@
                 const modsCleaned = item.mods.replace(';', ',').split(',').map(i => i.trim()).filter(i => i !== '');
                 const newPlatform = {
                   igdbId: (item.igdb && item.igdb.id) ? item.igdb.id : 9999,
-                  userId: joey.id,
+                  user: joey._id,
                   name: (item.igdb && item.igdb.name) ? item.igdb.name : '',
                   alternative_name: (item.gb && item.gb.aliases) ? item.gb.aliases.replace(/(\r\n|\n|\r)/gm, ', ') : null,
                   generation: (item.igdb && item.igdb.generation) ? item.igdb.generation : null,

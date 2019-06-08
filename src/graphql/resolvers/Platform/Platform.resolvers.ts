@@ -62,7 +62,7 @@ export class PlatformClass {
         }
         try {
           const wishlist = wl && wl !== {} ? true : false;
-          const platforms = await Platform.find({ userId: user.id, wishlist }).populate('connectionChain.device').exec();
+          const platforms = await Platform.find({ user: user.id, wishlist }).populate('connectionChain.device').exec();
           return platforms;
         } catch (err) {
           logger.write(`Platform.queries.myPlatforms ERROR: ${err}`, 'error');
@@ -91,7 +91,7 @@ export class PlatformClass {
         }
         try {
           const newPlatform = new Platform(platform);
-          newPlatform.userId = user.id;
+          newPlatform.user = user.id;
           newPlatform.createdTimestamp();
           newPlatform.updatedTimestamp();
           const saved = await newPlatform.save();
@@ -109,7 +109,7 @@ export class PlatformClass {
           throw new UserInputError('You must send a platform ID to delete the platform!');
         }
         try {
-          const toDelete = Platform.findOne({ userId: user.id, id });
+          const toDelete = Platform.findOne({ user: user.id, _id: id });
           const deleted = await toDelete.remove();
           return deleted.ok;
         } catch (err) {
@@ -118,6 +118,7 @@ export class PlatformClass {
         }
       },
       async editPlatform(_, { platform }, { user }: IContext): Promise<IUserPlatform> {
+        console.log('user', user);
         if (!user) {
           throw new ForbiddenError(Helpers.forbiddenMessage);
         }
@@ -125,14 +126,13 @@ export class PlatformClass {
           throw new UserInputError('You must send a platform ID to edit the platform!');
         }
         try {
-          const toEdit = await Platform.findOne({ id: platform.id, userId: user.id });
+          const toEdit = await Platform.findOne({ _id: platform.id, user: user.id });
           const editObj = toEdit.toObject();
           const keys = Object.keys(platform);
           const errorArr = [];
           keys.forEach(key => {
-            if (key !== 'id' && key !== 'created' && key !== 'updated' && key !== 'userId') {
+            if (key !== 'id' && key !== 'created' && key !== 'updated' && key !== 'user') {
               if (editObj.hasOwnProperty(key)) {
-                console.log('key', key);
                 toEdit[key] = platform[key];
               } else {
                 errorArr.push(key)

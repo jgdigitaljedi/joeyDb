@@ -3,13 +3,7 @@ import { IPlatformDocument } from '../graphql/resolvers/Platform/Platform.model'
 import { Helpers } from '../util/helpers';
 
 const PlatformSchema = new Schema({
-  id: {
-    type: Schema.Types.ObjectId,
-    index: true,
-    auto: true,
-    required: true
-  },
-  userId: {
+  user: {
     type: Schema.Types.ObjectId,
     ref: 'User'
   },

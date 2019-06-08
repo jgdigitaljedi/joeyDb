@@ -28,9 +28,9 @@ export interface IIgdbPlatform {
 }
 
 export interface IUserPlatform {
-  id?: number;
+  _id?: number;
   igdbId: string;
-  userId?: string;
+  user?: string;
   name: string;
   alternative_name?: string;
   category?: string;
@@ -57,9 +57,8 @@ export interface IUserPlatform {
 }
 
 export interface IPlatformDocument extends Document {
-  id?: number;
   igdbId: string;
-  userId?: string;
+  user?: string;
   name: string;
   alternative_name?: string;
   category?: string;
