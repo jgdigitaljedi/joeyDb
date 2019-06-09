@@ -87,8 +87,13 @@ type GbGame {
   platforms: [GbPlatform]
   site_detail_url: String
 }
+type GameBeaten {
+  date: String!
+  comment: String
+}
 type UserGame {
-  userId: String!
+  user: User
+  igdbId: Int
   name: String!
   ageRating: String
   aggregatedRating: Float
@@ -97,20 +102,25 @@ type UserGame {
   series: String
   cover: String
   summary: String
-  platforms: [IgdbGeneral]
+  platform: String
   genres: [String]
   firstReleaseDate: String
-  pricePaid: Int
+  gameBeaten: [GameBeaten]
+  xboxOneBkwd: Boolean
+  threeSixtyBkwd: Boolean
+  pricePaid: Float
   physical: Boolean
   case: String
   condition: String
   box: Boolean
   manual: Boolean
   pirated: Boolean
-  multiplayerNumber: Int
+  maxLocalPlayerNumber: Int
   datePurchased: String
   howAcquired: String
   region: String
+  notes: String
+  wishlist: Boolean
   updated: String
   created: String
 }
@@ -118,6 +128,7 @@ extend type Query {
   igdbGameLookup (name: String!, platform: Int!): [IgdbGame]
   gbGameLookup (name: String!, platform: Int!): [GbGame]
   ageRatingsEnum (rating: Int): String
+  userGames: [UserGame]
 }
 extend type Mutation {
   addGame(name: String!): UserGame

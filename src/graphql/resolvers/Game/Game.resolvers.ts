@@ -5,6 +5,7 @@ import { Helpers } from '../../../util/helpers';
 import axios from 'axios';
 import apicalypse from 'apicalypse';
 import Game from '../../../models/Game';
+import { ObjectID } from 'bson';
 
 const gbKey = process.env.JGBKEY;
 const logger = Helpers.apiLogger;
@@ -73,6 +74,21 @@ export class GameClass {
         } else {
           throw new ForbiddenError(Helpers.forbiddenMessage);
         }
+      },
+      async userGames(_, args, { user }: IContext) {
+        if (!user) {
+          throw new ForbiddenError(Helpers.forbiddenMessage);
+        }
+        try {
+          // const games = await Game.find({ 'user._id': user.id }).populate('user').exec();
+          const games = await Game.find({ user: new ObjectID(user.id) }).populate('user').exec();
+          // const games = await Game.find({}).populate('user');
+          // console.log('games', games);
+          return games;
+        } catch (err) {
+          logger.write(`Game.queries.userGames ERROR: ${err}`, 'error');
+          throw new ApolloError(err);
+        }
       }
     };
 
@@ -84,7 +100,7 @@ export class GameClass {
 
         try {
           const game = new Game(data);
-          game.userId = user.id;
+          game.user = user.id;
           game.createdTimestamp();
           game.updatedTimestamp();
           const savedGame: IGameDocument = await game.save();

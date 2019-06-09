@@ -4,13 +4,7 @@ import { Helpers } from '../util/helpers';
 
 // Create the Game Schema.
 const GameSchema = new Schema({
-  id: {
-    type: Schema.Types.ObjectId,
-    index: true,
-    auto: true,
-    required: true
-  },
-  userId: {
+  user: {
     type: Schema.Types.ObjectId,
     ref: 'User'
   },
@@ -49,18 +43,10 @@ const GameSchema = new Schema({
     type: String,
     default: null
   },
-  platform: [
-    {
-      name: {
-        type: String,
-        default: null
-      },
-      id: {
-        type: Number,
-        default: null
-      }
-    }
-  ],
+  platform: {
+    type: Schema.Types.ObjectId,
+    ref: 'Platform'
+  },
   genres: {
     type: [String],
     default: []
@@ -95,7 +81,7 @@ const GameSchema = new Schema({
     type: Boolean,
     default: false
   },
-  multiplayerNumber: {
+  maxLocalPlayerNumber: {
     type: Number,
     default: null
   },
@@ -114,6 +100,24 @@ const GameSchema = new Schema({
   notes: {
     type: String,
     default: null
+  },
+  gameBeaten: [
+    {
+      date: {
+        type: String
+      },
+      comment: {
+        type: String
+      }
+    }
+  ],
+  xboxOneBkwd: {
+    type: Boolean,
+    default: false
+  },
+  threeSixtyBkwd: {
+    type: Boolean,
+    default: false
   },
   wishlist: {
     type: Boolean,

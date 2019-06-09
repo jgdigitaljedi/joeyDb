@@ -52,3 +52,19 @@
       deleteAVDevice (id: "5cfbb4c9e443b660632a79b7")
     }
     ```
+  - editAVDevice (edits device and returns new device data/can send any single fields or multiple):
+    ```
+    mutation {
+      editAVDevice(device: {name: "test device", id: "5cfbb2c62c2c395f20928ac0"}) {
+        name,
+        brand,
+        channels,
+        inputs,
+        output,
+        location,
+        created,
+        updated,
+        wishlist
+      }
+    }
+    ```

@@ -87,7 +87,6 @@
                 console.log(chalk.cyan.bold(`Added ${item.igdb.name}`));
                 if ((index + 1) === consoles.length) {
                   console.log(chalk.green.bold(`ADDED ALL PLATFORMS SUCCESSFULLY`));
-                  // resolve(true);
                 }
               });
               wishlist.forEach((item, index) => {

@@ -19,7 +19,8 @@
     "seed:platforms": "node seed/platforms.js",
     "seed:users": "node seed/users.js --all=$ALL",
     "seed:devices": "node seed/avDevices.js --all=$ALL",
-    "seed:all": "ALL=true npm-run-all build seed:users seed:devices seed:platforms"
+    "seed:games": "node seed/games.js --all=$ALL",
+    "seed:all": "ALL=true npm-run-all build seed:users seed:devices seed:platforms seed:games"
   },
   "repository": {
     "type": "git",

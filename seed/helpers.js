@@ -14,8 +14,8 @@ async function getAdmin() {
   return user;
 }
 
-module.exports.joey = getAdmin();
 module.exports.mongoose = mongoose;
+module.exports.joey = getAdmin();
 module.exports.killProcess = function (exit) {
   if (!process.env.ALL || exit) {
     mongoose.connection.close();

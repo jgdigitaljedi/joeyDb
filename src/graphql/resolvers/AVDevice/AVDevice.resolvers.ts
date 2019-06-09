@@ -59,7 +59,7 @@ export class AVDeviceClass {
           throw new ForbiddenError(Helpers.forbiddenMessage);
         }
         try {
-          const toEdit = await AVDevice.findOne({ _id: device._id, user: user.id });
+          const toEdit = await AVDevice.findOne({ _id: device.id, user: user.id });
           const editObj = toEdit.toObject();
           const keys = Object.keys(device);
           const errorArr = [];

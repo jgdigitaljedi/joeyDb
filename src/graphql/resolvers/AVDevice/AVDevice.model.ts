@@ -17,7 +17,7 @@ export interface IAVDeviceDocument extends Document {
 }
 
 export interface IAVDeviceReq {
-  _id?: String;
+  id?: String;
   name: string;
   brand?: string;
   image?: string;

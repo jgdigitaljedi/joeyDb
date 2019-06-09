@@ -41,8 +41,7 @@ export interface IGameIgdbResponse {
 }
 
 export interface IGameDocument extends Document {
-  id?: string;
-  userId?: string;
+  user?: string;
   name: string;
   ageRating?: string;
   aggregatedRating?: number;
