@@ -56,10 +56,6 @@ AVDeviceSchema.methods.updatedTimestamp = function () {
   this.updated = Helpers.getTimestamp();
 };
 
-// AVDeviceSchema.virtual('id').get(function () {
-//   return this._id.toHexString();
-// });
-
 const AVDevice: Model<IAVDeviceDocument> = model<IAVDeviceDocument>('AVDevice', AVDeviceSchema);
 
 export default AVDevice;

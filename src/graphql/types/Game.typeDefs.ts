@@ -1,6 +1,42 @@
 import { gql } from 'apollo-server-express';
 
 export default gql`
+input BeatenReq {
+  date: String!
+  comment: String
+}
+input GameReq {
+  _id: String
+  user: String
+  igdbId: Int
+  name: String!
+  ageRating: String
+  aggregatedRating: Float
+  aggregatedRatingCount: Int
+  alternativeNames: [String]
+  series: String
+  cover: String
+  summary: String
+  platform: String
+  genres: [String]
+  firstReleaseDate: String
+  gameBeaten: [BeatenReq]
+  xboxOneBkwd: Boolean
+  threeSixtyBkwd: Boolean
+  pricePaid: Float
+  physical: Boolean
+  case: String
+  condition: String
+  box: Boolean
+  manual: Boolean
+  pirated: Boolean
+  maxLocalPlayerNumber: Int
+  datePurchased: String
+  howAcquired: String
+  region: String
+  notes: String
+  wishlist: Boolean
+}
 type Game {
   id: String!
   name: String!
@@ -92,6 +128,7 @@ type GameBeaten {
   comment: String
 }
 type UserGame {
+  _id: String
   user: User
   igdbId: Int
   name: String!
@@ -128,9 +165,11 @@ extend type Query {
   igdbGameLookup (name: String!, platform: Int!): [IgdbGame]
   gbGameLookup (name: String!, platform: Int!): [GbGame]
   ageRatingsEnum (rating: Int): String
-  userGames: [UserGame]
+  userGames(wl: Boolean, id: String): [UserGame]
 }
 extend type Mutation {
-  addGame(name: String!): UserGame
+  addGame(newGame: GameReq): UserGame
+  editGame(data: GameReq): UserGame
+  deleteGame(id: String): UserGame
 }
 `;

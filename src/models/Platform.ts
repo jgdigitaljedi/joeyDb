@@ -106,6 +106,10 @@ const PlatformSchema = new Schema({
       type: String
     }
   }],
+  room: {
+    type: String,
+    default: null
+  },
   created: {
     type: String,
     default: null

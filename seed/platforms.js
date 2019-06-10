@@ -27,6 +27,48 @@
     return 'console';
   }
 
+  function makePlatform(item, joey, modsCleaned, ports, tv, wishlist) {
+    return {
+      igdbId: (item.igdb && item.igdb.id) ? item.igdb.id : 9999,
+      user: joey._id,
+      name: (item.igdb && item.igdb.name) ? item.igdb.name : '',
+      alternative_name: (item.gb && item.gb.aliases) ? item.gb.aliases.replace(/(\r\n|\n|\r)/gm, ', ') : null,
+      generation: (item.igdb && item.igdb.generation) ? item.igdb.generation : null,
+      version_name: (item.igdb && item.igdb.version) ? item.igdb.version : null,
+      first_release_date: null,
+      storage: item.storage,
+      unit: item.unit,
+      mods: modsCleaned.length ? modsCleaned : null,
+      notes: item.notes,
+      box: item.box,
+      connectedBy: item.connectedBy,
+      upscaler: item.upscaler,
+      condition: item.condition,
+      datePurchased: item.datePurchased,
+      purchasePrice: item.purchasePrice,
+      howAcquired: item.howAcquired,
+      region: (item.igdb && item.igdb.id === 4) ? 'Japan' : 'US',
+      ghostConsole: item.ghostConsole,
+      wishlist,
+      category: getCategory(item.igdb.id),
+      connectionChain: [
+        {
+          device: ports,
+          order: 1,
+          usesInput: 'HDMI',
+          usesChannel: (Math.floor(Math.random() * (9))).toString()
+        },
+        {
+          device: tv,
+          order: 2,
+          usesInput: 'HDMI',
+          usesChannel: `HDMI${Math.floor(Math.random() * (5))}`
+        }
+      ],
+      room: 'living room'
+    };
+  }
+
   // get admin user
   function seedPlatforms() {
     return new Promise((resolve, reject) => {
@@ -42,44 +84,7 @@
               // add consoles from other project
               consoles.forEach((item, index) => {
                 const modsCleaned = item.mods.replace(';', ',').split(',').map(i => i.trim()).filter(i => i !== '');
-                const newPlatform = {
-                  igdbId: (item.igdb && item.igdb.id) ? item.igdb.id : 9999,
-                  user: joey._id,
-                  name: (item.igdb && item.igdb.name) ? item.igdb.name : '',
-                  alternative_name: (item.gb && item.gb.aliases) ? item.gb.aliases.replace(/(\r\n|\n|\r)/gm, ', ') : null,
-                  generation: (item.igdb && item.igdb.generation) ? item.igdb.generation : null,
-                  version_name: (item.igdb && item.igdb.version) ? item.igdb.version : null,
-                  first_release_date: null,
-                  storage: item.storage,
-                  unit: item.unit,
-                  mods: modsCleaned.length ? modsCleaned : null,
-                  notes: item.notes,
-                  box: item.box,
-                  connectedBy: item.connectedBy,
-                  upscaler: item.upscaler,
-                  condition: item.condition,
-                  datePurchased: item.datePurchased,
-                  purchasePrice: item.purchasePrice,
-                  howAcquired: item.howAcquired,
-                  region: (item.igdb && item.igdb.id === 4) ? 'Japan' : 'US',
-                  ghostConsole: item.ghostConsole,
-                  wishlist: false,
-                  category: getCategory(item.igdb.id),
-                  connectionChain: [
-                    {
-                      device: ports,
-                      order: 1,
-                      usesInput: 'HDMI',
-                      usesChannel: (Math.floor(Math.random() * (9))).toString()
-                    },
-                    {
-                      device: tv,
-                      order: 2,
-                      usesInput: 'HDMI',
-                      usesChannel: `HDMI${Math.floor(Math.random() * (5))}`
-                    }
-                  ]
-                };
+                const newPlatform = makePlatform(item, joey, modsCleaned, ports, tv, false);
                 const plat = new Platform(newPlatform);
                 plat.createdTimestamp();
                 plat.updatedTimestamp();
@@ -91,31 +96,7 @@
               });
               wishlist.forEach((item, index) => {
                 const modsCleaned = item.mods.replace(';', ',').split(',').map(i => i.trim()).filter(i => i !== '');
-                const newPlatform = {
-                  igdbId: (item.igdb && item.igdb.id) ? item.igdb.id : 9999,
-                  user: joey._id,
-                  name: (item.igdb && item.igdb.name) ? item.igdb.name : '',
-                  alternative_name: (item.gb && item.gb.aliases) ? item.gb.aliases.replace(/(\r\n|\n|\r)/gm, ', ') : null,
-                  generation: (item.igdb && item.igdb.generation) ? item.igdb.generation : null,
-                  version_name: (item.igdb && item.igdb.version) ? item.igdb.version : null,
-                  first_release_date: null,
-                  storage: item.storage,
-                  unit: item.unit,
-                  mods: modsCleaned.length ? modsCleaned : null,
-                  notes: item.notes,
-                  box: item.box,
-                  connectedBy: item.connectedBy,
-                  upscaler: item.upscaler,
-                  condition: item.condition,
-                  datePurchased: item.datePurchased,
-                  purchasePrice: item.purchasePrice,
-                  howAcquired: item.howAcquired,
-                  region: (item.igdb && item.igdb.id === 4) ? 'Japan' : 'US',
-                  ghostConsole: item.ghostConsole,
-                  wishlist: true,
-                  category: getCategory(item.igdb.id),
-                  connectionChain: []
-                };
+                const newPlatform = makePlatform(item, joey, modsCleaned, ports, tv, true);
                 const plat = new Platform(newPlatform);
                 plat.createdTimestamp();
                 plat.updatedTimestamp();

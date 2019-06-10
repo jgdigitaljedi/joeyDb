@@ -51,6 +51,7 @@ export interface IUserPlatform {
   region?: string;
   ghostConsole: boolean;
   connectionChain?: IAVDeviceDevice[];
+  room?: string;
   wishlist?: boolean;
   created?: string;
   updated?: string;
@@ -79,6 +80,7 @@ export interface IPlatformDocument extends Document {
   region?: string;
   ghostConsole: boolean;
   connectionChain?: IAVDeviceDevice[];
+  room?: string;
   wishlist?: boolean;
   created?: string;
   updated?: string;

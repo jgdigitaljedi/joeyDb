@@ -32,58 +32,67 @@ export class GameClass {
     const that = this;
     this._queries = {
       async igdbGameLookup(_, { name, platform }, { user }: IContext): Promise<IGameIgdbData[]> {
-        if (user) {
-          try {
-            const igdbData = await that._igdbLookup(name, platform);
-            const dCopy = [...igdbData.data];
-            const withAgeRatings = dCopy.map(game => {
-              if (game.age_ratings && game.age_ratings.length) {
-                game.age_ratings = [...game.age_ratings].map(rating => {
-                  rating.translated = that.ageRatings[rating.rating];
-                  return rating;
-                });
-              }
-              return game;
-            });
-            return withAgeRatings;
-          } catch (error) {
-            logger.write(`Game.queries.igdbGameLookup ERROR: ${error}`, 'error');
-            throw new ApolloError(error);
-          }
-        } else {
+        if (!user) {
           throw new ForbiddenError(Helpers.forbiddenMessage);
+        }
+        if (!name && !platform) {
+          throw new UserInputError('You must send a name and platform to search for a game!');
+        }
+
+        try {
+          const igdbData = await that._igdbLookup(name, platform);
+          const dCopy = [...igdbData.data];
+          const withAgeRatings = dCopy.map(game => {
+            if (game.age_ratings && game.age_ratings.length) {
+              game.age_ratings = [...game.age_ratings].map(rating => {
+                rating.translated = that.ageRatings[rating.rating];
+                return rating;
+              });
+            }
+            return game;
+          });
+          return withAgeRatings;
+        } catch (error) {
+          logger.write(`Game.queries.igdbGameLookup ERROR: ${error}`, 'error');
+          throw new ApolloError(error);
         }
       },
       async gbGameLookup(_, { name, platform }, { user }: IContext): Promise<IGameGbData> {
-        if (user) {
-          try {
-            const urlName = encodeURI(name);
-            const gbData = await that._giantBombLookup(urlName, platform);
-            return gbData;
-          } catch (error) {
-            logger.write(`Game.queries.gbGameLookup ERROR: ${error}`, 'error');
-            throw new ApolloError(error);
-          }
-        } else {
+        if (!user) {
           throw new ForbiddenError(Helpers.forbiddenMessage);
+        }
+        if (!name && !platform) {
+          throw new UserInputError('You must send a name and platform to search for a game!');
+        }
+
+        try {
+          const urlName = encodeURI(name);
+          const gbData = await that._giantBombLookup(urlName, platform);
+          return gbData;
+        } catch (error) {
+          logger.write(`Game.queries.gbGameLookup ERROR: ${error}`, 'error');
+          throw new ApolloError(error);
         }
       },
       async ageRatingsEnum(_, { rating }, { user }: IContext): Promise<string> {
-        if (user) {
-          return that.ageRatings[rating];
-        } else {
+        if (!user) {
           throw new ForbiddenError(Helpers.forbiddenMessage);
         }
+        return that.ageRatings[rating];
       },
-      async userGames(_, args, { user }: IContext) {
+      async userGames(_, { wl, id }, { user }: IContext): Promise<IGameDocument[]> {
         if (!user) {
           throw new ForbiddenError(Helpers.forbiddenMessage);
         }
         try {
-          // const games = await Game.find({ 'user._id': user.id }).populate('user').exec();
-          const games = await Game.find({ user: new ObjectID(user.id) }).populate('user').exec();
-          // const games = await Game.find({}).populate('user');
-          // console.log('games', games);
+          let games;
+          if (id) {
+            games = await Game.find({ user: new ObjectID(user.id), _id: id }).populate('user').exec();
+          } else if (wl) {
+            games = await Game.find({ user: new ObjectID(user.id), wishlist: true }).populate('user').exec();
+          } else {
+            games = await Game.find({ user: new ObjectID(user.id), wishlist: false }).populate('user').exec();
+          }
           return games;
         } catch (err) {
           logger.write(`Game.queries.userGames ERROR: ${err}`, 'error');
@@ -93,13 +102,13 @@ export class GameClass {
     };
 
     this._mutations = {
-      async addGame(_, data: IGameDocument, { user }: IContext) {
+      async addGame(_, { newGame }, { user }: IContext): Promise<IGameDocument> {
         if (!user) {
           throw new ForbiddenError(Helpers.forbiddenMessage);
         }
 
         try {
-          const game = new Game(data);
+          const game = new Game(newGame);
           game.user = user.id;
           game.createdTimestamp();
           game.updatedTimestamp();
@@ -107,6 +116,45 @@ export class GameClass {
           return savedGame;
         } catch (error) {
           logger.write(`Game.mutations.addGame ERROR: ${error}`, 'error');
+          throw new ApolloError(error);
+        }
+      },
+      async editGame(_, { data }, { user }: IContext): Promise<IGameDocument> {
+        if (!user) {
+          throw new ForbiddenError(Helpers.forbiddenMessage);
+        }
+        if (!data.id) {
+          throw new UserInputError('You must send a game ID in the arguments to edit a game!');
+        }
+
+        try {
+          const game = await Game.findOne({ user: new ObjectID(user.id), _id: data.id }).populate('user').exec();
+          const keys = Object.keys(data);
+          keys.forEach(key => {
+            if (key !== '_id' && key !== 'user' && key !== 'created' && key !== 'updated') {
+              game[key] = data[key];
+            }
+          });
+          game.updatedTimestamp();
+          const saved = game.save();
+          return saved;
+        } catch (error) {
+          logger.write(`Game.mutations.editGame ERROR: ${error}`, 'error');
+          throw new ApolloError(error);
+        }
+      },
+      async deleteGame(_, { id }, { user }: IContext): Promise<IGameDocument> {
+        if (!user) {
+          throw new ForbiddenError(Helpers.forbiddenMessage);
+        }
+        if (!id) {
+          throw new UserInputError('You must send a game ID in the arguments to edit a game!');
+        } try {
+          const game = await Game.findOne({ user: new ObjectID(user.id), _id: id }).populate('user').exec();
+          const removed = await game.remove();
+          return removed;
+        } catch (error) {
+          logger.write(`Game.mutations.deleteGame ERROR: ${error}`, 'error');
           throw new ApolloError(error);
         }
       }

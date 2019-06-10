@@ -40,6 +40,11 @@ export interface IGameIgdbResponse {
   data: IGameIgdbData[];
 }
 
+interface IGameBeaten {
+  date: string;
+  comments: string;
+}
+
 export interface IGameDocument extends Document {
   user?: string;
   name: string;
@@ -64,6 +69,7 @@ export interface IGameDocument extends Document {
   datePurchased?: string;
   howAcquired?: string;
   region?: string;
+  gameBeaten: IGameBeaten[];
   createdTimestamp?: Function;
   updatedTimestamp?: Function;
   updated?: string;
