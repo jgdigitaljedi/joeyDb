@@ -12,13 +12,14 @@
   const Clone = mongoose.model('Clone');
 
   function makeClone(clone, joey, wishlist) {
+    const ce = clone.consolesEmulated.split(',') || [];
     return {
       user: joey._id,
       wishlist,
       name: clone.name,
       company: clone.company,
       image: clone.image,
-      platformsEmulated: clone.consolesEmulated.map(c => {
+      platformsEmulated: ce.map(c => {
         return { igdbId: 9999, name: c };
       }),
       notes: '',
@@ -55,7 +56,7 @@
               newClone.save().then(saved => {
                 if (saved) {
                   console.log(chalk.cyan.bold(`Added ${clone.name}`));
-                  if ((index + 1) === devices.length) {
+                  if ((index + 1) === clones.length) {
                     console.log(chalk.green.bold(`ADDED ALL CLONES SUCCESSFULLY`));
                   }
                 }
@@ -69,7 +70,7 @@
               newClone.save().then(saved => {
                 if (saved) {
                   console.log(chalk.cyan.bold(`Added ${clone.name}`));
-                  if ((index + 1) === devices.length) {
+                  if ((index + 1) === wlClones.length) {
                     console.log(chalk.green.bold(`ADDED ALL WISHLIST CLONES SUCCESSFULLY`));
                     resolve(true);
                   }

@@ -1,7 +1,7 @@
 {
   "name": "joeydb",
   "version": "1.0.0",
-  "description": "graphql API using MongoDB, JWT, Apollo, and Express",
+  "description": "graphql API using MongoDB, JWT, Apollo, TypeScript, and Express",
   "main": "src/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -21,7 +21,7 @@
     "seed:devices": "node seed/avDevices.js --all=$ALL",
     "seed:games": "node seed/games.js --all=$ALL",
     "seed:clones": "node seed/clones.js --all=$ALL",
-    "seed:all": "ALL=true npm-run-all build seed:users seed:devices seed:platforms seed:games"
+    "seed:all": "ALL=true npm-run-all build seed:users seed:devices seed:platforms seed:games seed:clones"
   },
   "repository": {
     "type": "git",
