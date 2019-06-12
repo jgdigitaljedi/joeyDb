@@ -2,7 +2,7 @@ import { gql } from 'apollo-server-express';
 
 const schema = gql`
 type ClonePlatforms {
-  igdbId: Int,
+  igdbId: Int
   name: String!
 }
 type Clone {
@@ -33,7 +33,7 @@ type Clone {
   updated: String
 }
 input ClonePlatformsReq {
-  igdbId: Int,
+  igdbId: Int
   name: String!
 }
 input CloneReq {

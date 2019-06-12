@@ -2,7 +2,7 @@ import { ForbiddenError, UserInputError, ApolloError } from 'apollo-server-expre
 import { IContext, IId, IGetReq } from '../../globalModels/context.model';
 import { Helpers } from '../../../util/helpers';
 import Clone from '../../../models/Clone';
-import { ICloneDocument } from './Clone.model';
+import { ICloneDocument, ICloneReq } from './Clone.model';
 
 const logger = Helpers.apiLogger;
 
@@ -38,7 +38,7 @@ export class CloneClass {
     };
 
     this._mutations = {
-      async addClone(_, { clone }, { user }: IContext): Promise<ICloneDocument> {
+      async addClone(_, { clone }: ICloneReq, { user }: IContext): Promise<ICloneDocument> {
         if (!user) {
           throw new ForbiddenError(Helpers.forbiddenMessage);
         }
@@ -54,19 +54,19 @@ export class CloneClass {
           throw new ApolloError(err);
         }
       },
-      async editClone(_, { device }, { user }: IContext): Promise<ICloneDocument> {
+      async editClone(_, { clone }: ICloneReq, { user }: IContext): Promise<ICloneDocument> {
         if (!user) {
           throw new ForbiddenError(Helpers.forbiddenMessage);
         }
         try {
-          const toEdit = await Clone.findOne({ _id: device.id, user: user.id });
+          const toEdit = await Clone.findOne({ _id: clone.id, user: user.id });
           const editObj = toEdit.toObject();
-          const keys = Object.keys(device);
+          const keys = Object.keys(clone);
           const errorArr = [];
           keys.forEach(key => {
             if (key !== 'id' && key !== 'created' && key !== 'updated' && key !== 'user') {
               if (editObj.hasOwnProperty(key)) {
-                toEdit[key] = device[key];
+                toEdit[key] = clone[key];
               } else {
                 errorArr.push(key)
               }
