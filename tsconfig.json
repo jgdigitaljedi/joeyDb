@@ -11,7 +11,8 @@
     "rootDir": "src",
     "removeComments": false,
     "esModuleInterop": true,
-    "suppressImplicitAnyIndexErrors": true
+    "suppressImplicitAnyIndexErrors": true,
+    "resolveJsonModule": true
   },
   "exclude": [
     "node_modules"

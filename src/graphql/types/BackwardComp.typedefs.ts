@@ -2,18 +2,23 @@ import { gql } from 'apollo-server-express';
 
 const schema = gql`
 type BcList {
-  _id: String
   igdbId: Int
   name: String
   notes: [String]
-  lastUpdated: String
+}
+type XboxGames {
+  xts: [BcList]
+  xbo: [BcList]
+}
+type XboxGameCheck {
+  xts: Boolean
+  xbo: Boolean
 }
 extend type Query {
-  tsBcList: [BcList]
-  bcList(id: String, wl: String): [BcList]
-}
-extend type Mutation {
-  bcListUpdate: Boolean
+  bcListForOriginalGame(id: String, name: String): XboxGameCheck
+  bcListForThreeSixtyGame(id: String, name: String): Boolean
+  xboxGameLists: XboxGames
+  xboxThreeSixtyGameList: [BcList]
 }
 `;
 
