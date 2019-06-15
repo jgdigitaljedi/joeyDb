@@ -1,223 +1,223 @@
 [
     {
-        "game": "Armed and Dangerous",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 211,
+        "name": "Armed and Dangerous",
+        "notes": null
     },
     {
-        "game": "Black",
+        "igdbId": 5749,
+        "name": "Black",
         "notes": [
             "Available in the Vault of EA Access"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Blinx: The Time Sweeper",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5751,
+        "name": "Blinx: The Time Sweeper",
+        "notes": null
     },
     {
-        "game": "BloodRayne 2",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 1016,
+        "name": "BloodRayne 2",
+        "notes": null
     },
     {
-        "game": "Breakdown",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5756,
+        "name": "Breakdown",
+        "notes": null
     },
     {
-        "game": "Conker: Live & Reloaded",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 1425,
+        "name": "Conker: Live & Reloaded",
+        "notes": null
     },
     {
-        "game": "Crimson Skies: High Road to Revenge",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5793,
+        "name": "Crimson Skies: High Road to Revenge",
+        "notes": null
     },
     {
-        "game": "Dead to Rights",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 3872,
+        "name": "Dead To Rights",
+        "notes": null
     },
     {
-        "game": "Destroy All Humans!",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 2651,
+        "name": "Destroy All Humans!",
+        "notes": null
     },
     {
-        "game": "The Elder Scrolls III: Morrowind",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 56,
+        "name": "The Elder Scrolls III: Morrowind",
+        "notes": null
     },
     {
-        "game": "Full Spectrum Warrior",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5840,
+        "name": "Full Spectrum Warrior",
+        "notes": null
     },
     {
-        "game": "Fuzion Frenzy",
+        "igdbId": 5842,
+        "name": "Fuzion Frenzy",
         "notes": [
             "Available via Game Pass"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Grabbed by the Ghoulies",
+        "igdbId": 5849,
+        "name": "Grabbed by the Ghoulies",
         "notes": [
             "Also included in Rare Replay"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Grand Theft Auto: San Andreas",
+        "igdbId": 732,
+        "name": "Grand Theft Auto: San Andreas",
         "notes": [
             "Saves won't transfer & Original Disc owners upgrades to 360 version"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Hunter: The Reckoning",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 3950,
+        "name": "Hunter: The Reckoning",
+        "notes": null
     },
     {
-        "game": "Indiana Jones and the Emperor's Tomb",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 187,
+        "name": "Indiana Jones and the Emperor's Tomb",
+        "notes": null
     },
     {
-        "game": "Jade Empire",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5867,
+        "name": "Jade Empire",
+        "notes": null
     },
     {
-        "game": "The King of Fighters Neowave",
+        "igdbId": 5896,
+        "name": "The King of Fighters Neowave",
         "notes": [
             "US and Mexico Only"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Mercenaries: Playground of Destruction",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 2683,
+        "name": "Mercenaries: Playground of Destruction",
+        "notes": null
     },
     {
-        "game": "MX Unleashed",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5939,
+        "name": "MX Unleashed",
+        "notes": null
     },
     {
-        "game": "Ninja Gaiden Black",
+        "igdbId": 18735,
+        "name": "Ninja Gaiden Black",
         "notes": [
             "Available via Game Pass (US & EUR Only)"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Panzer Dragoon Orta",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 1672,
+        "name": "Panzer Dragoon Orta",
+        "notes": null
     },
     {
-        "game": "Panzer Elite Action: Fields of Glory",
+        "igdbId": 5978,
+        "name": "Panzer Elite Action: Fields of Glory",
         "notes": [
             "Europe only"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Prince of Persia: The Sands of Time",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 836,
+        "name": "Prince of Persia: The Sands of Time",
+        "notes": null
     },
     {
-        "game": "Psychonauts",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 1339,
+        "name": "Psychonauts",
+        "notes": null
     },
     {
-        "game": "Red Faction II",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 4083,
+        "name": "Red Faction II",
+        "notes": null
     },
     {
-        "game": "Sid Meier's Pirates!",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 868,
+        "name": "Sid Meier's Pirates!",
+        "notes": null
     },
     {
-        "game": "Sphinx and the Cursed Mummy",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 4164,
+        "name": "Sphinx and the Cursed Mummy",
+        "notes": null
     },
     {
-        "game": "SSX 3",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 4174,
+        "name": "SSX 3",
+        "notes": null
     },
     {
-        "game": "Star Wars: Battlefront",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 141,
+        "name": "Star Wars: Battlefront",
+        "notes": null
     },
     {
-        "game": "Star Wars: Battlefront II",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 142,
+        "name": "Star Wars: Battlefront II",
+        "notes": null
     },
     {
-        "game": "Star Wars Jedi Knight: Jedi Academy",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 153,
+        "name": "Star Wars: Jedi Knight - Jedi Academy",
+        "notes": null
     },
     {
-        "game": "Star Wars: Jedi Starfighter",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 6160,
+        "name": "Star Wars: Jedi Starfighter",
+        "notes": null
     },
     {
-        "game": "Star Wars: Knights of the Old Republic",
+        "igdbId": 116,
+        "name": "Star Wars: Knights of the Old Republic",
         "notes": [
             "Available via Game Pass"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Star Wars Knights of the Old Republic II: The Sith Lords",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 118,
+        "name": "Star Wars: Knights of the Old Republic II - The Sith Lords",
+        "notes": null
     },
     {
-        "game": "Star Wars: Republic Commando",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 148,
+        "name": "Star Wars: Republic Commando",
+        "notes": null
     },
     {
-        "game": "Tom Clancy's Splinter Cell",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 910,
+        "name": "Tom Clancy's Splinter Cell",
+        "notes": null
     },
     {
-        "game": "Tom Clancy's Splinter Cell Chaos Theory",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 911,
+        "name": "Tom Clancy's Splinter Cell: Chaos Theory",
+        "notes": null
     },
     {
-        "game": "Tom Clancy's Splinter Cell Double Agent",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 7469,
+        "name": "Tom Clancy's Splinter Cell: Double Agent",
+        "notes": null
     },
     {
-        "game": "Tom Clancy's Splinter Cell Pandora Tomorrow",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 874,
+        "name": "Tom Clancy's Splinter Cell: Pandora Tomorrow",
+        "notes": null
     },
     {
-        "game": "Unreal Championship 2: The Liandri Conflict",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 6221,
+        "name": "Unreal Championship 2: The Liandri Conflict",
+        "notes": null
     }
 ]

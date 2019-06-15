@@ -1,2678 +1,2678 @@
 [
     {
-        "game": "2006 FIFA World Cup",
+        "igdbId": 5474,
+        "name": "2006 FIFA World Cup",
         "notes": [
             "Sometimes the text on menu options and buttons are replaced by text from a similar object on the same screen"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "25 to Life",
+        "igdbId": 5714,
+        "name": "25 To Life",
         "notes": [
             "Random crashes would occur when attempting to start an online match"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "4x4 Evo 2",
+        "igdbId": 5715,
+        "name": "4x4 EVO 2",
+        "notes": null
+    },
+    {
         "notes": null,
+        "name": "Airforce Delta Storm  Deadly Skies (PAL)  Airforce Delta II (JP)",
         "igdbId": null
     },
     {
-        "game": "Airforce Delta Storm  Deadly Skies (PAL)  Airforce Delta II (JP)",
+        "igdbId": 3783,
+        "name": "Aggressive Inline",
+        "notes": null
+    },
+    {
+        "igdbId": 5719,
+        "name": "Alias",
+        "notes": null
+    },
+    {
+        "igdbId": 5720,
+        "name": "Aliens Versus Predator: Extinction",
+        "notes": null
+    },
+    {
+        "igdbId": 11557,
+        "name": "All-Star Baseball 2003",
+        "notes": null
+    },
+    {
+        "igdbId": 11559,
+        "name": "All-Star Baseball 2005",
+        "notes": null
+    },
+    {
+        "igdbId": 5722,
+        "name": "America's Army: Rise of a Soldier",
+        "notes": null
+    },
+    {
+        "igdbId": 5723,
+        "name": "AMF Bowling 2004",
+        "notes": null
+    },
+    {
         "notes": null,
+        "name": "Amped: Freestyle Snowboarding  Tenku: Freestyle Snowboarding (JP)",
         "igdbId": null
     },
     {
-        "game": "Aggressive Inline",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Alias",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Aliens versus Predator: Extinction",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "All-Star Baseball 2003",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "All-Star Baseball 2005",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "America's Army: Rise of a Soldier",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "AMF Bowling 2004",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Amped: Freestyle Snowboarding  Tenku: Freestyle Snowboarding (JP)",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Amped 2  Tenku 2 (JP)",
         "notes": [
             "There is flickering geometry during some levels",
             "On occasion a sound effect will play repeatedly"
         ],
+        "name": "Amped 2  Tenku 2 (JP)",
         "igdbId": null
     },
     {
-        "game": "APEX  Racing Evoluzione (PAL)",
         "notes": [
             "During the dream mode cutscene there is missing audio dialogue"
         ],
+        "name": "APEX  Racing Evoluzione (PAL)",
         "igdbId": null
     },
     {
-        "game": "Aquaman: Battle of Atlantis",
         "notes": null,
+        "name": "Aquaman: Battle of Atlantis",
         "igdbId": null
     },
     {
-        "game": "Arena Football",
+        "igdbId": 5731,
+        "name": "Arena Football",
         "notes": [
             "Minor audio static can be heard during gameplay"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Armed and Dangerous",
+        "igdbId": 211,
+        "name": "Armed and Dangerous",
         "notes": [
             "After the first level voice audio doesn't play during game cinematics",
             "During the opening cinematic some audio and video choppiness are present"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Army Men: Sarge's War",
+        "igdbId": 2702,
+        "name": "Army Men: Sarge's War",
+        "notes": null
+    },
+    {
         "notes": null,
+        "name": "Atari Anthology",
         "igdbId": null
     },
     {
-        "game": "Atari Anthology",
+        "igdbId": 3790,
+        "name": "ATV Quad Power Racing 2",
+        "notes": null
+    },
+    {
+        "igdbId": 3791,
+        "name": "Auto Modellista",
+        "notes": null
+    },
+    {
+        "igdbId": 3792,
+        "name": "Avatar: The Last Airbender",
+        "notes": null
+    },
+    {
         "notes": null,
+        "name": "Bad Boys: Miami Takedown  Bad Boys II  (PAL)",
         "igdbId": null
     },
     {
-        "game": "ATV Quad Power Racing 2",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Auto Modellista",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Avatar: The Last Airbender",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Bad Boys: Miami Takedown  Bad Boys II  (PAL)",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Baldur's Gate: Dark Alliance",
+        "igdbId": 83,
+        "name": "Baldur's Gate: Dark Alliance",
         "notes": [
             "In the second zone during combat scenes there is a thirty to forty frames per second drop in performance"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Baldur's Gate: Dark Alliance II",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 84,
+        "name": "Baldur's Gate: Dark Alliance II",
+        "notes": null
     },
     {
-        "game": "Barbie Horse Adventures: Wild Horse Rescue",
+        "igdbId": 3311,
+        "name": "Barbie Horse Adventures: Wild Horse Rescue",
         "notes": [
             "The bottom half of the screen is not drawn correctly in split-screen mode"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "The Bard's Tale",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 3803,
+        "name": "The Bard's Tale",
+        "notes": null
     },
     {
-        "game": "Bass Pro Shops Trophy Hunter 2007",
+        "igdbId": 5737,
+        "name": "Bass Pro Shops Trophy Hunter 2007",
         "notes": [
             "The aiming reticule is surrounded by a box while the snowmobile suffers from a partial lack of collision"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Batman Begins",
+        "igdbId": 3063,
+        "name": "Batman Begins",
+        "notes": null
+    },
+    {
+        "igdbId": 5739,
+        "name": "Batman: Rise of Sin Tzu",
+        "notes": null
+    },
+    {
+        "igdbId": 5741,
+        "name": "Battle Engine Aquila",
+        "notes": null
+    },
+    {
+        "igdbId": 5744,
+        "name": "Battlestar Galactica",
+        "notes": null
+    },
+    {
+        "igdbId": 3809,
+        "name": "Big Mutha Truckers",
+        "notes": null
+    },
+    {
         "notes": null,
+        "name": "Bionicle",
         "igdbId": null
     },
     {
-        "game": "Batman: Rise of Sin Tzu",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5749,
+        "name": "Black",
+        "notes": null
     },
     {
-        "game": "Battle Engine Aquila",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Battlestar Galactica",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Big Mutha Truckers",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Bionicle",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Black",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Black Stone: Magic & Steel  Ex-Chaser (JP)",
         "notes": [
             "Graphics for Y button do not display correctly in Controller Settings"
         ],
+        "name": "Black Stone: Magic & Steel  Ex-Chaser (JP)",
         "igdbId": null
     },
     {
-        "game": "Blade II",
+        "igdbId": 22220,
+        "name": "Blade II",
         "notes": [
             "There is a slight pause when reaching a save point"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Blinx: The Time Sweeper",
+        "igdbId": 5751,
+        "name": "Blinx: The Time Sweeper",
         "notes": [
             "This title consistently runs at a slightly slower frame rate"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Blinx 2: Masters of Time & Space",
         "notes": [
             "This title experiences consistent performance problems"
         ],
+        "name": "Blinx 2: Masters of Time & Space",
         "igdbId": null
     },
     {
-        "game": "Blitz: The League",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5753,
+        "name": "Blitz: The League",
+        "notes": null
     },
     {
-        "game": "Blood Omen 2",
+        "igdbId": 23451,
+        "name": "Blood Omen 2",
         "notes": [
             "Characters may spin in different directions randomly during cut scenes",
             "When gaining a new ability graphical effects do not display correctly"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "BloodRayne 2",
+        "igdbId": 1016,
+        "name": "BloodRayne 2",
         "notes": [
             "After reloading the checkpoint a noticeable loss in frame rate is present"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "BlowOut",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 3825,
+        "name": "BlowOut",
+        "notes": null
     },
     {
-        "game": "BMX XXX",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 3826,
+        "name": "BMX XXX",
+        "notes": null
     },
     {
-        "game": "Breakdown",
+        "igdbId": 5756,
+        "name": "Breakdown",
         "notes": [
             "During gameplay system hangs on occasion while light sources show through walls"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Brute Force",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5759,
+        "name": "Brute Force",
+        "notes": null
     },
     {
-        "game": "Buffy the Vampire Slayer",
+        "igdbId": 5760,
+        "name": "Buffy the Vampire Slayer",
         "notes": [
             "When viewing the opening logos and cinematic it will not display properly"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Buffy the Vampire Slayer: Chaos Bleeds",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 3837,
+        "name": "Buffy the Vampire Slayer: Chaos Bleeds",
+        "notes": null
     },
     {
-        "game": "Burnout",
+        "igdbId": 3838,
+        "name": "Burnout",
         "notes": [
             "During the \"USA Marathon\" track performance drops"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Burnout 2: Point of Impact",
+        "igdbId": 3840,
+        "name": "Burnout 2: Point of Impact",
         "notes": [
             "Pressing Start on attract mode will cause the game to boot back instantly",
             "When playing split-screen races and on tracks with snow and rain effects performance slows down"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Burnout 3: Takedown",
+        "igdbId": 5761,
+        "name": "Burnout 3: Takedown",
+        "notes": null
+    },
+    {
+        "igdbId": 3842,
+        "name": "Cabela's Big Game Hunter 2005 Adventures",
+        "notes": null
+    },
+    {
+        "igdbId": 5763,
+        "name": "Cabela's Dangerous Hunts",
+        "notes": null
+    },
+    {
+        "igdbId": 3843,
+        "name": "Cabela's Dangerous Hunts 2",
+        "notes": null
+    },
+    {
         "notes": null,
+        "name": "Cabela's Outdoor Adventures",
         "igdbId": null
     },
     {
-        "game": "Cabela's Big Game Hunter 2005 Adventures",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5764,
+        "name": "Cabela's Deer Hunt: 2004 Season",
+        "notes": null
     },
     {
-        "game": "Cabela's Dangerous Hunts",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5765,
+        "name": "Cabela's Deer Hunt: 2005 Season",
+        "notes": null
     },
     {
-        "game": "Cabela's Dangerous Hunts 2",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Cabela's Outdoor Adventures",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Cabela's Deer Hunt: 2004 Season",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Cabela's Deer Hunt: 2005 Season",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Call of Cthulhu: Dark Corners of the Earth",
+        "igdbId": 2964,
+        "name": "Call of Cthulhu: Dark Corners of The Earth",
         "notes": [
             "During the prologue stage a green dot appears and will remain on screen while walking down the last set of stairs"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Call of Duty: Finest Hour",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 3761,
+        "name": "Call of Duty: Finest Hour",
+        "notes": null
     },
     {
-        "game": "Call of Duty 2: Big Red One",
+        "igdbId": 3845,
+        "name": "Call of Duty 2: Big Red One",
         "notes": [
             "When playing multiplayer, dots representing the enemy do not appear in the HUD"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Call of Duty 3",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 949,
+        "name": "Call of Duty 3",
+        "notes": null
     },
     {
-        "game": "Cars",
+        "igdbId": 3849,
+        "name": "Cars",
         "notes": [
             "When viewing cut scenes pixel color alteration will occur"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Casino",
         "notes": null,
+        "name": "Casino",
         "igdbId": null
     },
     {
-        "game": "Catwoman",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 3851,
+        "name": "Catwoman",
+        "notes": null
     },
     {
-        "game": "Championship Manager 2006",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5771,
+        "name": "Championship Manager 2006",
+        "notes": null
     },
     {
-        "game": "Chicago Enforcer",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5775,
+        "name": "Chicago Enforcer",
+        "notes": null
     },
     {
-        "game": "The Chronicles of Narnia: The Lion, The Witch and The Wardrobe",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 3857,
+        "name": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
+        "notes": null
     },
     {
-        "game": "Circus Maximus: Chariot Wars",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5776,
+        "name": "Circus Maximus: Chariot Wars",
+        "notes": null
     },
     {
-        "game": "Close Combat: First to Fight",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5779,
+        "name": "Close Combat: First to Fight",
+        "notes": null
     },
     {
-        "game": "Colin McRae Rally 04",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 641,
+        "name": "Colin McRae Rally 04",
+        "notes": null
     },
     {
-        "game": "Colin McRae Rally 2005",
+        "igdbId": 7969,
+        "name": "Colin McRae Rally 2005",
         "notes": [
             "While on the main menu there is some texture flickering in the background image",
             "Before the start of a race graphical artifacts appear on text on screen",
             "During single and multiplayer races there are minor performance drops"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Combat Elite: WWII Paratroopers",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5784,
+        "name": "Combat Elite: WWII Paratroopers",
+        "notes": null
     },
     {
-        "game": "Commandos 2: Men of Courage",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 653,
+        "name": "Commandos 2: Men of Courage",
+        "notes": null
     },
     {
-        "game": "Conflict: Desert Storm",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 3863,
+        "name": "Conflict: Desert Storm",
+        "notes": null
     },
     {
-        "game": "Conker: Live & Reloaded",
+        "igdbId": 1425,
+        "name": "Conker: Live & Reloaded",
         "notes": [
             "Loading screens will not appear, occasional system hangs during gameplay and local multiplayer",
             "Effects such as dust and smoke will not render correctly",
             "The game crashes when entering the Dung Bettle dungeon"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Constantine",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5787,
+        "name": "Constantine",
+        "notes": null
     },
     {
-        "game": "Counter-Strike",
+        "igdbId": 241,
+        "name": "Counter-Strike",
         "notes": [
             "When playing in VGA/HD video mode performance drops occur during single player mode high bot matches"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Crash Bandicoot: The Wrath of Cortex",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 1188,
+        "name": "Crash Bandicoot: The Wrath of Cortex",
+        "notes": null
     },
     {
-        "game": "Crash Nitro Kart",
+        "igdbId": 1193,
+        "name": "Crash Nitro Kart",
         "notes": [
             "Multiplayer games do not work for this title"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Crash Twinsanity",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 1189,
+        "name": "Crash Twinsanity",
+        "notes": null
     },
     {
-        "game": "Crime Life: Gang Wars",
+        "igdbId": 5791,
+        "name": "Crime Life: Gang Wars",
         "notes": [
             "Random cut scenes display a static image while audio plays normally",
             "There is an occasional crash during the loading screen"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Crimson Skies: High Road to Revenge",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5793,
+        "name": "Crimson Skies: High Road to Revenge",
+        "notes": null
     },
     {
-        "game": "Crouching Tiger, Hidden Dragon",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5794,
+        "name": "Crouching Tiger, Hidden Dragon",
+        "notes": null
     },
     {
-        "game": "The Da Vinci Code",
+        "igdbId": 5797,
+        "name": "The Da Vinci Code",
         "notes": [
             "There are some environments that are transparent",
             "There is some skipping during the cut scenes"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Dai Senryaku VII: Modern Military Tactics  Daisenryaku VII (JP)",
         "notes": [
             "After the opening logos, a dirty disc error is occasionally displayed"
         ],
+        "name": "Dai Senryaku VII: Modern Military Tactics  Daisenryaku VII (JP)",
         "igdbId": null
     },
     {
-        "game": "Dark Angel",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5868,
+        "name": "Dark Angel",
+        "notes": null
     },
     {
-        "game": "Darkwatch",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5808,
+        "name": "Darkwatch",
+        "notes": null
     },
     {
-        "game": "Dave Mirra Freestyle BMX 2",
+        "igdbId": 3871,
+        "name": "Dave Mirra Freestyle BMX 2",
         "notes": [
             "The sky is corrupted in the Attract Mode",
             "There is also a random performance drop during gameplay"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Dead or Alive 3",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 1389,
+        "name": "Dead or Alive 3",
+        "notes": null
     },
     {
-        "game": "Dead or Alive Ultimate",
+        "igdbId": 1391,
+        "name": "Dead or Alive Ultimate",
         "notes": [
             "A random crash may occur before starting the opening movie"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Dead to Rights",
+        "igdbId": 3872,
+        "name": "Dead To Rights",
         "notes": [
             "Flickering during third helicopter fight on mission #6",
             "Temporary performance drops on stage #7"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Deathrow",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5811,
+        "name": "Deathrow",
+        "notes": null
     },
     {
-        "game": "Destroy All Humans!",
+        "igdbId": 2651,
+        "name": "Destroy All Humans!",
         "notes": [
             "The weapon sounds cut out during periods of high activity"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Digimon Rumble Arena 2",
+        "igdbId": 3877,
+        "name": "Digimon Rumble Arena 2",
         "notes": [
             "Issue only present in the Japanese version, save data title is shown in English"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Dinotopia: The Sunstone Odyssey",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 3879,
+        "name": "Dinotopia: The Sunstone Odyssey",
+        "notes": null
     },
     {
-        "game": "Doom 3",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 280,
+        "name": "Doom 3",
+        "notes": null
     },
     {
-        "game": "Doom 3: Resurrection of Evil",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 672,
+        "name": "Doom 3: Resurrection of Evil",
+        "notes": null
     },
     {
-        "game": "Drake of the 99 Dragons",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5815,
+        "name": "Drake of the 99 Dragons",
+        "notes": null
     },
     {
-        "game": "Dreamfall: The Longest Journey",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 1961,
+        "name": "Dreamfall: The Longest Journey",
+        "notes": null
     },
     {
-        "game": "Drive to Survive",
         "notes": [
             "A short pause in gameplay will occur when taunting"
         ],
+        "name": "Drive to Survive",
         "igdbId": null
     },
     {
-        "game": "Dungeons and Dragons: Heroes",
         "notes": null,
+        "name": "Dungeons and Dragons: Heroes",
         "igdbId": null
     },
     {
-        "game": "Dynasty Warriors 4  Shin Sangokumusou 3 (JP)",
         "notes": null,
+        "name": "Dynasty Warriors 4  Shin Sangokumusou 3 (JP)",
         "igdbId": null
     },
     {
-        "game": "Egg Mania: Eggstreme Madness",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 3903,
+        "name": "Egg Mania: Eggstreme Madness",
+        "notes": null
     },
     {
-        "game": "The Elder Scrolls III: Morrowind",
+        "igdbId": 56,
+        "name": "The Elder Scrolls III: Morrowind",
         "notes": [
             "The load game screenshots will fail to render correctly"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "ESPN College Hoops",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5823,
+        "name": "ESPN College Hoops",
+        "notes": null
     },
     {
-        "game": "ESPN College Hoops 2K5",
+        "igdbId": 5824,
+        "name": "ESPN College Hoops 2K5",
         "notes": [
             "During the intro video, there is some choppiness"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "ESPN Major League Baseball",
         "notes": [
             "The following issues occur during Xbox Live matches; controller sometimes fails to viberate outside of the strike zone, logos on player uniforms sometimes flicker and occasional choppy animations when video mode is set to 1080i"
         ],
+        "name": "ESPN Major League Baseball",
         "igdbId": null
     },
     {
-        "game": "ESPN MLS ExtraTime 2002",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 3906,
+        "name": "ESPN MLS ExtraTime 2002",
+        "notes": null
     },
     {
-        "game": "ESPN NFL 2K5",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 7881,
+        "name": "ESPN NFL 2K5",
+        "notes": null
     },
     {
-        "game": "ESPN NHL 2K5",
+        "igdbId": 5826,
+        "name": "ESPN NHL 2K5",
         "notes": [
             "There are texture issues throughout the gameplay and gameplay splash screens"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Euro 2004",
         "notes": null,
+        "name": "Euro 2004",
         "igdbId": null
     },
     {
-        "game": "Evil Dead: A Fistful of Boomstick",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5827,
+        "name": "Evil Dead: A Fistful of Boomstick",
+        "notes": null
     },
     {
-        "game": "Evil Dead Regeneration",
+        "igdbId": 5828,
+        "name": "Evil Dead: Regeneration",
         "notes": [
             "Some in-game light sources engulf large portions of the screen",
             "There is some random crashing"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "F1 2001",
         "notes": null,
+        "name": "F1 2001",
         "igdbId": null
     },
     {
-        "game": "Fable",
+        "igdbId": 521,
+        "name": "Fable",
         "notes": [
             "Occasionally there is an audio \"scratch\" or static popping sound"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Fable: The Lost Chapters",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 694,
+        "name": "Fable: The Lost Chapters",
+        "notes": null
     },
     {
-        "game": "The Fairly OddParents: Breakin' Da Rules",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 3911,
+        "name": "The Fairly OddParents: Breakin' da Rules",
+        "notes": null
     },
     {
-        "game": "Family Guy Video Game!",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 2846,
+        "name": "Family Guy Video Game!",
+        "notes": null
     },
     {
-        "game": "Fantastic Four",
+        "igdbId": 3914,
+        "name": "Fantastic Four",
         "notes": [
             "There is a random crash during the first full-motion video"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Far Cry Instincts",
+        "igdbId": 5831,
+        "name": "Far Cry Instincts",
         "notes": [
             "During three-person split-screen, there is graphic distortion and loss of control",
             "There are jagged horizontal lines in the attract mode on 480p/720p displays",
             "Frame rate drops during the second mission, and there are visible texture seams while riding the zipline in the mines",
             "When using a melee attack after transformation, the knife audio effect plays",
             "The checkpoints do not save when running in PAL-50"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Fatal Frame  Project Zero (PAL)",
         "notes": [
             "Missing video during a ghost introduction cutscene in the mansion"
         ],
+        "name": "Fatal Frame  Project Zero (PAL)",
         "igdbId": null
     },
     {
-        "game": "Fatal Frame II: Crimson Butterfly  Project Zero II: Crimson Butterfly (PAL)",
         "notes": null,
+        "name": "Fatal Frame II: Crimson Butterfly  Project Zero II: Crimson Butterfly (PAL)",
         "igdbId": null
     },
     {
-        "game": "FIFA Football 2003",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 702,
+        "name": "FIFA Football 2003",
+        "notes": null
     },
     {
-        "game": "FIFA Football 2004",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 3136,
+        "name": "FIFA Football 2004",
+        "notes": null
     },
     {
-        "game": "FIFA 06",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 700,
+        "name": "FIFA 06",
+        "notes": null
     },
     {
-        "game": "FIFA 07",
+        "igdbId": 696,
+        "name": "FIFA 07",
         "notes": [
             "The frame rate drops on the opening video, and the in-game cut scenes are blurry"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "FIFA Street",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5832,
+        "name": "FIFA Street",
+        "notes": null
     },
     {
-        "game": "FIFA Street 2",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5833,
+        "name": "FIFA Street 2",
+        "notes": null
     },
     {
-        "game": "Fight Night 2004",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5835,
+        "name": "Fight Night 2004",
+        "notes": null
     },
     {
-        "game": "Fight Night Round 3",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5836,
+        "name": "Fight Night Round 3",
+        "notes": null
     },
     {
-        "game": "Final Fight Streetwise",
+        "igdbId": 1660,
+        "name": "Final Fight: Streetwise",
         "notes": [
             "The audio and video are not synced in the cut scenes while there is minor flickering in the cinematics",
             "There is a performance slowdown during gameplay when there is a significant number of objects on screen, and the floor texture is missing in the Pier 15 area of Chapter 3"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "FlatOut",
+        "igdbId": 2667,
+        "name": "FlatOut",
+        "notes": null
+    },
+    {
         "notes": null,
+        "name": "Ford Mustang: The Legend Lives",
         "igdbId": null
     },
     {
-        "game": "Ford Mustang: The Legend Lives",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5838,
+        "name": "Ford vs. Chevy",
+        "notes": null
     },
     {
-        "game": "Ford vs. Chevy",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Forgotten Realms: Demon Stone",
+        "igdbId": 5839,
+        "name": "Forgotten Realms: Demon Stone",
         "notes": [
             "In Chapter 4, there is a texture dropout in the cut scene",
             "In Chapters 4 and 5, the unlockable concept art videos do not play",
             "There is a small vertical dotted line distortion on the right side of the heads-up display"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Forza Motorsport",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 3073,
+        "name": "Forza Motorsport",
+        "notes": null
     },
     {
-        "game": "Freaky Flyers",
+        "igdbId": 3918,
+        "name": "Freaky Flyers",
         "notes": [
             "The frame rate occasionally drops during the game"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Freedom Fighters",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 719,
+        "name": "Freedom Fighters",
+        "notes": null
     },
     {
-        "game": "Freestyle Street Soccer",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 3921,
+        "name": "Freestyle Street Soccer",
+        "notes": null
     },
     {
-        "game": "Frogger Beyond",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 3922,
+        "name": "Frogger Beyond",
+        "notes": null
     },
     {
-        "game": "Full Spectrum Warrior",
+        "igdbId": 5840,
+        "name": "Full Spectrum Warrior",
         "notes": [
             "There is some improper aliasing on player models and environment"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Full Spectrum Warrior: Ten Hammers",
+        "igdbId": 5841,
+        "name": "Full Spectrum Warrior: Ten Hammers",
         "notes": [
             "There is some improper aliasing on player models and environment"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Futurama",
-        "notes": null,
-        "igdbId": null
+        "igdbId": null,
+        "name": "Futurama",
+        "notes": null
     },
     {
-        "game": "Future Tactics: The Uprising",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 3925,
+        "name": "Future Tactics: The Uprising",
+        "notes": null
     },
     {
-        "game": "Fuzion Frenzy",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5842,
+        "name": "Fuzion Frenzy",
+        "notes": null
     },
     {
-        "game": "Gauntlet: Seven Sorrows",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5844,
+        "name": "Gauntlet: Seven Sorrows",
+        "notes": null
     },
     {
-        "game": "Genma Onimusha",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 78622,
+        "name": "Genma Onimusha",
+        "notes": null
     },
     {
-        "game": "Godzilla: Destroy All Monsters Melee",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 3935,
+        "name": "Godzilla: Destroy All Monsters Melee",
+        "notes": null
     },
     {
-        "game": "Godzilla: Save the Earth",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5847,
+        "name": "Godzilla: Save the Earth",
+        "notes": null
     },
     {
-        "game": "GoldenEye: Rogue Agent",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 1632,
+        "name": "GoldenEye: Rogue Agent",
+        "notes": null
     },
     {
-        "game": "Grabbed by the Ghoulies",
+        "igdbId": 5849,
+        "name": "Grabbed by the Ghoulies",
         "notes": [
             "Video output is too narrow on VGA with 1280x1024 resolution",
             "This can be remedied by selecting a different output resolution"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "The Great Escape",
+        "igdbId": 5853,
+        "name": "The Great Escape",
+        "notes": null
+    },
+    {
+        "igdbId": 3934,
+        "name": "Goblin Commander: Unleash the Horde",
+        "notes": null
+    },
+    {
+        "igdbId": 730,
+        "name": "Grand Theft Auto III",
+        "notes": null
+    },
+    {
         "notes": null,
+        "name": "Grand Theft Auto: Double Pack[31]",
         "igdbId": null
     },
     {
-        "game": "Goblin Commander: Unleash the Horde",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 732,
+        "name": "Grand Theft Auto: San Andreas",
+        "notes": null
     },
     {
-        "game": "Grand Theft Auto III",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Grand Theft Auto: Double Pack[31]",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Grand Theft Auto: San Andreas",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Grand Theft Auto: Vice City",
+        "igdbId": 733,
+        "name": "Grand Theft Auto: Vice City",
         "notes": [
             "There is some chugging during the intro"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Grand Theft Auto: The Trilogy",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5850,
+        "name": "Grand Theft Auto: The Trilogy",
+        "notes": null
     },
     {
-        "game": "Gravity Games Bike: Street. Vert. Dirt.",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5851,
+        "name": "Gravity Games Bike: Street Vert Dirt",
+        "notes": null
     },
     {
-        "game": "Greg Hastings Tournament Paintball",
         "notes": [
             "During system link and online gameplay, players may be randomly teleported"
         ],
+        "name": "Greg Hastings Tournament Paintball",
         "igdbId": null
     },
     {
-        "game": "Grooverider: Slot Car Thunder",
+        "igdbId": 3937,
+        "name": "Grooverider: Slot Car Thunder",
+        "notes": null
+    },
+    {
+        "igdbId": 5857,
+        "name": "Guilty Gear Isuka",
+        "notes": null
+    },
+    {
         "notes": null,
+        "name": "Guilty Gear XX #Reload",
         "igdbId": null
     },
     {
-        "game": "Guilty Gear Isuka",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Guilty Gear XX #Reload",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "The Guy Game",
+        "igdbId": 5859,
+        "name": "The Guy Game",
         "notes": [
             "There is audio choppiness in videos under the bonus unlockables, and on the extra videos at the end of an episode"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Half-Life 2",
+        "igdbId": 233,
+        "name": "Half-Life 2",
         "notes": [
             "This game does not play on PAL-60 televisions with composite cabling this does not affect PAL-50",
             "Screen corruption in attract mode after console has been idle for a long period of time"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Halo: Combat Evolved",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 740,
+        "name": "Halo: Combat Evolved",
+        "notes": null
     },
     {
-        "game": "Halo 2",
+        "igdbId": 986,
+        "name": "Halo 2",
         "notes": [
             "Performance problems while playing on the Backwash map",
             "Occasionally the player may observe \"ghost\" images displayed on the screen",
             "According to Micorosft a workaround for this issue is to return to the Dashboard and restart the game"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Halo 2 Multiplayer Map Pack",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 3122,
+        "name": "Halo 2: Multiplayer Map Pack",
+        "notes": null
     },
     {
-        "game": "Harry Potter and the Chamber of Secrets",
+        "igdbId": 3941,
+        "name": "Harry Potter and the Chamber of Secrets",
         "notes": [
             "Certain objects have no graphics while there is a frames-per-second issue"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Harry Potter and the Goblet of Fire",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 3942,
+        "name": "Harry Potter and the Goblet of Fire",
+        "notes": null
     },
     {
-        "game": "Harry Potter and the Prisoner of Azkaban",
+        "igdbId": 3943,
+        "name": "Harry Potter and the Prisoner of Azkaban",
         "notes": [
             "An occasional hard lock occurs when switching to cut scenes",
             "Occasionally, enemies will become stuck in a loop or just stuck to the environment"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Harry Potter and the Sorcerer's Stone  Harry Potter and the Philosopher's Stone (PAL)",
         "notes": null,
+        "name": "Harry Potter and the Sorcerer's Stone  Harry Potter and the Philosopher's Stone (PAL)",
         "igdbId": null
     },
     {
-        "game": "He-Man: Defender of Grayskull",
         "notes": [
             "An Xbox version was planned but never released however this title is included on Microsoft's official backwards compatible list"
         ],
+        "name": "He-Man: Defender of Grayskull",
         "igdbId": null
     },
     {
-        "game": "High Heat: Major League Baseball 2004",
         "notes": null,
+        "name": "High Heat: Major League Baseball 2004",
         "igdbId": null
     },
     {
-        "game": "Hitman: Contracts",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 1049,
+        "name": "Hitman: Contracts",
+        "notes": null
     },
     {
-        "game": "Hot Wheels: Stunt Track Challenge",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5862,
+        "name": "Hot Wheels: Stunt Track Challenge",
+        "notes": null
     },
     {
-        "game": "The House of the Dead III",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5863,
+        "name": "The House of the Dead III",
+        "notes": null
     },
     {
-        "game": "Hulk",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 3949,
+        "name": "Hulk",
+        "notes": null
     },
     {
-        "game": "Hunter: The Reckoning",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 3950,
+        "name": "Hunter: The Reckoning",
+        "notes": null
     },
     {
-        "game": "I-Ninja",
+        "igdbId": 3951,
+        "name": "I-Ninja",
         "notes": [
             "The frame rate drops in World 3 Central map"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "IHRA Drag Racing: Sportsman Edition",
+        "igdbId": 20547,
+        "name": "IHRA Drag Racing Sportsman Edition",
+        "notes": null
+    },
+    {
         "notes": null,
+        "name": "IHRA Professional Drag Racing 2005",
         "igdbId": null
     },
     {
-        "game": "IHRA Professional Drag Racing 2005",
+        "igdbId": 3954,
+        "name": "The Incredible Hulk: Ultimate Destruction",
+        "notes": null
+    },
+    {
         "notes": null,
+        "name": "The Incredibles  Mr. Incredible (JP)",
         "igdbId": null
     },
     {
-        "game": "The Incredible Hulk: Ultimate Destruction",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 3955,
+        "name": "The Incredibles: Rise of the Underminer",
+        "notes": null
     },
     {
-        "game": "The Incredibles  Mr. Incredible (JP)",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "The Incredibles: Rise of the Underminer",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Indiana Jones and the Emperor's Tomb",
+        "igdbId": 187,
+        "name": "Indiana Jones and the Emperor's Tomb",
         "notes": [
             "Some sound effects are out of sync, and there is a random crash on the last level"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Indigo Prophecy",
         "notes": null,
+        "name": "Indigo Prophecy",
         "igdbId": null
     },
     {
-        "game": "IndyCar Series 2005",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 23543,
+        "name": "IndyCar Series 2005",
+        "notes": null
     },
     {
-        "game": "Intellivision Lives!",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 3956,
+        "name": "Intellivision Lives!",
+        "notes": null
     },
     {
-        "game": "Jade Empire",
+        "igdbId": 5867,
+        "name": "Jade Empire",
         "notes": [
             "The Monk Zeng content from the limited edition became available as of the December 2005 update"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Jet Set Radio Future",
+        "igdbId": 1570,
+        "name": "Jet Set Radio Future",
         "notes": [
             "There is graphic flickering in the main menu"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Judge Dredd: Dredd Vs. Death",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 3961,
+        "name": "Judge Dredd: Dredd Vs. Death",
+        "notes": null
     },
     {
-        "game": "Jurassic Park: Operation Genesis",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5871,
+        "name": "Jurassic Park: Operation Genesis",
+        "notes": null
     },
     {
-        "game": "Justice League Heroes",
+        "igdbId": 5872,
+        "name": "Justice League Heroes",
         "notes": [
             "Text still appears when scrolling through the upgrade menu screen",
             "There are performance drops during game play",
             "There are some texture issues"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Kabuki Warriors",
+        "igdbId": 5873,
+        "name": "Kabuki Warriors",
+        "notes": null
+    },
+    {
+        "igdbId": 3963,
+        "name": "Kelly Slater's Pro Surfer",
+        "notes": null
+    },
+    {
         "notes": null,
+        "name": "Kill Switch",
         "igdbId": null
     },
     {
-        "game": "Kelly Slater's Pro Surfer",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Kill Switch",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "King Arthur",
+        "igdbId": 3967,
+        "name": "King Arthur",
         "notes": [
             "Minor video stuttering occurs during the actual movie videos"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "The King of Fighters Neowave",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5896,
+        "name": "The King of Fighters Neowave",
+        "notes": null
     },
     {
-        "game": "The King of Fighters 2002 & 2003",
         "notes": [
             "KOF 2003 not compatible"
         ],
+        "name": "The King of Fighters 2002 & 2003",
         "igdbId": null
     },
     {
-        "game": "Kingdom Under Fire: The Crusaders",
+        "igdbId": 5883,
+        "name": "Kingdom Under Fire: The Crusaders",
         "notes": [
             "Game hangs when selecting \"Create Match\" after editing a party"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "The Legend of Spyro: A New Beginning",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 1582,
+        "name": "The Legend of Spyro: A New Beginning",
+        "notes": null
     },
     {
-        "game": "Lego Star Wars: The Video Game",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 2681,
+        "name": "LEGO Star Wars: The Video Game",
+        "notes": null
     },
     {
-        "game": "Lego Star Wars II: The Original Trilogy",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 190,
+        "name": "LEGO Star Wars II: The Original Trilogy",
+        "notes": null
     },
     {
-        "game": "Leisure Suit Larry: Magna Cum Laude",
+        "igdbId": 2913,
+        "name": "Leisure Suit Larry: Magna Cum Laude",
         "notes": [
             "Incorrect textures are loaded as the player progresses"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Lemony Snicket's A Series of Unfortunate Events",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 3977,
+        "name": "Lemony Snicket's A Series of Unfortunate Events",
+        "notes": null
     },
     {
-        "game": "Links 2004",
+        "igdbId": 5902,
+        "name": "Links 2004",
         "notes": [
             "System hangs occasionally when transitioning between players on an Xbox Live game"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Loons: The Fight for Fame",
+        "igdbId": 5903,
+        "name": "Loons: The Fight for Fame",
+        "notes": null
+    },
+    {
+        "igdbId": 2973,
+        "name": "The Lord of the Rings: The Return of the King",
+        "notes": null
+    },
+    {
+        "igdbId": 6500,
+        "name": "The Lord of the Rings: The Third Age",
+        "notes": null
+    },
+    {
         "notes": null,
+        "name": "Magatama",
         "igdbId": null
     },
     {
-        "game": "The Lord of the Rings: The Return of the King",
         "notes": null,
+        "name": "Magic: The Gathering – Battlegrounds",
         "igdbId": null
     },
     {
-        "game": "The Lord of the Rings: The Third Age",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 1971,
+        "name": "Manhunt",
+        "notes": null
     },
     {
-        "game": "Magatama",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 3992,
+        "name": "Marvel Nemesis: Rise of the Imperfects",
+        "notes": null
     },
     {
-        "game": "Magic: The Gathering – Battlegrounds",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Manhunt",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Marvel Nemesis: Rise of the Imperfects",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Marvel vs. Capcom 2",
         "notes": [
             "There is some severe artifacting on character sprites"
         ],
+        "name": "Marvel vs. Capcom 2",
         "igdbId": null
     },
     {
-        "game": "Mat Hoffman's Pro BMX 2",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 3993,
+        "name": "Mat Hoffman's Pro BMX 2",
+        "notes": null
     },
     {
-        "game": "Max Payne",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 18,
+        "name": "Max Payne",
+        "notes": null
     },
     {
-        "game": "Max Payne 2: The Fall of Max Payne",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 19,
+        "name": "Max Payne 2: The Fall Of Max Payne",
+        "notes": null
     },
     {
-        "game": "Mercenaries: Playground of Destruction",
+        "igdbId": 2683,
+        "name": "Mercenaries: Playground of Destruction",
         "notes": [
             "The thumbnail map will not render correctly",
             "During the China campaign, there are random system hang ups that prevent player progress"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Maximum Chase",
         "notes": null,
+        "name": "Maximum Chase",
         "igdbId": null
     },
     {
-        "game": "MechAssault 2: Lone Wolf",
+        "igdbId": 5911,
+        "name": "MechAssault 2: Lone Wolf",
+        "notes": null
+    },
+    {
+        "igdbId": 1311,
+        "name": "Medal of Honor: European Assault",
+        "notes": null
+    },
+    {
+        "igdbId": 1309,
+        "name": "Medal of Honor: Frontline",
+        "notes": null
+    },
+    {
+        "igdbId": 1316,
+        "name": "Medal of Honor: Rising Sun",
+        "notes": null
+    },
+    {
+        "igdbId": 1728,
+        "name": "Mega Man Anniversary Collection",
+        "notes": null
+    },
+    {
+        "igdbId": 4004,
+        "name": "Metal Arms: Glitch in the System",
+        "notes": null
+    },
+    {
         "notes": null,
+        "name": "Micro Machines",
         "igdbId": null
     },
     {
-        "game": "Medal of Honor: European Assault",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 24076,
+        "name": "Mike Tyson Heavyweight Boxing",
+        "notes": null
     },
     {
-        "game": "Medal of Honor: Frontline",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 4012,
+        "name": "Minority Report: Everybody Runs",
+        "notes": null
     },
     {
-        "game": "Medal of Honor: Rising Sun",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Mega Man Anniversary Collection",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Metal Arms: Glitch in the System",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Micro Machines",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Mike Tyson Heavyweight Boxing",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Minority Report: Everybody Runs",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "MLB SlugFest 2003",
+        "igdbId": 47334,
+        "name": "MLB Slugfest 2003",
         "notes": [
             "All resolutions above 480i / 480p show no video",
             "There is text corruption throughout the game in the menu, gameplay, pause, and other screens"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "MLB SlugFest 2004",
         "notes": null,
+        "name": "MLB SlugFest 2004",
         "igdbId": null
     },
     {
-        "game": "MLB Slugfest: Loaded",
         "notes": null,
+        "name": "MLB Slugfest: Loaded",
         "igdbId": null
     },
     {
-        "game": "Monster Garage",
         "notes": null,
+        "name": "Monster Garage",
         "igdbId": null
     },
     {
-        "game": "Mortal Kombat: Armageddon",
+        "igdbId": 1616,
+        "name": "Mortal Kombat: Armageddon",
         "notes": [
             "The Press Start screen has severe flickering"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Mortal Kombat: Deception",
+        "igdbId": 1613,
+        "name": "Mortal Kombat: Deception",
         "notes": [
             "There is flickering on the title screen"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "MotoGP",
         "notes": null,
+        "name": "MotoGP",
         "igdbId": null
     },
     {
-        "game": "MotoGP 2",
+        "igdbId": 5933,
+        "name": "MotoGP 2",
         "notes": [
             "Engine sound effects play louder than normal setting when at higher speeds",
             "Engine sounds crackle and cut out during races",
             "The option to assign keys to the Right Trigger in the Settings menu is missing",
             "Tutorial videos shake and flash"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "MVP Baseball 2003",
+        "igdbId": 11556,
+        "name": "MVP Baseball 2003",
+        "notes": null
+    },
+    {
         "notes": null,
+        "name": "MVP Baseball 2004",
         "igdbId": null
     },
     {
-        "game": "MVP Baseball 2004",
         "notes": null,
+        "name": "MTV Music Generator 3: This is the Remix",
         "igdbId": null
     },
     {
-        "game": "MTV Music Generator 3: This is the Remix",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "MTX Mototrax",
+        "igdbId": 5935,
+        "name": "MTX Mototrax",
         "notes": [
             "The loading progress bar is missing"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Murakumo: Renegade Mech Pursuit",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5936,
+        "name": "Murakumo: Renegade Mech Pursuit",
+        "notes": null
     },
     {
-        "game": "MX Unleashed",
+        "igdbId": 5939,
+        "name": "MX Unleashed",
         "notes": [
             "The shadows flicker when leaving the starting gate",
             "Loading screens have a silver box behind the text",
             "Distant trees flicker in and out on the Montauk Plains Freestyle stage"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "MX vs. ATV Unleashed",
         "notes": [
             "When entering or leaving a race, graphics are polarized",
             "There is object rendering difficulty on the horizon during a waypoint race",
             "Shadows flicker in the THQ SX championship on the Tucson track"
         ],
+        "name": "MX vs. ATV Unleashed",
         "igdbId": null
     },
     {
-        "game": "MX World Tour Featuring Jamie Little",
         "notes": null,
+        "name": "MX World Tour Featuring Jamie Little",
         "igdbId": null
     },
     {
-        "game": "Myst III: Exile",
+        "igdbId": 797,
+        "name": "Myst III: Exile",
+        "notes": null
+    },
+    {
         "notes": null,
+        "name": "Namco Museum",
         "igdbId": null
     },
     {
-        "game": "Namco Museum",
         "notes": null,
+        "name": "Namco Museum 50th Anniversary Arcade Collection",
         "igdbId": null
     },
     {
-        "game": "Namco Museum 50th Anniversary Arcade Collection",
         "notes": null,
+        "name": "NASCAR 2006: Total Team Control",
         "igdbId": null
     },
     {
-        "game": "NASCAR 2006: Total Team Control",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "NASCAR Thunder 2002",
+        "igdbId": 5946,
+        "name": "NASCAR Thunder 2002",
         "notes": [
             "There is audio static throughout the game, and the performance drops when the rear view mirror is enabled"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "NASCAR Thunder 2003",
+        "igdbId": 4028,
+        "name": "NASCAR Thunder 2003",
         "notes": [
             "There is audio static throughout the game, the audio effects are loud when in the in-car view, and there is some flickering in the Pause menu"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "NBA Ballers",
+        "igdbId": 5948,
+        "name": "NBA Ballers",
+        "notes": null
+    },
+    {
         "notes": null,
+        "name": "NBA Inside Drive 2002",
         "igdbId": null
     },
     {
-        "game": "NBA Inside Drive 2002",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 4030,
+        "name": "NBA 2K3",
+        "notes": null
     },
     {
-        "game": "NBA 2K3",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5950,
+        "name": "NBA Live 2002",
+        "notes": null
     },
     {
-        "game": "NBA Live 2002",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 4032,
+        "name": "NBA Live 2004",
+        "notes": null
     },
     {
-        "game": "NBA Live 2004",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "NBA Street V3",
+        "igdbId": 4037,
+        "name": "NBA Street V3",
         "notes": [
             "There is audio stuttering in the introductory video"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "NCAA College Basketball 2K3",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 4038,
+        "name": "NCAA College Basketball 2K3",
+        "notes": null
     },
     {
-        "game": "NCAA Football 06",
+        "igdbId": 5952,
+        "name": "NCAA Football 06",
         "notes": [
             "During gameplay there is some audio static"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "NCAA March Madness 06",
+        "igdbId": 5958,
+        "name": "NCAA March Madness 06",
         "notes": [
             "Performance problems occur during the intro video, there is some audio stutter during the game setup, and minor audio static occurs during gameplay"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "NCAA March Madness 2005",
+        "igdbId": 5960,
+        "name": "NCAA March Madness 2005",
         "notes": [
             "Video stutters during the introductory video"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Need for Speed: Underground 2",
+        "igdbId": 97,
+        "name": "Need for Speed: Underground 2",
+        "notes": null
+    },
+    {
+        "igdbId": 8845,
+        "name": "NFL 2K2",
+        "notes": null
+    },
+    {
+        "igdbId": 8846,
+        "name": "NFL 2K3",
+        "notes": null
+    },
+    {
         "notes": null,
+        "name": "NFL Blitz 2002",
         "igdbId": null
     },
     {
-        "game": "NFL 2K2",
         "notes": null,
+        "name": "NFL Blitz 2003",
         "igdbId": null
     },
     {
-        "game": "NFL 2K3",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 47337,
+        "name": "NFL Blitz Pro",
+        "notes": null
     },
     {
-        "game": "NFL Blitz 2002",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 24094,
+        "name": "NFL Fever 2004",
+        "notes": null
     },
     {
-        "game": "NFL Blitz 2003",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 816,
+        "name": "NHL 2004",
+        "notes": null
     },
     {
-        "game": "NFL Blitz Pro",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "NFL Fever 2004",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "NHL 2004",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "NHL 2005",
+        "igdbId": 4043,
+        "name": "NHL 2005",
         "notes": [
             "Audio and video are out of sync in the introductory cinematic"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "NHL 2K3",
+        "igdbId": 4045,
+        "name": "NHL 2K3",
         "notes": [
             "A random crash will occur at the loading screen when launching a quick game",
             "During system link games, there are performance drops and random de-syncing between consoles",
             "There are minor performance drops during gameplay, and after a goal is scored, an audio squeal can be heard"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "NHL Hitz 2003",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 4047,
+        "name": "NHL Hitz 2003",
+        "notes": null
     },
     {
-        "game": "NHL Hitz Pro",
+        "igdbId": 4048,
+        "name": "NHL Hitz Pro",
         "notes": [
             "During faceoffs and replays, there is minor flickering on the players"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "NightCaster",
+        "igdbId": 5967,
+        "name": "NightCaster",
         "notes": [
             "Audio dialogue ends early during the gameplay, and there is a minor performance drop during the opening and closing of the spellbook"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Ninja Gaiden",
+        "igdbId": 5972,
+        "name": "Ninja Gaiden",
         "notes": [
             "The unlockable NES arcade games cannot be played"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Ninja Gaiden Black",
+        "igdbId": 18735,
+        "name": "Ninja Gaiden Black",
         "notes": [
             "This title is rendered at a slightly reduced speed on PAL-50 televisions",
             "The game runs normally under PAL-60",
             "The unlockable NES arcade game can't be played"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "NTRA Breeders' Cup World Thoroughbred Championships",
         "notes": [
             "Video in the Start menu skips"
         ],
+        "name": "NTRA Breeders' Cup World Thoroughbred Championships",
         "igdbId": null
     },
     {
-        "game": "Oddworld: Munch's Oddysee",
+        "igdbId": 1001,
+        "name": "Oddworld: Munch's Oddysee",
         "notes": [
             "The frame rate drops during in-game cinematics, and the sound effects sound very distant"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Open Season",
+        "igdbId": 4055,
+        "name": "Open Season",
         "notes": [
             "The camera is jittery when running uphill on the Beaver Damage Stage"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Outlaw Golf 2",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 3437,
+        "name": "Outlaw Golf 2",
+        "notes": null
     },
     {
-        "game": "Outlaw Golf 9 More Holes of X-mas",
+        "igdbId": 47311,
+        "name": "Outlaw Golf: 9 More Holes of X-Mas",
         "notes": [
             "Frame rate drops during gameplay"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Outlaw Tennis",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5977,
+        "name": "Outlaw Tennis",
+        "notes": null
     },
     {
-        "game": "Outlaw Volleyball",
+        "igdbId": 3806,
+        "name": "Outlaw Volleyball",
         "notes": [
             "Flickering background graphics occur during a match"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Outlaw Volleyball: Red Hot",
         "notes": null,
+        "name": "Outlaw Volleyball: Red Hot",
         "igdbId": null
     },
     {
-        "game": "OutRun 2",
+        "igdbId": 2052,
+        "name": "OutRun 2",
         "notes": [
             "Audio loops occasionally get stuck",
             "Graphics do not always stream in time around checkpoints",
             "Performance drops during game play"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "OutRun 2006: Coast 2 Coast",
+        "igdbId": 2054,
+        "name": "OutRun 2006: Coast 2 Coast",
         "notes": [
             "The loading screen hangs"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Over the Hedge",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 4059,
+        "name": "Over The Hedge",
+        "notes": null
     },
     {
-        "game": "Pac-Man World 3",
+        "igdbId": 4064,
+        "name": "Pac-Man World 3",
         "notes": [
             "Character motion can be blurry"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Panzer Dragoon Orta",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 1672,
+        "name": "Panzer Dragoon Orta",
+        "notes": null
     },
     {
-        "game": "Panzer Elite Action: Fields of Glory",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5978,
+        "name": "Panzer Elite Action: Fields of Glory",
+        "notes": null
     },
     {
-        "game": "Pariah",
+        "igdbId": 5979,
+        "name": "Pariah",
         "notes": [
             "There is a minor, but recurring, drop in performance during gameplay",
             "The Loading bar does not display until it is almost full",
             "There is a green line in the pre-game introduction video"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Phantom Crash",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5980,
+        "name": "Phantom Crash",
+        "notes": null
     },
     {
-        "game": "Phantom Dust",
+        "igdbId": 5981,
+        "name": "Phantom Dust",
         "notes": [
             "The system occasionally hangs during gameplay"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Pinball Hall of Fame: The Gottlieb Collection",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 4067,
+        "name": "Pinball Hall of Fame: The Gottlieb Collection",
+        "notes": null
     },
     {
-        "game": "Pitfall: The Lost Expedition",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 4070,
+        "name": "Pitfall: The Lost Expedition",
+        "notes": null
     },
     {
-        "game": "Playboy the Mansion",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 2161,
+        "name": "Playboy: The Mansion",
+        "notes": null
     },
     {
-        "game": "Predator: Concrete Jungle",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5986,
+        "name": "Predator: Concrete Jungle",
+        "notes": null
     },
     {
-        "game": "Prince of Persia: The Sands of Time",
+        "igdbId": 836,
+        "name": "Prince of Persia: The Sands of Time",
         "notes": [
             "Unlockable mini-games do not play correctly for this title"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Pro Race Driver  TOCA Race Driver (PAL)",
         "notes": null,
+        "name": "Pro Race Driver  TOCA Race Driver (PAL)",
         "igdbId": null
     },
     {
-        "game": "Project Gotham Racing",
+        "igdbId": 3320,
+        "name": "Project Gotham Racing",
         "notes": [
             "There is a performance drop on the Tokyo map"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Project Gotham Racing 2",
+        "igdbId": 3321,
+        "name": "Project Gotham Racing 2",
         "notes": [
             "Cars don't render properly in Car Select and Transmission Select",
             "The car radio does not work in-game",
             "A graphic error occurs when choosing Xbox Demos"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Psychonauts",
+        "igdbId": 1339,
+        "name": "Psychonauts",
+        "notes": null
+    },
+    {
         "notes": null,
+        "name": "Pump It Up: Exceed",
         "igdbId": null
     },
     {
-        "game": "Pump It Up: Exceed",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 18294,
+        "name": "The Punisher",
+        "notes": null
     },
     {
-        "game": "The Punisher",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5995,
+        "name": "Pure Pinball",
+        "notes": null
     },
     {
-        "game": "Pure Pinball",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 4075,
+        "name": "Puyo Pop Fever",
+        "notes": null
     },
     {
-        "game": "Puyo Pop Fever",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5996,
+        "name": "Quantum Redshift",
+        "notes": null
     },
     {
-        "game": "Quantum Redshift",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 841,
+        "name": "Rallisport Challenge",
+        "notes": null
     },
     {
-        "game": "RalliSport Challenge",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Rapala Pro Fishing",
+        "igdbId": 47336,
+        "name": "Rapala Pro Fishing",
         "notes": [
             "The compass fails to load in certain levels, and fish can become stuck in the rocks when on the line"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Rayman Arena",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 78173,
+        "name": "Rayman Arena",
+        "notes": null
     },
     {
-        "game": "Raze's Hell",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5999,
+        "name": "Raze's Hell",
+        "notes": null
     },
     {
-        "game": "Red Dead Revolver",
+        "igdbId": 1969,
+        "name": "Red Dead Revolver",
         "notes": [
             "There is some graphics flicker in HD video mode"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Red Faction II",
+        "igdbId": 4083,
+        "name": "Red Faction II",
+        "notes": null
+    },
+    {
         "notes": null,
+        "name": "RedCard 20-03",
         "igdbId": null
     },
     {
-        "game": "RedCard 20-03",
+        "igdbId": 6003,
+        "name": "Reservoir Dogs",
+        "notes": null
+    },
+    {
         "notes": null,
+        "name": "Return To Castle Wolfenstein: Tides of War",
         "igdbId": null
     },
     {
-        "game": "Reservoir Dogs",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Return To Castle Wolfenstein: Tides of War",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Richard Burns Rally",
+        "igdbId": 6004,
+        "name": "Richard Burns Rally",
         "notes": [
             "Game play pauses during Exercise in the Rally School"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Run Like Hell",
         "notes": null,
+        "name": "Run Like Hell",
         "igdbId": null
     },
     {
-        "game": "RoadKill",
+        "igdbId": 4089,
+        "name": "RoadKill",
         "notes": [
             "Main Menu does not display",
             "Press A to launch single player mode"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Robin Hood: Defender of the Crown",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 6012,
+        "name": "Robin Hood: Defender of the Crown",
+        "notes": null
     },
     {
-        "game": "Robotech: Battlecry",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 4090,
+        "name": "Robotech: Battlecry",
+        "notes": null
     },
     {
-        "game": "Rocky",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 4093,
+        "name": "Rocky",
+        "notes": null
     },
     {
-        "game": "Rocky Legends",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 6016,
+        "name": "Rocky Legends",
+        "notes": null
     },
     {
-        "game": "Rogue Ops",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 4094,
+        "name": "Rogue Ops",
+        "notes": null
     },
     {
-        "game": "Rogue Trooper",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5126,
+        "name": "Rogue Trooper",
+        "notes": null
     },
     {
-        "game": "Rugby 2006",
         "notes": [
             "There is audio stuttering during the gameplay, and players render as a dark silhouette on the right side of the field but only during the first game played"
         ],
+        "name": "Rugby 2006",
         "igdbId": null
     },
     {
-        "game": "Rugby League 2",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 6022,
+        "name": "Rugby League 2",
+        "notes": null
     },
     {
-        "game": "Samurai Jack: The Shadow of Aku",
         "notes": [
             "An Xbox version was planned but never released however this title is included on Microsoft's official backwards compatible list"
         ],
+        "name": "Samurai Jack: The Shadow of Aku",
         "igdbId": null
     },
     {
-        "game": "Samurai Warriors",
+        "igdbId": 6027,
+        "name": "Samurai Warriors",
+        "notes": null
+    },
+    {
+        "igdbId": 5139,
+        "name": "Scarface: The World Is Yours",
+        "notes": null
+    },
+    {
+        "igdbId": 2860,
+        "name": "Scooby-Doo! Night of 100 Frights",
+        "notes": null
+    },
+    {
         "notes": null,
+        "name": "Scrapland",
         "igdbId": null
     },
     {
-        "game": "Scarface: The World is Yours",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Scooby-Doo! Night of 100 Frights",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Scrapland",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Sega GT 2002",
+        "igdbId": 6039,
+        "name": "Sega GT 2002",
         "notes": [
             "Title plays very slowly"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Sega GT Online",
+        "igdbId": 6040,
+        "name": "Sega GT Online",
         "notes": [
             "Performance drops too low on many levels"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Sega Soccer Slam",
+        "igdbId": 4102,
+        "name": "Sega Soccer Slam",
+        "notes": null
+    },
+    {
         "notes": null,
+        "name": "Serious Sam",
         "igdbId": null
     },
     {
-        "game": "Serious Sam",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Shadow Ops: Red Mercury",
+        "igdbId": 6043,
+        "name": "Shadow Ops: Red Mercury",
         "notes": [
             "Performance drops with poor frame-per-second rate in gameplay"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Shadow the Hedgehog",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 4105,
+        "name": "Shadow the Hedgehog",
+        "notes": null
     },
     {
-        "game": "Shamu's Deep Sea Adventures",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 4099,
+        "name": "Shamu's Deep Sea Adventures",
+        "notes": null
     },
     {
-        "game": "Shark Tale",
+        "igdbId": 4148,
+        "name": "Shark Tale",
         "notes": [
             "While running at 480p in-game cinematics are choppy"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Shattered Union",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 6046,
+        "name": "Shattered Union",
+        "notes": null
     },
     {
-        "game": "ShellShock: Nam '67",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 1870,
+        "name": "Shellshock: Nam '67",
+        "notes": null
     },
     {
-        "game": "Shenmue II",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 1218,
+        "name": "Shenmue II",
+        "notes": null
     },
     {
-        "game": "Shinchou Mahjong (Nobunaga Mahjong)",
         "notes": [
             "A line-like graphic is displayed near the character's neck"
         ],
+        "name": "Shinchou Mahjong (Nobunaga Mahjong)",
         "igdbId": null
     },
     {
-        "game": "Shrek: Super Party",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 3673,
+        "name": "Shrek Super Party",
+        "notes": null
     },
     {
-        "game": "Sid Meier's Pirates!",
+        "igdbId": 868,
+        "name": "Sid Meier's Pirates!",
         "notes": [
             "While sailing on the world map, there are occasional choppy animations"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Silent Hill 2: Restless Dreams",
         "notes": [
             "PAL version (Silent Hill 2: Inner Fears) is NOT compatible"
         ],
+        "name": "Silent Hill 2: Restless Dreams",
         "igdbId": null
     },
     {
-        "game": "Silent Hill 4: The Room",
+        "igdbId": 483,
+        "name": "Silent Hill 4: The Room",
         "notes": [
             "Visible seams on NPC's faces during cutscenes"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "The Simpsons: Hit & Run",
+        "igdbId": 2844,
+        "name": "The Simpsons: Hit & Run",
+        "notes": null
+    },
+    {
+        "igdbId": 2842,
+        "name": "The Simpsons: Road Rage",
+        "notes": null
+    },
+    {
+        "igdbId": 224,
+        "name": "The Sims 2",
+        "notes": null
+    },
+    {
+        "igdbId": 2743,
+        "name": "Smashing Drive",
+        "notes": null
+    },
+    {
+        "igdbId": 6053,
+        "name": "Sneakers",
+        "notes": null
+    },
+    {
+        "igdbId": 4156,
+        "name": "Sonic Heroes",
+        "notes": null
+    },
+    {
         "notes": null,
+        "name": "Sonic Mega Collection Plus",
         "igdbId": null
     },
     {
-        "game": "The Simpsons: Road Rage",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 4158,
+        "name": "Sonic Riders",
+        "notes": null
     },
     {
-        "game": "The Sims 2",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Smashing Drive",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Sneakers",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Sonic Heroes",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Sonic Mega Collection Plus",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Sonic Riders",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Soul Calibur II",
         "notes": [
             "The controller vibration does not work"
         ],
+        "name": "Soul Calibur II",
         "igdbId": null
     },
     {
-        "game": "Spawn: Armageddon",
         "notes": null,
+        "name": "Spawn: Armageddon",
         "igdbId": null
     },
     {
-        "game": "Speed Kings",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 4163,
+        "name": "Speed Kings",
+        "notes": null
     },
     {
-        "game": "Sphinx and the Cursed Mummy",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 4164,
+        "name": "Sphinx and the Cursed Mummy",
+        "notes": null
     },
     {
-        "game": "Spider-Man",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 19114,
+        "name": "Spider-Man",
+        "notes": null
     },
     {
-        "game": "Spider-Man 2",
+        "igdbId": 6285,
+        "name": "Spider-Man 2",
         "notes": [
             "Textures flicker during the game"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Splat Magazine Renegade Paintball",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 6151,
+        "name": "Splat Magazine Renegade Paintball",
+        "notes": null
     },
     {
-        "game": "SpongeBob SquarePants: Battle for Bikini Bottom",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 2765,
+        "name": "Spongebob Squarepants: Battle For Bikini Bottom",
+        "notes": null
     },
     {
-        "game": "SpongeBob SquarePants: Lights, Camera, Pants!",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 2768,
+        "name": "Spongebob Squarepants: Lights, Camera, Pants!",
+        "notes": null
     },
     {
-        "game": "The SpongeBob SquarePants Movie",
+        "igdbId": 2767,
+        "name": "The Spongebob Squarepants Movie",
         "notes": [
             "Certain textures load incorrectly in the game"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Spy Hunter 2",
         "notes": null,
+        "name": "Spy Hunter 2",
         "igdbId": null
     },
     {
-        "game": "Spy Hunter: Nowhere to Run",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 6155,
+        "name": "Spy Hunter: Nowhere to Run",
+        "notes": null
     },
     {
-        "game": "Spyro: A Hero's Tail",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 1580,
+        "name": "Spyro: A Hero's Tail",
+        "notes": null
     },
     {
-        "game": "SSX 3",
+        "igdbId": 4174,
+        "name": "SSX 3",
         "notes": [
             "This title has minor graphical glitches"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Stake: Fortune Fighters",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 6158,
+        "name": "Stake: Fortune Fighters",
+        "notes": null
     },
     {
-        "game": "Star Wars: Battlefront",
+        "igdbId": 141,
+        "name": "Star Wars: Battlefront",
         "notes": [
             "In some instances, system link games may freeze"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Star Wars: Battlefront II",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 142,
+        "name": "Star Wars: Battlefront II",
+        "notes": null
     },
     {
-        "game": "Star Wars Episode III: Revenge of the Sith",
-        "notes": null,
-        "igdbId": null
+        "igdbId": null,
+        "name": "Star Wars: Episode III - Revenge of the Sith",
+        "notes": null
     },
     {
-        "game": "Star Wars: Jedi Knight: Jedi Academy",
+        "igdbId": null,
+        "name": "Star Wars: Jedi Knight - Jedi Academy",
         "notes": [
             "Cannot play split-screen games for this title"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Star Wars: Jedi Starfighter",
+        "igdbId": 6160,
+        "name": "Star Wars: Jedi Starfighter",
         "notes": [
             "Minor slowdown during menu selections and transitions, minor performance issues during cut scenes",
             "Items on HUD may randomly become solid instead of transparent"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Star Wars: Knights of the Old Republic",
+        "igdbId": 116,
+        "name": "Star Wars: Knights of the Old Republic",
+        "notes": null
+    },
+    {
+        "igdbId": 118,
+        "name": "Star Wars: Knights of the Old Republic II - The Sith Lords",
+        "notes": null
+    },
+    {
+        "igdbId": 148,
+        "name": "Star Wars: Republic Commando",
+        "notes": null
+    },
+    {
         "notes": null,
+        "name": "Starsky and Hutch",
         "igdbId": null
     },
     {
-        "game": "Star Wars Knights of the Old Republic II: The Sith Lords",
+        "igdbId": 6161,
+        "name": "State of Emergency",
+        "notes": null
+    },
+    {
+        "igdbId": 6178,
+        "name": "Street Fighter Anniversary Collection",
+        "notes": null
+    },
+    {
+        "igdbId": 4184,
+        "name": "Street Racing Syndicate",
+        "notes": null
+    },
+    {
         "notes": null,
+        "name": "Stubbs the Zombie in \"Rebel Without a Pulse\"",
         "igdbId": null
     },
     {
-        "game": "Star Wars: Republic Commando",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 6180,
+        "name": "The Suffering",
+        "notes": null
     },
     {
-        "game": "Starsky and Hutch",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 4187,
+        "name": "Super Bubble Pop",
+        "notes": null
     },
     {
-        "game": "State of Emergency",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 2929,
+        "name": "Super Monkey Ball Deluxe",
+        "notes": null
     },
     {
-        "game": "Street Fighter Anniversary Collection",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 4193,
+        "name": "SX Superstar",
+        "notes": null
     },
     {
-        "game": "Street Racing Syndicate",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Stubbs the Zombie in \"Rebel Without a Pulse\"",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "The Suffering",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Super Bubble Pop",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Super Monkey Ball Deluxe",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "SX Superstar",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Syberia II",
+        "igdbId": 6185,
+        "name": "Syberia II",
         "notes": [
             "Game takes almost a minute to load from the Xbox splash screen",
             "There are graphical issues when moving between screens"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Taz: Wanted",
+        "igdbId": 4194,
+        "name": "Taz: Wanted",
         "notes": [
             "During World 3, Stage 2: Haunted there is a partially mis-textured graphic",
             "The reconnect controller screen is not displayed"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Teenage Mutant Ninja Turtles",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 19747,
+        "name": "Teenage Mutant Ninja Turtles",
+        "notes": null
     },
     {
-        "game": "Teenage Mutant Ninja Turtles: Mutant Melee",
+        "igdbId": null,
+        "name": "Teenage Mutant Ninja Turtles: Mutant Melee",
         "notes": [
             "The introductory video stutters"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "The Terminator: Dawn of Fate",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 6195,
+        "name": "The Terminator: Dawn of Fate",
+        "notes": null
     },
     {
-        "game": "Terminator 3: Rise of the Machines",
+        "igdbId": 6196,
+        "name": "Terminator 3: Rise of the Machines",
         "notes": [
             "There is a minor performance drop during gameplay",
             "The black bars are not positioned properly at 640x480 VGA"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Test Drive  TD Overdrive (PAL)",
         "notes": [
             "There are minor performance drops and minor texture flickering during gameplay",
             "Character voices are missing during cut scenes from stage 35 until end of game"
         ],
+        "name": "Test Drive  TD Overdrive (PAL)",
         "igdbId": null
     },
     {
-        "game": "Test Drive: Eve of Destruction",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 6197,
+        "name": "Test Drive: Eve of Destruction",
+        "notes": null
     },
     {
-        "game": "Tetris Worlds",
+        "igdbId": 4200,
+        "name": "Tetris Worlds",
         "notes": [
             "Only the \"offline version\" is compatible",
             "The \"Xbox Live-enabled\" version is not compatible"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Thief: Deadly Shadows",
+        "igdbId": 3,
+        "name": "Thief: Deadly Shadows",
+        "notes": null
+    },
+    {
+        "igdbId": 6199,
+        "name": "The Thing",
+        "notes": null
+    },
+    {
         "notes": null,
+        "name": "Thousand Land",
         "igdbId": null
     },
     {
-        "game": "The Thing",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Thousand Land",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Thrillville",
+        "igdbId": 2852,
+        "name": "Thrillville",
         "notes": [
             "There is an occasional random crash during gameplay",
             "The Pirate Raiders mini-game sometimes loads without environments",
             "In the Event Horizon mini-game, enemy sprites are missing and are replaced by a white rectangle"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Tiger Woods PGA Tour 07",
+        "igdbId": 5220,
+        "name": "Tiger Woods PGA Tour 07",
+        "notes": null
+    },
+    {
         "notes": null,
+        "name": "Tom and Jerry: War of the Whiskers",
         "igdbId": null
     },
     {
-        "game": "Tom and Jerry: War of the Whiskers",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 1294,
+        "name": "Tom Clancy's Ghost Recon",
+        "notes": null
     },
     {
-        "game": "Tom Clancy's Ghost Recon",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Tom Clancy's Ghost Recon 2",
+        "igdbId": 1298,
+        "name": "Tom Clancy's Ghost Recon 2",
         "notes": [
             "Night vision doesn't work properly in split-screen multiplayer"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Tom Clancy's Ghost Recon 2: Summit Strike",
+        "igdbId": 1299,
+        "name": "Tom Clancy's Ghost Recon 2: Summit Strike",
         "notes": [
             "In split-screen multiplayer games, the screen is completely black"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Tom Clancy's Ghost Recon: Island Thunder",
+        "igdbId": 1296,
+        "name": "Tom Clancy's Ghost Recon: Island Thunder",
         "notes": [
             "In-game voice chat is not working"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Tom Clancy's Rainbow Six 3",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 9891,
+        "name": "Tom Clancy's Rainbow Six 3",
+        "notes": null
     },
     {
-        "game": "Tom Clancy's Rainbow Six 3: Black Arrow",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 47321,
+        "name": "Tom Clancy's Rainbow Six 3: Black Arrow",
+        "notes": null
     },
     {
-        "game": "Tom Clancy's Rainbow Six: Lockdown",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 1851,
+        "name": "Tom Clancy's Rainbow Six: Lockdown",
+        "notes": null
     },
     {
-        "game": "Tom Clancy's Splinter Cell",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 910,
+        "name": "Tom Clancy's Splinter Cell",
+        "notes": null
     },
     {
-        "game": "Tom Clancy's Splinter Cell: Chaos Theory",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 911,
+        "name": "Tom Clancy's Splinter Cell: Chaos Theory",
+        "notes": null
     },
     {
-        "game": "Tom Clancy's Splinter Cell: Double Agent",
+        "igdbId": 7469,
+        "name": "Tom Clancy's Splinter Cell: Double Agent",
         "notes": [
             "When accessing Versus Mode, the system occasionally hangs and the video signal is corrupted",
             "Frame rate drops in the second and third missions",
             "The Save File Snapshot Photo is corrupted after saving"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Tom Clancy's Splinter Cell: Pandora Tomorrow",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 874,
+        "name": "Tom Clancy's Splinter Cell: Pandora Tomorrow",
+        "notes": null
     },
     {
-        "game": "Tony Hawk's American Wasteland",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 7219,
+        "name": "Tony Hawk's American Wasteland",
+        "notes": null
     },
     {
-        "game": "Tony Hawk's Pro Skater 2X",
+        "igdbId": 47325,
+        "name": "Tony Hawk's Pro Skater 2X",
         "notes": [
             "There are graphic obstructions in system link"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Tony Hawk's Pro Skater 3",
+        "igdbId": 914,
+        "name": "Tony Hawk's Pro Skater 3",
         "notes": [
             "Client soft locks after the host leaves a system link game"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Tony Hawk's Pro Skater 4",
+        "igdbId": 915,
+        "name": "Tony Hawk's Pro Skater 4",
+        "notes": null
+    },
+    {
+        "igdbId": 2698,
+        "name": "Tony Hawk's Underground",
+        "notes": null
+    },
+    {
+        "igdbId": 2699,
+        "name": "Tony Hawk's Underground 2",
+        "notes": null
+    },
+    {
+        "igdbId": 6205,
+        "name": "Torino 2006",
+        "notes": null
+    },
+    {
+        "igdbId": 6206,
+        "name": "Tork: Prehistoric Punk",
+        "notes": null
+    },
+    {
+        "igdbId": 6215,
+        "name": "Toxic Grind",
+        "notes": null
+    },
+    {
+        "igdbId": 4209,
+        "name": "TransWorld Surf",
+        "notes": null
+    },
+    {
         "notes": null,
+        "name": "Trigger Man",
         "igdbId": null
     },
     {
-        "game": "Tony Hawk's Underground",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Tony Hawk's Underground 2",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Torino 2006",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Tork: Prehistoric Punk",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Toxic Grind",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "TransWorld Surf",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Trigger Man",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Trivial Pursuit Unhinged",
+        "igdbId": 6216,
+        "name": "Trivial Pursuit: Unhinged",
         "notes": [
             "Stuttering occurs during the logo animations during at start up on the splash screen",
             "Texture errors on occur on command prompts"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "True Crime: Streets of LA",
+        "igdbId": 4216,
+        "name": "True Crime: Streets of LA",
         "notes": [
             "When operating the car, a small indistinct screen appears",
             "Graphic defects are displayed around the track name"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Turok: Evolution",
+        "igdbId": 1329,
+        "name": "Turok: Evolution",
         "notes": [
             "During gameplay there are flickering textures"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Ty the Tasmanian Tiger",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 1322,
+        "name": "Ty the Tasmanian Tiger",
+        "notes": null
     },
     {
-        "game": "Ty the Tasmanian Tiger 2: Bush Rescue",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 1323,
+        "name": "Ty the Tasmanian Tiger 2: Bush Rescue",
+        "notes": null
     },
     {
-        "game": "Ty the Tasmanian Tiger 3: Night of the Quinkan",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 1324,
+        "name": "Ty the Tasmanian Tiger 3: Night of the Quinkan",
+        "notes": null
     },
     {
-        "game": "Ultimate Spider-Man",
+        "igdbId": 4225,
+        "name": "Ultimate Spider-Man",
         "notes": [
             "The frame rate drops in the in-game cinematics, and there is random texture flickering on various surfaces"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Ultra Bust-a-Move  Ultra Puzzle Bobble (JP)",
         "notes": null,
+        "name": "Ultra Bust-a-Move  Ultra Puzzle Bobble (JP)",
         "igdbId": null
     },
     {
-        "game": "Unreal Championship 2: The Liandri Conflict",
+        "igdbId": 6221,
+        "name": "Unreal Championship 2: The Liandri Conflict",
         "notes": [
             "The frame rate drops in the Story Mode character selection screen",
             "There are occasional system hangs during Instant Action games, and after leaving the game while navigating back to the Xbox Dashboard",
             "There are some missing textures on the Eternal map"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Urban Freestyle Soccer (PAL)",
         "notes": null,
+        "name": "Urban Freestyle Soccer (PAL)",
         "igdbId": null
     },
     {
-        "game": "The Urbz: Sims in the City",
         "notes": [
             "In the Cozmo Street area the game stutters",
             "While on loading screens random system hardlocks will occur"
         ],
+        "name": "The Urbz: Sims in the City",
         "igdbId": null
     },
     {
-        "game": "Van Helsing",
+        "igdbId": 6226,
+        "name": "Van Helsing",
         "notes": [
             "At the top edge of the main menu and mission briefing screens there is flickering"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Vexx",
+        "igdbId": 4079,
+        "name": "Vexx",
+        "notes": null
+    },
+    {
+        "igdbId": 22165,
+        "name": "Vietcong: Purple Haze",
+        "notes": null
+    },
+    {
         "notes": null,
+        "name": "Volvo: Drive For Life",
         "igdbId": null
     },
     {
-        "game": "Vietcong: Purple Haze",
         "notes": null,
+        "name": "Wakeboarding Unleashed featuring Shaun Murray",
         "igdbId": null
     },
     {
-        "game": "Volvo: Drive For Life",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 6228,
+        "name": "Warpath",
+        "notes": null
     },
     {
-        "game": "Wakeboarding Unleashed featuring Shaun Murray",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "WarPath",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Whacked!",
+        "igdbId": 6229,
+        "name": "Whacked!",
         "notes": [
             "Loading screens do not display correctly",
             "While on the High Rise level characters will flicker",
             "During the Space Walk level there is some texture tearing when in combat or being knocked off the platform"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "WinBack 2: Project Poseidon",
+        "igdbId": 6234,
+        "name": "WinBack 2: Project Poseidon",
         "notes": [
             "When switching to character B there are some missing textures"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Without Warning",
+        "igdbId": 6236,
+        "name": "Without Warning",
         "notes": [
             "Some texture corruption, gameplay freezes briefly"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "World Series Baseball 2K3",
+        "igdbId": 6241,
+        "name": "World Series Baseball 2K3",
+        "notes": null
+    },
+    {
         "notes": null,
+        "name": "World Soccer Winning Eleven 8 International  Pro Evolution Soccer 4 (PAL)  Winning Eleven 8 (JP)",
         "igdbId": null
     },
     {
-        "game": "World Soccer Winning Eleven 8 International  Pro Evolution Soccer 4 (PAL)  Winning Eleven 8 (JP)",
         "notes": null,
+        "name": "World Soccer Winning Eleven 9[a]  Pro Evolution Soccer 5 (PAL)  Winning Eleven 9 (JP)",
         "igdbId": null
     },
     {
-        "game": "World Soccer Winning Eleven 9[a]  Pro Evolution Soccer 5 (PAL)  Winning Eleven 9 (JP)",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 1047,
+        "name": "Worms 3D",
+        "notes": null
     },
     {
-        "game": "Worms 3D",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 6244,
+        "name": "Worms 4: Mayhem",
+        "notes": null
     },
     {
-        "game": "Worms 4: Mayhem",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 6245,
+        "name": "Worms Forts: Under Siege",
+        "notes": null
     },
     {
-        "game": "Worms Forts: Under Siege",
-        "notes": null,
-        "igdbId": null
-    },
-    {
-        "game": "Wrath Unleashed",
+        "igdbId": 6248,
+        "name": "Wrath Unleashed",
         "notes": [
             "Upon completion of a battle the \"You are Victorious\" audio file may play twice",
             "Only weapons and armor of the models are drawn",
             "Game units \"Centaur\" and \"Centabra\" will not display on the map"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "WWE Raw 2",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 6249,
+        "name": "WWE Raw 2",
+        "notes": null
     },
     {
-        "game": "WWF Raw",
         "notes": [
             "When six characters are present on screen the game runs very slowly"
         ],
+        "name": "WWF Raw",
         "igdbId": null
     },
     {
-        "game": "X2: Wolverine's Revenge",
+        "igdbId": 4579,
+        "name": "X2: Wolverine's Revenge",
         "notes": [
             "When approaching locker cabinets they will flash",
             "Characters/surrounding environments experience minor, occasional texture flickering on later levels"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Xiaolin Showdown",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5742,
+        "name": "Xiaolin Showdown",
+        "notes": null
     },
     {
-        "game": "XIII",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 1987,
+        "name": "XIII",
+        "notes": null
     },
     {
-        "game": "Yourself!Fitness",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 5029,
+        "name": "Yourself!Fitness",
+        "notes": null
     },
     {
-        "game": "Yu-Gi-Oh! The Dawn of Destiny",
+        "igdbId": 6257,
+        "name": "Yu-Gi-Oh! The Dawn of Destiny",
         "notes": [
             "During system link play random crashes and the system hardlock will occur"
-        ],
-        "igdbId": null
+        ]
     },
     {
-        "game": "Zapper: One Wicked Cricket",
-        "notes": null,
-        "igdbId": null
+        "igdbId": 4583,
+        "name": "Zapper: One Wicked Cricket",
+        "notes": null
     },
     {
-        "game": "Zathura",
+        "igdbId": 47324,
+        "name": "Zathura",
         "notes": [
             "During the first level there is missing audio in the pre-rendered video"
-        ],
-        "igdbId": null
+        ]
     }
 ]

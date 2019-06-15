@@ -1,3027 +1,2467 @@
 [
     {
         "game": "0 Day Attack on Earth",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "3D Ultra MiniGolf Adventures",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Ace Combat 6: Fires of Liberation",
         "notes": [
             "Also included as a pre-order bonus with Ace Combat 7: Skies Unknown"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "A Kingdom for Keflings",
-        "notes": [],
-        "igdbId": null
+        "notes": []
     },
     {
         "game": "A World of Keflings",
-        "notes": [],
-        "igdbId": null
+        "notes": []
     },
     {
         "game": "Aegis Wing",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Age of Booty",
-        "notes": [],
-        "igdbId": null
+        "notes": []
     },
     {
         "game": "AirMech Arena",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Alan Wake",
         "notes": [
             "Also available as a bonus with purchase of Quantum Break"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Alan Wake's American Nightmare",
         "notes": [
             "Also included as a pre-order bonus with Quantum Break"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Alice: Madness Returns",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Alien Hominid HD",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Aliens vs. Predator",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Altered Beast",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Anomaly: Warzone Earth",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Aqua",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "ARKANOID Live!",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Army of Two",
         "notes": [
             "Available in the Vault of EA Access"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Assassin's Creed",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Assassin's Creed II",
         "notes": [
             "Also available in Assassin's Creed: The Ezio Collection which includes remastered versions of Assassin's Creed II, Assassin's Creed: Brotherhood and Assassin's Creed: Revelations for Xbox One"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Assassin's Creed III",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Assassin's Creed Liberation HD",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Assassin's Creed IV: Black Flag",
         "notes": [
             "Also released as a launch title for Xbox One"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Assassin's Creed: Brotherhood",
         "notes": [
             "Also available in Assassin's Creed: The Ezio Collection which includes remastered versions of Assassin's Creed II, Assassin's Creed: Brotherhood and Assassin's Creed: Revelations for Xbox One"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Assassin's Creed: Revelations",
         "notes": [
             "Also available in Assassin's Creed: The Ezio Collection which includes remastered versions of Assassin's Creed II, Assassin's Creed: Brotherhood and Assassin's Creed: Revelations for Xbox One"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Assassin's Creed Rogue",
         "notes": [
             "Also available as a remastered version on Xbox One"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Assault Heroes 2",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Asteroids & Deluxe",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "AstroPop",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Axel & Pixel",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Babel Rising",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Band of Bugs",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Banjo-Kazooie",
         "notes": [
             "Also included as part of the Rare Replay collection of games"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Banjo-Kazooie: Nuts & Bolts",
         "notes": [
             "Also included as part of the Rare Replay collection of games"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Banjo-Tooie",
         "notes": [
             "Also included as part of the Rare Replay collection of games"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Batman: Arkham Origins",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "BattleBlock Theater",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Battlefield 1943",
         "notes": [
             "Available in the Vault of EA Access"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Battlefield 3",
         "notes": [
             "Available in the Vault of EA Access"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Battlefield: Bad Company",
         "notes": [
             "Available in the Vault of EA Access"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Battlefield: Bad Company 2",
         "notes": [
             "Available in the Vault of EA Access"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Battlestations: Pacific",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Battlestations: Midway",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Bayonetta",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Beat'n Groovy",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Bejeweled 2",
         "notes": [
             "Available in the Vault of EA Access"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Bejeweled 3",
         "notes": [
             "Available in the Vault of EA Access"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Bellator: MMA Onslaught",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Beyond Good & Evil HD",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Bionic Commando Rearmed 2",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "BioShock",
         "notes": [
             "Also available in BioShock: The Collection, featuring remastered versions of all 3 BioShock titles on Xbox One"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "BioShock 2",
         "notes": [
             "Also available in BioShock: The Collection, featuring remastered versions of all 3 BioShock titles on Xbox One"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "BioShock Infinite",
         "notes": [
             "Also available in BioShock: The Collection, featuring remastered versions of all 3 BioShock titles on Xbox One"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Blazing Angels: Squadrons of WWII",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Blood Knights",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Blood of the Werewolf",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Bloodforge",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "BloodRayne: Betrayal",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Blue Dragon",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Bolt",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Bomberman Live: Battlefest",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Boom Boom Rocket",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Bound by Flame",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Borderlands",
         "notes": [
             "All versions of the game, including physical and digital copies, receive all DLC as a free download (on Xbox One only)"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Borderlands 2",
         "notes": [
             "Also available in Borderlands: The Handsome Collection which includes remastered versions of Borderlands 2 and Borderlands: The Pre-Sequel for Xbox One"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Braid",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Brain Challenge",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Brave: The Video Game",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Brothers in Arms: Hell's Highway",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Brütal Legend",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Bullet Soul",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Bullet Soul -Infinite Burst-",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Bully: Scholarship Edition",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Burnout Paradise",
         "notes": [
             "Remastered as Burnout Paradise Remastered for Xbox One",
             "Available in the Vault of EA Access"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Burnout Revenge",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Cabela's Alaskan Adventures",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Cabela's Dangerous Hunts 2013",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Cabela's Hunting Expeditions",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Cabela's Survival: Shadows of Katmai",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Call of Duty: Advanced Warfare",
         "notes": [
             "Also released on Xbox One"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Call of Duty: Black Ops",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Call of Duty: Black Ops II",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Call of Duty: Ghosts",
         "notes": [
             "Also released as a launch title for Xbox One"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Call of Duty: Modern Warfare 2",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Call of Duty: Modern Warfare 3",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Call of Duty: World at War",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Call of Duty 2",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Call of Duty 3",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Call of Duty 4: Modern Warfare",
         "notes": [
             "Also available in a remastered version"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Call of Juarez: Bound in Blood",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Call of Juarez: Gunslinger",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Call of Juarez: The Cartel",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Capcom Arcade Cabinet",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Carcassonne",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Cars Mater-National Championship",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Cars 2: The Video Game",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Castlevania: Harmony of Despair",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Castlevania: Lords of Shadow",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Castlevania: Lords of Shadow 2",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Castlevania: Lords of Shadow - Mirror of Fate",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Castlevania: Symphony of the Night",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Castle Crashers",
-        "notes": [],
-        "igdbId": null
+        "notes": []
     },
     {
         "game": "Castle of Illusion Starring Mickey Mouse",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "CastleStorm",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Catherine",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Cave, TheThe Cave",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Centipede & Millipede",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Child of Eden",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Clannad",
         "notes": [
             "Japan only"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Command & Conquer 3: Kane's Wrath",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Command & Conquer 3: Tiberium Wars",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Command & Conquer: Red Alert 3",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Command & Conquer: Red Alert 3 – Commander's Challenge",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Commanders: Attack of the Genos",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Comic Jumper: The Adventures of Captain Smiley",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Comix Zone",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Condemned: Criminal Origins",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Contra",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Costume Quest",
-        "notes": [],
-        "igdbId": null
+        "notes": []
     },
     {
         "game": "Costume Quest 2",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Counter-Strike: Global Offensive",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Crackdown",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Crackdown 2",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Crazy Taxi",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Crysis",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Crysis 2",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Crysis 3",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Crystal Defenders",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Crystal Quest",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Cyber Troopers Virtual-On Oratorio Tangram",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Dante's Inferno",
         "notes": [
             "Available in the Vault of EA Access"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Dark Souls",
         "notes": [
             "Available as a digital pre-order bonus with Dark Souls 3 on the Xbox store"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Dark Void",
-        "notes": [],
-        "igdbId": null
+        "notes": []
     },
     {
         "game": "Darkness, TheThe Darkness",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Darkness II, TheThe Darkness II",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Darksiders",
         "notes": [
             "Remastered as Darksiders: Warmastered Edition for Xbox One"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Darksiders II",
         "notes": [
             "Remastered as Darksiders II: Deathinitive Edition for Xbox One"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Daytona USA",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "de Blob 2",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Dead Rising 2: Case Zero",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Dead Rising 2: Case West",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Dead Space",
         "notes": [
             "Available in the Vault of EA Access"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Dead Space 2",
         "notes": [
             "Available in the Vault of EA Access"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Dead Space 3",
         "notes": [
             "Available in the Vault of EA Access"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Dead Space Ignition",
         "notes": [
             "Available in the Vault of EA Access"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Deadfall Adventures",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Deadliest Warrior: The Game",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Deadliest Warrior: Legends",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Deadly Premonition",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "DeathSpank: Thongs of Virtue",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Defense Grid: The Awakening",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Deus Ex: Human Revolution",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Deus Ex: Human Revolution Director's Cut",
         "notes": [
             "First Multi-Disc game made available"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Dig Dug",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "DiRT 3",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Dirt: Showdown",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Discs of Tron",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Divinity II",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Domino Master",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Doom",
         "notes": [
             "Available as a digital pre-order bonus with Doom on the Xbox store"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Doom II",
         "notes": [
             "Available as a digital pre-order bonus with Doom on the Xbox store"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Doom 3: BFG Edition",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Doritos Crash Course",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Double Dragon: Neon",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Dragon Age: Origins",
         "notes": [
             "Available in the Vault of EA Access"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Dragon Age II",
         "notes": [
             "Available in the Vault of EA Access"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Dragon's Lair",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Driver: San Francisco",
         "notes": [
             "Available on disc only, but existing digital owners can download it"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "DuckTales Remastered",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Duke Nukem Forever",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Duke Nukem: Manhattan Project",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Dungeons & Dragons: Chronicles of Mystara",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Dungeon Siege III",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Earth Defense Force: Insect Armageddon",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Earth Defense Force 2017",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Earth Defense Force 2025",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Earthworm Jim HD",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Eat Lead: The Return of Matt Hazard",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Elder Scrolls IV, TheThe Elder Scrolls IV: Oblivion",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Encleverment Experiment",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Epic Mickey 2: The Power of Two",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Escape Dead Island",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Every Extend Extra Extreme",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "F1 2014",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Fable Anniversary",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Fable Heroes",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Fable II",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Fable II Pub Games",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Fable III",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Faery: Legends of Avalon",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Fallout 3",
         "notes": [
             "Was also available as a bonus with purchase of Fallout 4",
             "Also, owners of the Xbox 360 Game of the Year Edition can run the game with all the DLC using disc 2"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Fallout: New Vegas",
         "notes": [
             "Owners of the Xbox 360 Ultimate Edition can run the game with all the DLC using disc 2"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Far Cry 2",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Far Cry 3",
         "notes": [
             "Given to players who owned the season pass of Far Cry 5 as a bonus on May 29, 2018",
             "Later released as a standalone product titled Far Cry 3 Classic Edition on June 26, 2018"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Far Cry 3: Blood Dragon",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Feeding Frenzy",
         "notes": [
             "Available in the Vault of EA Access"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Feeding Frenzy 2: Shipwreck Showdown",
         "notes": [
             "Available in the Vault of EA Access"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Fight Night Champion",
         "notes": [
             "Available in the Vault of EA Access"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Fighting Vipers",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Final Fantasy XIII",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Final Fantasy XIII-2",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Final Fight: Double Impact",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Flashback",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Flock!",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Forza Horizon",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Foul Play",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Fret Nice",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Frogger",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Frogger 2",
-        "notes": [],
-        "igdbId": null
+        "notes": []
     },
     {
         "game": "From Dust",
-        "notes": [],
-        "igdbId": null
+        "notes": []
     },
     {
         "game": "Frontlines: Fuel of War",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Fuel",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "FunTown Mahjong",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Galaga",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Galaga Legions",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Galaga Legions DX",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Garou: Mark of the Wolves",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Gatling Gears",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Gears of War",
         "notes": [
             "Was also available as a bonus with purchase of Gears of War: Ultimate Edition"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Gears of War 2",
         "notes": [
             "Was also available as a bonus with purchase of Gears of War: Ultimate Edition"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Gears of War 3",
         "notes": [
             "Was also available as a bonus with purchase of Gears of War: Ultimate Edition"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Gears of War: Judgment",
         "notes": [
             "Was also available as a bonus with purchase of Gears of War: Ultimate Edition"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Geometry Wars: Retro Evolved",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Geometry Wars: Retro Evolved 2",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Geometry Wars 3: Dimensions",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Ghostbusters: Sanctum of Slime",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Ghostbusters: The Video Game",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Gin Rummy",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Girl Fight",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Go! Go! Break Steady",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Goat Simulator",
         "notes": [
             "Also released on Xbox One"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Golden Axe",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Golf: Tee It Up!",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Grand Theft Auto IV",
         "notes": [
             "Including \"Episodes From Liberty City\" DLC"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Grand Theft Auto: San Andreas",
-        "notes": [],
-        "igdbId": null
+        "notes": []
     },
     {
         "game": "Greg Hastings Paintball 2",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Grid 2",
-        "notes": [],
-        "igdbId": null
+        "notes": []
     },
     {
         "game": "Grid Autosport",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "GripShift",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Guardian Heroes",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Gunstar Heroes",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Guwange",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Gyromancer",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Gyruss",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Half-Minute Hero: Super Mega Neo Climax",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Halo 3",
         "notes": [
             "Remastered version available in Halo: The Master Chief Collection"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Halo 3: ODST Campaign Edition",
         "notes": [
             "Remastered version available in Halo: The Master Chief Collection via downloadable content"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Halo 4",
         "notes": [
             "Remastered version available in Halo: The Master Chief Collection"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Halo: Combat Evolved Anniversary",
         "notes": [
             "Remastered version available in Halo: The Master Chief Collection"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Halo: Reach",
         "notes": [
             "Remastered version is in development for Halo: The Master Chief Collection via downloadable content"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Halo: Spartan Assault",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Halo Wars",
         "notes": [
             "Remastered version available in Halo Wars: Defintive Edition"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Hard Corps: Uprising",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Hardwood Backgammon",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Hardwood Hearts",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Hardwood Spades",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Harms Way",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Haunted House",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Heavy Weapon",
         "notes": [
             "Available in the Vault of EA Access"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Hexic HD",
         "notes": [
             "This originally bundled Xbox 360 game can now be downloaded for free in certain regions from the Xbox store here"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Hexic 2",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Hitman: Absolution",
         "notes": [
             "Hitman: Sniper Challenge pre-order bonus is also compatible"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Hitman: Blood Money",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Hitman HD Trilogy",
         "notes": [
             "HD versions of Hitman 2: Silent Assassin and Hitman: Contracts",
             "Collection also includes already-released Xbox 360 title Hitman: Blood Money"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Hydrophobia",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Hydro Thunder Hurricane",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "I Am Alive",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Ikaruga",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "ilomilo",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Injustice: Gods Among Us",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Insanely Twisted Shadow Planet",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Interpol: The Trail of Dr. Chaos",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Iron Brigade",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Jeremy McGrath's Offroad",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Jet Set Radio HD",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Jetpac Refuelled",
         "notes": [
             "Also included as part of the Rare Replay collection of games"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Jewel Quest",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Joe Danger: Special Edition",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Joe Danger 2: The Movie",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Joust",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Joy Ride Turbo",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "JUJU",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Jurassic Park: The Game",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Just Cause",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Just Cause 2",
         "notes": [
             "Also available as a bonus with purchase of successor Just Cause 3"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Kameo: Elements of Power",
         "notes": [
             "Also included as part of the Rare Replay collection of games"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Kane & Lynch 2: Dog Days",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Killer Is Dead",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Kingdoms of Amalur: Reckoning",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "King of Fighters '98 Ultimate Match, TheThe King of Fighters '98 Ultimate Match",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "King of Fighters 2002 Unlimited Match, TheThe King of Fighters 2002 Unlimited Match",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "KOF Sky Stage",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Lara Croft and the Guardian of Light",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Lazy Raiders",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Left 4 Dead",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Left 4 Dead 2",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "LEGO Batman: The Videogame",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Lego Batman 2: DC Super Heroes",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "LEGO Indiana Jones: The Original Adventures",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "LEGO Indiana Jones 2: The Adventure Continues",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "LEGO Pirates of the Caribbean: The Video Game",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "LEGO Star Wars III: The Clone Wars",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "LEGO Star Wars: The Complete Saga",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Lego Star Wars II: The Original Trilogy",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Limbo",
         "notes": [
             "Also released on Xbox One"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Lightning Returns: Final Fantasy XIII",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Lode Runner",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Lost Odyssey",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Lost Planet",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Lost Planet: Colonies",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Lost Planet 2",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Lost Planet 3",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Lumines LIVE",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Luxor 2",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Madballs in Babo: Invasion",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Mad Tracks",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Mafia II",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Magic: The Gathering - Duels of the Planeswalkers",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Magic: The Gathering - Duels of the Planeswalkers 2012",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Magic: The Gathering - Duels of the Planeswalkers 2013",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Magic: The Gathering – Duels of the Planeswalkers 2014",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Marathon 2: Durandal",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Marlow Briggs and the Mask of Death",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Mars: War Logs",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Mass Effect",
         "notes": [
             "Available in the Vault of EA Access"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Mass Effect 2",
         "notes": [
             "Available in the Vault of EA Access"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Mass Effect 3",
         "notes": [
             "Available in the Vault of EA Access"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Matt Hazard: Blood Bath and Beyond",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Maw, TheThe Maw",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Medal of Honor: Airborne",
         "notes": [
             "Available in the Vault of EA Access"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Meet the Robinsons",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Mega Man 9",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Mega Man 10",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Metal Gear Rising: Revengeance",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Metal Gear Solid HD Edition",
         "notes": [
             "HD versions of Metal Gear Solid 2: Sons of Liberty and Metal Gear Solid 3: Snake Eater",
             "Metal Gear Solid HD Collection is not yet available"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Metal Gear Solid: Peace Walker - HD Edition",
         "notes": [
             "Stand-alone disc from the Metal Gear Solid HD Collection is also compatible"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Metal Slug 3",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Metal Slug XX",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Midnight Club: Los Angeles",
-        "notes": [],
-        "igdbId": null
+        "notes": []
     },
     {
         "game": "Midway Arcade Origins",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Might & Magic: Clash of Heroes",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Military Madness: Nectaris",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Mirror's Edge",
         "notes": [
             "Available in the Vault of EA Access"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Misadventures of P.B. Winterbottom, TheThe Misadventures of P.B. Winterbottom",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Missile Command",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Monaco: What's Yours Is Mine",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Monday Night Combat",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Monopoly Deal",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Monopoly Plus",
-        "notes": [],
-        "igdbId": null
+        "notes": []
     },
     {
         "game": "Moon Diver",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Motocross Madness",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Mr. Driller Online",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Ms. Pac-Man",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Ms. Splosion Man",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Mutant Storm Empire",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Mutant Storm Reloaded",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "MX vs. ATV Reflex",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "N+",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "NBA Jam: On Fire Edition",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "NeoGeo Battle Coliseum",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "New Rally-X",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "NiGHTS into Dreams...",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Nin2-Jump",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Ninja Gaiden II",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Ninja Gaiden 3: Razor's Edge",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Of Orcs and Men",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Omega Five",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Orcs Must Die!",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Operation Flashpoint: Dragon Rising",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Operation Flashpoint: Red River",
         "notes": [
             "Available digitally only on the Japanese Xbox Marketplace"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Orange Box, TheThe Orange Box",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Outland",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Overlord",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Overlord II",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Pac-Man",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Pac-Man Championship Edition",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Pac-Man Championship Edition DX",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Pac-Man Museum",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Peggle",
         "notes": [
             "Available in the Vault of EA Access"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Peggle 2",
         "notes": [
             "Also released on Xbox One"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Perfect Dark",
         "notes": [
             "Also included as part of the Rare Replay collection of games"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Perfect Dark Zero",
         "notes": [
             "Also included as part of the Rare Replay collection of games"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Persona 4 Arena",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Phantasy Star II",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Phantom Breaker: Battle Grounds",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Pinball FX",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Plants vs. Zombies",
         "notes": [
             "Available in the Vault of EA Access"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Planets Under Attack",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Port Royale 3: Pirates & Merchants",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Portal: Still Alive",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Portal 2",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Prey",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Prince of Persia",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Prince of Persia Classic",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Pure",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Putty Squad",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Puzzle Quest 1Puzzle Quest: Challenge of the Warlords",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Puzzle Quest: Galactrix",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Puzzle Quest 2",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Puzzlegeddon",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Qix++",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Quantum Conundrum",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "R-Type Dimensions",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Radiant Silvergun",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Rage",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Raiden IV",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Raskulls",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Rayman 3 HD",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Rayman Legends",
         "notes": [
             "Also released on Xbox One"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Rayman Origins",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Rayman Raving Rabbids",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Red Dead Redemption",
         "notes": [
             "Standard, \"Game of the Year\" and \"Undead Nightmare\" editions are all compatible"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Red Faction: Armageddon",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Red Faction: Battlegrounds",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Resident Evil Code: Veronica X",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "RoboBlitz",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Rocket Knight",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Rockstar Games Presents Table Tennis",
-        "notes": [],
-        "igdbId": null
+        "notes": []
     },
     {
         "game": "R.U.S.E.",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Rumble Roses XX",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Runner2",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Sacred 3",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Sacred Citadel",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Saints Row",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Saints Row: Gat out of Hell",
         "notes": [
             "Also released on Xbox One"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Saints Row 2",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Saints Row: The Third",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Saints Row IV",
         "notes": [
             "Also released on Xbox One"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Sam & Max Beyond Time and Space",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Sam & Max Save the World",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Samurai Shodown II",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Scarygirl",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Scrap Metal",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "ScreamRide",
         "notes": [
             "Also released on Xbox One"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Secret of Monkey Island, TheThe Secret of Monkey Island: Special Edition",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Secret of Monkey Island 2, TheMonkey Island 2 Special Edition: LeChuck's Revenge",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Sega Bass Fishing",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Sega Vintage Collection: Alex Kidd & Co.(Alex Kidd in Miracle World, Super Hang-On, The Revenge of Shinobi)",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Sega Vintage Collection: Golden Axe(Golden Axe, II, III)",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Sega Vintage Collection: Monster World(Wonder Boy in Monster Land, Wonder Boy in Monster World, Monster World IV)",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Sega Vintage Collection: Streets of Rage(Streets of Rage, 2, 3)",
         "notes": [
             "Includes all three Streets of Rage games"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Sega Vintage Collection: ToeJam & Earl(ToeJam & Earl and ToeJam & Earl in Panic on Funkotron)",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Sensible World of Soccer",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Shadowrun",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Shadow Assault: Tenchu",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Shadow Complex",
-        "notes": [],
-        "igdbId": null
+        "notes": []
     },
     {
         "game": "Shadows of the Damned",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Shank 2",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Shinobi",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Shotest Shogi",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Shred Nebula",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Sid Meier's Civilization Revolution",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Silent Hill: Downpour",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Silent Hill HD Collection",
         "notes": [
             "Includes remastered versions of Silent Hill 2 & Silent Hill 3"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Silent Hill: Homecoming",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Sine Mora",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Skate 3",
         "notes": [
             "Available in the Vault of EA Access"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Skullgirls: Encore",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Skydive: Proximity Flight",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Slender: The Arrival",
         "notes": [
             "Also released on Xbox One"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Small Arms",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Sniper Elite V2",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Soltrio Solitaire",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Sonic Adventure",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Sonic Adventure 2",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Sonic & Knuckles",
         "notes": [
             "Supports Sonic 3 & Knuckles for those that also own Sonic 3"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Sonic & All-Stars Racing Transformed",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Sonic Generations",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Sonic CD",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Sonic the Fighters",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Sonic the Hedgehog",
         "notes": [
             "Supports Blue Sphere for those that also own Sonic & Knuckles"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Sonic the Hedgehog 2",
         "notes": [
             "Supports Knuckles in Sonic 2 for those that also own Sonic & Knuckles"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Sonic the Hedgehog 3",
         "notes": [
             "Supports Sonic 3 & Knuckles for those that also own Sonic & Knuckles"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Sonic the Hedgehog 4: Episode I",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Sonic the Hedgehog 4: Episode II",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Sonic Unleashed",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Soulcalibur",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "SoulCalibur II HD Online",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "South Park: The Stick of Truth",
         "notes": [
             "Also released on Xbox One"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Space Ark",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Space Giraffe",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Space Invaders Infinity Gene",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Spec Ops: The Line",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Spelunky",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Splatters, TheThe Splatters",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Split/Second",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "'Splosion Man",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "SSX",
         "notes": [
             "Available in the Vault of EA Access"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Stacking",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Star Wars: The Force Unleashed",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Star Wars: The Force Unleashed II",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Steins;Gate",
         "notes": [
             "Japan only"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Steins;Gate: Hiyoku Renri no Darling",
         "notes": [
             "Japan only"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Steins;Gate: Senkei Kōsoku no Phenogram",
         "notes": [
             "Japan only"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Strania",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Street Fighter IV",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Stuntman: Ignition",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Super Contra",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Super Meat Boy",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Super Street Fighter IV: Arcade Edition",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Supreme Commander 2",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Syberia",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Tales from Space: Mutant Blobs Attack",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Tecmo Bowl Throwback",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Tekken 6",
         "notes": [
             "Also available as a bonus with purchase of Tekken 7"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Tekken Tag Tournament 2",
-        "notes": [],
-        "igdbId": null
+        "notes": []
     },
     {
         "game": "Texas Hold 'Em",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Bureau: XCOM Declassified, TheThe Bureau: XCOM Declassified",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "The King of Fighters XIII",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Ticket to Ride",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "TimeShift",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Tom Clancy's EndWar",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Tom Clancy's Ghost Recon Advanced Warfighter",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Tom Clancy's Ghost Recon Advanced Warfighter 2",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Tom Clancy's Ghost Recon: Future Soldier",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Tom Clancy's H.A.W.X",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Tom Clancy's Rainbow Six: Vegas",
         "notes": [
             "Also available as a bonus with purchase of Tom Clancy's Rainbow Six Siege"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Tom Clancy's Rainbow Six: Vegas 2",
         "notes": [
             "Also available as a bonus with purchase of Tom Clancy's Rainbow Six Siege"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Tom Clancy's Splinter Cell: Blacklist",
-        "notes": [],
-        "igdbId": null
+        "notes": []
     },
     {
         "game": "Tom Clancy's Splinter Cell: Conviction",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Tom Clancy's Splinter Cell: Double Agent",
-        "notes": [],
-        "igdbId": null
+        "notes": []
     },
     {
         "game": "Tomb Raider: Anniversary",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Tomb Raider: Legend",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Tomb Raider: Underworld",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Torchlight",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Tour de France 2009: The Official Game",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Tour de France 2011",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Tower Bloxx Deluxe",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Toy Soldiers",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Toy Soldiers: Cold War",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Toy Story 3",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Toybox Turbos",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Trials Evolution",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Trials HD",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Triggerheart Exelica",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Trine 2",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Tron: Evolution",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Tropico 4",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Ugly Americans: Apocalypsegeddon",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Unbound Saga",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Undertow",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Vanquish",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Virtua Fighter 2",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Virtua Fighter 5: Final Showdown",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Cyber Troopers Virtual-On Oratorio Tangram",
-        "notes": [],
-        "igdbId": null
+        "notes": []
     },
     {
         "game": "Viva Piñata",
         "notes": [
             "Also included as part of the Rare Replay collection of games"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Viva Piñata: Trouble in Paradise",
         "notes": [
             "Also included as part of the Rare Replay collection of games"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Walking Dead, TheThe Walking Dead",
         "notes": [
             "Also released on Xbox One"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Walking Dead: Michonne, TheThe Walking Dead: Michonne",
         "notes": [
             "Also released on Xbox One"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Walking Dead: Season Two, TheThe Walking Dead: Season Two",
         "notes": [
             "Also released on Xbox One"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Witcher 2, TheThe Witcher 2: Assassins of Kings",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Wolf of the Battlefield: Commando 3",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Wolfenstein 3D",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Word Puzzle",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "XCOM: Enemy Unknown",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "XCOM: Enemy Within",
-        "notes": [],
-        "igdbId": null
+        "notes": []
     },
     {
         "game": "Yosumin! Live",
-        "notes": null,
-        "igdbId": null
+        "notes": null
     },
     {
         "game": "Zone of the Enders HD Collection",
         "notes": [
             "Includes remastered versions of Zone of the Enders & Zone of the Enders: The 2nd Runner"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Zuma",
         "notes": [
             "Available in the Vault of EA Access"
-        ],
-        "igdbId": null
+        ]
     },
     {
         "game": "Zuma's Revenge!",
         "notes": [
             "Available in the Vault of EA Access"
-        ],
-        "igdbId": null
+        ]
     }
 ]
