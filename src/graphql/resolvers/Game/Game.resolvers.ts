@@ -80,7 +80,7 @@ export class GameClass {
         }
         return that.ageRatings[rating];
       },
-      async userGames(_, { wl, id }, { user }: IContext): Promise<IGameDocument[]> {
+      async userGames(_, { wl, id, platformId }, { user }: IContext): Promise<IGameDocument[]> {
         if (!user) {
           throw new ForbiddenError(Helpers.forbiddenMessage);
         }
@@ -88,10 +88,23 @@ export class GameClass {
           let games;
           if (id) {
             games = await Game.find({ user: new ObjectID(user.id), _id: id }).populate('user').exec();
+          } else if (platformId) {
+            return await Game.find({ user: new ObjectID(user.id) }).populate('user platform').then(results => {
+              if (wl === undefined) {
+                results = results.filter(r => {
+                  return r['platform'].igdbId === platformId;
+                });
+              } else {
+                results = results.filter(r => {
+                  return r['platform'].igdbId === platformId && r['wishlist'] === wl;
+                });
+              }
+              return results;
+            });
           } else if (wl) {
-            games = await Game.find({ user: new ObjectID(user.id), wishlist: true }).populate('user').exec();
+            games = await Game.find({ user: new ObjectID(user.id), wishlist: true }).populate('user').populate('platform').exec();
           } else {
-            games = await Game.find({ user: new ObjectID(user.id), wishlist: false }).populate('user').exec();
+            games = await Game.find({ user: new ObjectID(user.id), wishlist: false }).populate('user').populate('platform').exec();
           }
           return games;
         } catch (err) {
@@ -128,7 +141,7 @@ export class GameClass {
         }
 
         try {
-          const game = await Game.findOne({ user: new ObjectID(user.id), _id: data.id }).populate('user').exec();
+          const game = await Game.findOne({ user: new ObjectID(user.id), _id: data.id }).populate('user').populate('platform').exec();
           const keys = Object.keys(data);
           keys.forEach(key => {
             if (key !== '_id' && key !== 'user' && key !== 'created' && key !== 'updated') {
@@ -150,7 +163,7 @@ export class GameClass {
         if (!id) {
           throw new UserInputError('You must send a game ID in the arguments to edit a game!');
         } try {
-          const game = await Game.findOne({ user: new ObjectID(user.id), _id: id }).populate('user').exec();
+          const game = await Game.findOne({ user: new ObjectID(user.id), _id: id }).populate('user').populate('platform').exec();
           const removed = await game.remove();
           return removed;
         } catch (error) {

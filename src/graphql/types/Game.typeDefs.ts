@@ -139,7 +139,7 @@ type UserGame {
   series: String
   cover: String
   summary: String
-  platform: String
+  platform: UserPlatform
   genres: [String]
   firstReleaseDate: String
   gameBeaten: [GameBeaten]
@@ -165,7 +165,7 @@ extend type Query {
   igdbGameLookup (name: String!, platform: Int!): [IgdbGame]
   gbGameLookup (name: String!, platform: Int!): [GbGame]
   ageRatingsEnum (rating: Int): String
-  userGames(wl: Boolean, id: String): [UserGame]
+  userGames(wl: Boolean, id: String, platformId: Int): [UserGame]
 }
 extend type Mutation {
   addGame(newGame: GameReq): UserGame

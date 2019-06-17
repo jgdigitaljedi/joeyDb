@@ -3,9 +3,16 @@
   const fs = require('fs');
   const path = require('path');
   const apicalypse = require('apicalypse').default;
-  const xboxToXboxThreeSixty = require('../src/static/xboxToXboxThreeSixty.json');
-  const xbox360ToXboxOne = require('../src/static/xbox360ToXboxOne.json');
-  const xboxToXboxOne = require('../src/static/xboxToXboxOne.json');
+  const _cloneDeep = require('lodash').cloneDeep;
+
+  const xboxToXboxThreeSixtyOrig = require('../../xbox-backward-compatibility-scraper/output/XboxToXbox360.json');
+  const xboxToXboxThreeSixty = _cloneDeep(xboxToXboxThreeSixtyOrig);
+
+  const xbox360ToXboxOneOrig = require('../../xbox-backward-compatibility-scraper/output/Xbox360ToXboxOne.json');
+  const xbox360ToXboxOne = _cloneDeep(xbox360ToXboxOneOrig);
+
+  const xboxToXboxOneOrig = require('../../xbox-backward-compatibility-scraper/output/XboxToXboxOne.json');
+  const xboxToXboxOne = _cloneDeep(xboxToXboxOneOrig);
 
   const igdbLookup = async function (name, platformId) {
     const requestOptions = {
@@ -21,7 +28,10 @@
       .search(name)
       .where(`platforms = [${platformId}]`)
       .request('/games')
-      .then(result => result.data)
+      .then(result => {
+        console.log('data', result.data);
+        return result.data
+      })
       .catch(error => {
         console.log(chalk.red.bold('ERROR FETCHING GAME DATA FROM IGDB API!', error));
         return [];
@@ -83,29 +93,29 @@
     }
   });
 
-  // const xtstxbo = xbox360ToXboxOne.map(g => {
-  //   const game = formatGame(g);
-  //   return igdbLookup(game.name, 12);
-  // });
-  // Promise.all(xtstxbo).then(result => {
-  //   if (result && result.length) {
-  //     const final = dealWithResults(result, xbox360ToXboxOne);
-  //     fs.writeFileSync(path.join(__dirname, '../src/static/xbox360ToXboxOne.json'), JSON.stringify(final, null, 4));
-  //   } else {
-  //     console.log(chalk.red.bold('Error writing Xbox 360 to Xbox One list!'));
-  //   }
-  // });
+  const xtstxbo = xbox360ToXboxOne.map(g => {
+    const game = formatGame(g);
+    return igdbLookup(game.name, 12);
+  });
+  Promise.all(xtstxbo).then(result => {
+    if (result && result.length) {
+      const final = dealWithResults(result, xbox360ToXboxOne);
+      fs.writeFileSync(path.join(__dirname, '../src/static/xbox360ToXboxOne.json'), JSON.stringify(final, null, 4));
+    } else {
+      console.log(chalk.red.bold('Error writing Xbox 360 to Xbox One list!'));
+    }
+  });
 
-  // const xtbo = xboxToXboxOne.map(g => {
-  //   const game = formatGame(g);
-  //   return igdbLookup(game.name, 11);
-  // });
-  // Promise.all(xtbo).then(result => {
-  //   if (result && result.length) {
-  //     const final = dealWithResults(result, xboxToXboxOne);
-  //     fs.writeFileSync(path.join(__dirname, '../src/static/xboxToXboxOne.json'), JSON.stringify(final, null, 4));
-  //   } else {
-  //     console.log(chalk.red.bold('Error writing Xbox to Xbox One list!'));
-  //   }
-  // });
+  const xtbo = xboxToXboxOne.map(g => {
+    const game = formatGame(g);
+    return igdbLookup(game.name, 11);
+  });
+  Promise.all(xtbo).then(result => {
+    if (result && result.length) {
+      const final = dealWithResults(result, xboxToXboxOne);
+      fs.writeFileSync(path.join(__dirname, '../src/static/xboxToXboxOne.json'), JSON.stringify(final, null, 4));
+    } else {
+      console.log(chalk.red.bold('Error writing Xbox to Xbox One list!'));
+    }
+  });
 })();

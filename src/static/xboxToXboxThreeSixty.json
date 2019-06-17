@@ -19,9 +19,9 @@
         "notes": null
     },
     {
-        "notes": null,
-        "name": "Airforce Delta Storm  Deadly Skies (PAL)  Airforce Delta II (JP)",
-        "igdbId": null
+        "igdbId": 5718,
+        "name": "AirForce Delta Storm",
+        "notes": null
     },
     {
         "igdbId": 3783,
@@ -59,24 +59,24 @@
         "notes": null
     },
     {
-        "notes": null,
-        "name": "Amped: Freestyle Snowboarding  Tenku: Freestyle Snowboarding (JP)",
-        "igdbId": null
+        "igdbId": 5484,
+        "name": "Amped: Freestyle Snowboarding",
+        "notes": null
     },
     {
+        "igdbId": 5725,
+        "name": "Amped 2",
         "notes": [
             "There is flickering geometry during some levels",
             "On occasion a sound effect will play repeatedly"
-        ],
-        "name": "Amped 2  Tenku 2 (JP)",
-        "igdbId": null
+        ]
     },
     {
+        "igdbId": 5728,
+        "name": "APEX",
         "notes": [
             "During the dream mode cutscene there is missing audio dialogue"
-        ],
-        "name": "APEX  Racing Evoluzione (PAL)",
-        "igdbId": null
+        ]
     },
     {
         "notes": null,
@@ -91,12 +91,12 @@
         ]
     },
     {
-        "igdbId": 211,
-        "name": "Armed and Dangerous",
         "notes": [
             "After the first level voice audio doesn't play during game cinematics",
             "During the opening cinematic some audio and video choppiness are present"
-        ]
+        ],
+        "name": "Armed and Dangerous",
+        "igdbId": null
     },
     {
         "igdbId": 2702,
@@ -124,9 +124,9 @@
         "notes": null
     },
     {
-        "notes": null,
-        "name": "Bad Boys: Miami Takedown  Bad Boys II  (PAL)",
-        "igdbId": null
+        "igdbId": 5736,
+        "name": "Bad Boys: Miami Takedown",
+        "notes": null
     },
     {
         "igdbId": 83,
@@ -195,11 +195,11 @@
         "notes": null
     },
     {
+        "igdbId": 5750,
+        "name": "Black Stone: Magic & Steel",
         "notes": [
             "Graphics for Y button do not display correctly in Controller Settings"
-        ],
-        "name": "Black Stone: Magic & Steel  Ex-Chaser (JP)",
-        "igdbId": null
+        ]
     },
     {
         "igdbId": 22220,
@@ -489,7 +489,7 @@
         "notes": [
             "After the opening logos, a dirty disc error is occasionally displayed"
         ],
-        "name": "Dai Senryaku VII: Modern Military Tactics  Daisenryaku VII (JP)",
+        "name": "Dai Senryaku VII: Modern Military Tactics",
         "igdbId": null
     },
     {
@@ -587,14 +587,14 @@
         "igdbId": null
     },
     {
-        "notes": null,
-        "name": "Dynasty Warriors 4  Shin Sangokumusou 3 (JP)",
-        "igdbId": null
+        "igdbId": 3007,
+        "name": "Dynasty Warriors 4",
+        "notes": null
     },
     {
-        "igdbId": 3903,
+        "notes": null,
         "name": "Egg Mania: Eggstreme Madness",
-        "notes": null
+        "igdbId": null
     },
     {
         "igdbId": 56,
@@ -703,16 +703,16 @@
         ]
     },
     {
+        "igdbId": 5106,
+        "name": "Fatal Frame",
         "notes": [
             "Missing video during a ghost introduction cutscene in the mansion"
-        ],
-        "name": "Fatal Frame  Project Zero (PAL)",
-        "igdbId": null
+        ]
     },
     {
-        "notes": null,
-        "name": "Fatal Frame II: Crimson Butterfly  Project Zero II: Crimson Butterfly (PAL)",
-        "igdbId": null
+        "igdbId": 5105,
+        "name": "Fatal Frame II: Crimson Butterfly",
+        "notes": null
     },
     {
         "igdbId": 702,
@@ -830,7 +830,7 @@
         ]
     },
     {
-        "igdbId": null,
+        "igdbId": 5822,
         "name": "Futurama",
         "notes": null
     },
@@ -996,9 +996,9 @@
         ]
     },
     {
-        "notes": null,
-        "name": "Harry Potter and the Sorcerer's Stone  Harry Potter and the Philosopher's Stone (PAL)",
-        "igdbId": null
+        "igdbId": 341,
+        "name": "Harry Potter and the Sorcerer's Stone",
+        "notes": null
     },
     {
         "notes": [
@@ -1060,9 +1060,9 @@
         "notes": null
     },
     {
-        "notes": null,
-        "name": "The Incredibles  Mr. Incredible (JP)",
-        "igdbId": null
+        "igdbId": 3782,
+        "name": "The Incredibles",
+        "notes": null
     },
     {
         "igdbId": 3955,
@@ -1614,11 +1614,11 @@
         ]
     },
     {
-        "igdbId": 4055,
-        "name": "Open Season",
         "notes": [
             "The camera is jittery when running uphill on the Beaver Damage Stage"
-        ]
+        ],
+        "name": "Open Season",
+        "igdbId": null
     },
     {
         "igdbId": 3437,
@@ -1737,7 +1737,7 @@
     },
     {
         "notes": null,
-        "name": "Pro Race Driver  TOCA Race Driver (PAL)",
+        "name": "Pro Race Driver",
         "igdbId": null
     },
     {
@@ -1925,11 +1925,11 @@
         "igdbId": null
     },
     {
-        "igdbId": 6039,
-        "name": "Sega GT 2002",
         "notes": [
             "Title plays very slowly"
-        ]
+        ],
+        "name": "Sega GT 2002",
+        "igdbId": null
     },
     {
         "igdbId": 6040,
@@ -2156,12 +2156,12 @@
         "notes": null
     },
     {
-        "igdbId": null,
+        "igdbId": 6159,
         "name": "Star Wars: Episode III - Revenge of the Sith",
         "notes": null
     },
     {
-        "igdbId": null,
+        "igdbId": 153,
         "name": "Star Wars: Jedi Knight - Jedi Academy",
         "notes": [
             "Cannot play split-screen games for this title"
@@ -2257,7 +2257,7 @@
         "notes": null
     },
     {
-        "igdbId": null,
+        "igdbId": 4201,
         "name": "Teenage Mutant Ninja Turtles: Mutant Melee",
         "notes": [
             "The introductory video stutters"
@@ -2281,7 +2281,7 @@
             "There are minor performance drops and minor texture flickering during gameplay",
             "Character voices are missing during cut scenes from stage 35 until end of game"
         ],
-        "name": "Test Drive  TD Overdrive (PAL)",
+        "name": "Test Drive",
         "igdbId": null
     },
     {
@@ -2501,9 +2501,9 @@
         ]
     },
     {
-        "notes": null,
-        "name": "Ultra Bust-a-Move  Ultra Puzzle Bobble (JP)",
-        "igdbId": null
+        "igdbId": 47317,
+        "name": "Ultra Bust-A-Move",
+        "notes": null
     },
     {
         "igdbId": 6221,
@@ -2528,11 +2528,11 @@
         "igdbId": null
     },
     {
-        "igdbId": 6226,
-        "name": "Van Helsing",
         "notes": [
             "At the top edge of the main menu and mission briefing screens there is flickering"
-        ]
+        ],
+        "name": "Van Helsing",
+        "igdbId": null
     },
     {
         "igdbId": 4079,
@@ -2589,12 +2589,12 @@
     },
     {
         "notes": null,
-        "name": "World Soccer Winning Eleven 8 International  Pro Evolution Soccer 4 (PAL)  Winning Eleven 8 (JP)",
+        "name": "World Soccer Winning Eleven 8 International",
         "igdbId": null
     },
     {
         "notes": null,
-        "name": "World Soccer Winning Eleven 9[a]  Pro Evolution Soccer 5 (PAL)  Winning Eleven 9 (JP)",
+        "name": "World Soccer Winning Eleven 9[a]",
         "igdbId": null
     },
     {
