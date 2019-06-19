@@ -25,6 +25,8 @@ export interface IGameIgdbData {
   genres: IIgdbGeneral[];
   platforms: IIgdbGeneral[];
   summary: string;
+  xboxOneBkwd?: IXboxBkwd;
+  threeSixtyBkwd?: IXboxBkwd;
 }
 
 export interface IGameGbData {
@@ -43,6 +45,11 @@ export interface IGameIgdbResponse {
 interface IGameBeaten {
   date: string;
   comments: string;
+}
+
+interface IXboxBkwd {
+  bkwd: boolean;
+  notes: string[];
 }
 
 export interface IGameDocument extends Document {
@@ -66,6 +73,8 @@ export interface IGameDocument extends Document {
   manual?: boolean;
   pirated?: boolean;
   multiplayerNumber?: number;
+  xboxOneBkwd: IXboxBkwd;
+  threeSixtyBkwd: IXboxBkwd;
   datePurchased?: string;
   howAcquired?: string;
   region?: string;

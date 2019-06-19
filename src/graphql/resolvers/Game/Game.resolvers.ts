@@ -5,6 +5,9 @@ import { Helpers } from '../../../util/helpers';
 import axios from 'axios';
 import apicalypse from 'apicalypse';
 import Game from '../../../models/Game';
+import XboxToXboxOne from '../../../static/xboxToXboxOne.json';
+import XboxToXboxThreeSixty from '../../../static/xboxToXboxThreeSixty.json';
+import Xbox360ToXboxOne from '../../../static/xbox360ToXboxOne.json';
 import { ObjectID } from 'bson';
 
 const gbKey = process.env.JGBKEY;
@@ -27,6 +30,8 @@ export class GameClass {
     11: 'M',
     12: 'AO'
   };
+  xboxId = 11;
+  xboxTsId = 12;
 
   constructor() {
     const that = this;
@@ -49,6 +54,9 @@ export class GameClass {
                 return rating;
               });
             }
+            const bkwd = that._xboxBkwdLookup(game);
+            game.xboxOneBkwd = bkwd.xboxOneBkwd;
+            game.threeSixtyBkwd = bkwd.threeSixtyBkwd;
             return game;
           });
           return withAgeRatings;
@@ -180,6 +188,29 @@ export class GameClass {
 
   get mutations() {
     return this._mutations;
+  }
+
+  private _xboxBkwdLogic(id, data) {
+    const filtered = data.filter(d => d.igdbId === id);
+    return filtered && filtered.length ? filtered[0] : Object.assign({}, { bkwd: false, notes: null });
+  }
+
+  private _xboxBkwdLookup(game) {
+    if (game.id === 11) {
+      return {
+        xboxOneBkwd: this._xboxBkwdLogic(game.id, XboxToXboxOne),
+        threeSixtyBkwd: this._xboxBkwdLogic(game.id, XboxToXboxThreeSixty)
+      };
+    } else if (game.id === 12) {
+      return {
+        xboxOneBkwd: this._xboxBkwdLogic(game.id, Xbox360ToXboxOne),
+        threeSixtyBkwd: { bkwd: false, notes: null }
+      };
+    }
+    return {
+      xboxOneBkwd: { bkwd: false, notes: null },
+      threeSixtyBkwd: { bkwd: false, notes: null }
+    };
   }
 
   private _giantBombLookup(name: string, platform: number): Promise<IGameGbData> {

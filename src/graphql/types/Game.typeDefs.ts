@@ -5,6 +5,10 @@ input BeatenReq {
   date: String!
   comment: String
 }
+input XboxBkwdIn {
+  type: Boolean
+  notes: [String]
+}
 input GameReq {
   _id: String
   user: String
@@ -21,8 +25,8 @@ input GameReq {
   genres: [String]
   firstReleaseDate: String
   gameBeaten: [BeatenReq]
-  xboxOneBkwd: Boolean
-  threeSixtyBkwd: Boolean
+  xboxOneBkwd: XboxBkwdIn
+  threeSixtyBkwd: XboxBkwdIn
   pricePaid: Float
   physical: Boolean
   case: String
@@ -127,6 +131,10 @@ type GameBeaten {
   date: String!
   comment: String
 }
+type XboxBkwdType {
+  bkwd: Boolean
+  notes: [String]
+}
 type UserGame {
   _id: String
   user: User
@@ -143,8 +151,8 @@ type UserGame {
   genres: [String]
   firstReleaseDate: String
   gameBeaten: [GameBeaten]
-  xboxOneBkwd: Boolean
-  threeSixtyBkwd: Boolean
+  xboxOneBkwd: XboxBkwdType
+  threeSixtyBkwd: XboxBkwdType
   pricePaid: Float
   physical: Boolean
   case: String

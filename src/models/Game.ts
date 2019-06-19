@@ -112,12 +112,24 @@ const GameSchema = new Schema({
     }
   ],
   xboxOneBkwd: {
-    type: Boolean,
-    default: false
+    bkwd: {
+      type: Boolean,
+      default: false
+    },
+    notes: {
+      type: [String],
+      default: null
+    }
   },
   threeSixtyBkwd: {
-    type: Boolean,
-    default: false
+    bkwd: {
+      type: Boolean,
+      default: false
+    },
+    notes: {
+      type: [String],
+      default: null
+    }
   },
   wishlist: {
     type: Boolean,
