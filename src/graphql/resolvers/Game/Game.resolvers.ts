@@ -54,6 +54,7 @@ export class GameClass {
                 return rating;
               });
             }
+            // need to check things here once IGDB limit starts over
             const bkwd = that._xboxBkwdLookup(game);
             game.xboxOneBkwd = bkwd.xboxOneBkwd;
             game.threeSixtyBkwd = bkwd.threeSixtyBkwd;
@@ -118,6 +119,26 @@ export class GameClass {
         } catch (err) {
           logger.write(`Game.queries.userGames ERROR: ${err}`, 'error');
           throw new ApolloError(err);
+        }
+      },
+      async xboxBkwd(_, { id, platform }, { user }: IContext) {
+        if (!user) {
+          throw new ForbiddenError(Helpers.forbiddenMessage);
+        }
+        if (!id) {
+          throw new UserInputError('You must send an IGDB ID for a game to check Xbox version compatibility!');
+        }
+        try {
+          const gameObj = {
+            id,
+            platform: {
+              id: platform
+            }
+          };
+          const bkwd = that._xboxBkwdLookup(gameObj);
+          return bkwd;
+        } catch (error) {
+          throw new ApolloError(error);
         }
       }
     };
@@ -192,16 +213,19 @@ export class GameClass {
 
   private _xboxBkwdLogic(id, data) {
     const filtered = data.filter(d => d.igdbId === id);
-    return filtered && filtered.length ? filtered[0] : Object.assign({}, { bkwd: false, notes: null });
+    return filtered && filtered.length
+      ? Object.assign({}, { bkwd: true, notes: filtered[0].notes })
+      : Object.assign({}, { bkwd: false, notes: null });
   }
 
   private _xboxBkwdLookup(game) {
-    if (game.id === 11) {
+    // this is untested and probably wrong since I currently have exhausted my monthly API limit; will fix when calls can be made again
+    if (game.platform.id === 11) {
       return {
         xboxOneBkwd: this._xboxBkwdLogic(game.id, XboxToXboxOne),
         threeSixtyBkwd: this._xboxBkwdLogic(game.id, XboxToXboxThreeSixty)
       };
-    } else if (game.id === 12) {
+    } else if (game.platform.id === 12) {
       return {
         xboxOneBkwd: this._xboxBkwdLogic(game.id, Xbox360ToXboxOne),
         threeSixtyBkwd: { bkwd: false, notes: null }

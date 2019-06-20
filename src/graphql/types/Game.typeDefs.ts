@@ -9,6 +9,9 @@ input XboxBkwdIn {
   type: Boolean
   notes: [String]
 }
+input GameGeneralId {
+  id: Int
+}
 input GameReq {
   _id: String
   user: String
@@ -169,11 +172,16 @@ type UserGame {
   updated: String
   created: String
 }
+type XboxBkwdRes {
+  xboxOneBkwd: XboxBkwdType
+  threeSixtyBkwd: XboxBkwdType
+}
 extend type Query {
   igdbGameLookup (name: String!, platform: Int!): [IgdbGame]
   gbGameLookup (name: String!, platform: Int!): [GbGame]
   ageRatingsEnum (rating: Int): String
   userGames(wl: Boolean, id: String, platformId: Int): [UserGame]
+  xboxBkwd(id: Int, platform: Int): XboxBkwdRes
 }
 extend type Mutation {
   addGame(newGame: GameReq): UserGame
