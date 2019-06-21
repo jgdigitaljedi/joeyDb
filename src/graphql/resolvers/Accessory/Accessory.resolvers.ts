@@ -19,15 +19,15 @@ export class AccessoryClass {
         try {
           if (id) {
             // return 1 accessory
-            const acc = await Accessory.findOne({ user: user.id, _id: id });
+            const acc = await Accessory.findOne({ user: user.id, _id: id }).populate('forPlatforms').exec();
             return [acc];
           } else if (wl) {
             // return accessories wishlist or owned; wl must be passed as string
-            const accs = await Accessory.find({ user: user.id, wishlist: JSON.parse(wl) });
+            const accs = await Accessory.find({ user: user.id, wishlist: JSON.parse(wl) }).populate('forPlatforms').exec();
             return accs;
           } else {
             // return all user accessories both from wishlist and owned
-            const accs = await Accessory.find({ user: user.id });
+            const accs = await Accessory.find({ user: user.id }).populate('forPlatforms').exec();
             return accs;
           }
         } catch (err) {

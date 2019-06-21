@@ -43,7 +43,7 @@
   function seedClones() {
     return new Promise((resolve, reject) => {
       helpers.joey.then(result => {
-        joey = result;
+        const joey = result;
 
         // remove previous entries
         Clone.deleteMany({}, err => {
@@ -87,8 +87,7 @@
 
   seedClones()
     .then(result => {
-      helpers.killProcess();
-      process.exit();
+      helpers.killProcess(true);
     })
     .catch(error => {
       throw new Error(error);
