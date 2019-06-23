@@ -22,7 +22,8 @@
     "seed:games": "node seed/games.js --all=$ALL",
     "seed:clones": "node seed/clones.js --all=$ALL",
     "seed:accessories": "node seed/accessories.js --all=$ALL",
-    "seed:all": "ALL=true npm-run-all build seed:users seed:devices seed:platforms seed:games seed:clones seed:accessories",
+    "seed:collectibles": "node seed/collectibles.js --all=$ALL",
+    "seed:all": "ALL=true npm-run-all build seed:users seed:devices seed:platforms seed:games seed:clones seed:accessories seed:collectibles",
     "bc:id": "node seed/bcListAddId.js"
   },
   "repository": {

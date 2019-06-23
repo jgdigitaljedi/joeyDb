@@ -13,7 +13,38 @@
   const games = require('../../homeControl/server/db/games.json');
   const wishlist = require('../../homeControl/server/db/wlGames.json');
 
+  // xbox backward compatibility lists
+  const XboxToXboxOne = require('../src/static/xboxToXboxOne.json');
+  const XboxToXboxThreeSixty = require('../src/static/xboxToXboxThreeSixty.json');
+  const Xbox360ToXboxOne = require('../src/static/xbox360ToXboxOne.json');
+
+  function xboxBkwdLogic(id, data) {
+    const filtered = data.filter(d => d.igdbId === id);
+    return filtered && filtered.length
+      ? Object.assign({}, { bkwd: true, notes: filtered[0].notes })
+      : Object.assign({}, { bkwd: false, notes: null });
+  }
+
+  function xboxBkwdLookup(game) {
+    if (game.platform.id === 11) {
+      return {
+        xboxOneBkwd: xboxBkwdLogic(game.id, XboxToXboxOne),
+        threeSixtyBkwd: xboxBkwdLogic(game.id, XboxToXboxThreeSixty)
+      };
+    } else if (game.platform.id === 12) {
+      return {
+        xboxOneBkwd: xboxBkwdLogic(game.id, Xbox360ToXboxOne),
+        threeSixtyBkwd: { bkwd: false, notes: null }
+      };
+    }
+    return {
+      xboxOneBkwd: { bkwd: false, notes: null },
+      threeSixtyBkwd: { bkwd: false, notes: null }
+    };
+  }
+
   function makeGame(game, platId, joey, wishlist) {
+    const bkwd = xboxBkwdLookup({ id: game.igdb.id, platform: { id: platId[0].igdbId } });
     return {
       user: joey.id,
       igdbId: game.igdb.id,
@@ -30,8 +61,8 @@
       genres: game.igdb.genres,
       firstReleaseDate: game.igdb.first_release_date,
       gameBeaten: null,
-      xboxOneBkwd: false,
-      threeSixtyBkwd: false,
+      xboxOneBkwd: bkwd.xboxOneBkwd,
+      threeSixtyBkwd: bkwd.threeSixtyBkwd,
       pricePaid: parseFloat(game.pricePaid) > 0 ? parseFloat(game.pricePaid) : null,
       physical: game.physical ? true : false,
       case: game.case,
