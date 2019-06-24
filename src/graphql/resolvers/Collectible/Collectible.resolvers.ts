@@ -2,7 +2,7 @@ import { ForbiddenError, UserInputError, ApolloError } from 'apollo-server-expre
 import { IContext, IId, IGetReq } from '../../globalModels/context.model';
 import { Helpers } from '../../../util/helpers';
 import Collectible from '../../../models/Collectible';
-import { ICollectibleDocument } from './Collectible.model';
+import { ICollectibleDocument, ICollReq } from './Collectible.model';
 
 const logger = Helpers.apiLogger;
 
@@ -19,15 +19,16 @@ export class CollectibleClass {
         try {
           if (id) {
             // return 1 collectible
-            const coll = await Collectible.findOne({ user: user.id, _id: id });
+            const coll = await Collectible.findOne({ user: user.id, _id: id }).populate('forPlatforms');
             return [coll];
           } else if (wl) {
             // return collectibles wishlist or owned; wl must be passed as string
-            const coll = await Collectible.find({ user: user.id, wishlist: JSON.parse(wl) });
+            const coll = await Collectible.find({ user: user.id, wishlist: JSON.parse(wl) }).populate('forPlatforms');
             return coll;
           } else {
             // return all user collectibles both from wishlist and owned
-            const coll = await Collectible.find({ user: user.id });
+            const coll = await Collectible.find({ user: user.id }).populate('forPlatforms');
+            console.log('coll', coll);
             return coll;
           }
         } catch (err) {
@@ -38,7 +39,7 @@ export class CollectibleClass {
     };
 
     this._mutations = {
-      async addCollectible(_, { coll }, { user }: IContext): Promise<ICollectibleDocument> {
+      async addCollectible(_, { coll }: ICollReq, { user }: IContext): Promise<ICollectibleDocument> {
         if (!user) {
           throw new ForbiddenError(Helpers.forbiddenMessage);
         }
@@ -54,12 +55,12 @@ export class CollectibleClass {
           throw new ApolloError(err);
         }
       },
-      async editCollectible(_, { coll }, { user }: IContext): Promise<ICollectibleDocument> {
+      async editCollectible(_, { coll }: ICollReq, { user }: IContext): Promise<ICollectibleDocument> {
         if (!user) {
           throw new ForbiddenError(Helpers.forbiddenMessage);
         }
         try {
-          const toEdit = await Collectible.findOne({ _id: coll.id, user: user.id });
+          const toEdit = await Collectible.findOne({ _id: coll.id, user: user.id }).populate('forPlatforms');
           const editObj = toEdit.toObject();
           const keys = Object.keys(coll);
           const errorArr = [];

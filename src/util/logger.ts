@@ -2,9 +2,10 @@
 import { Logger, LoggerOptions, loggers, transports, createLogger, format } from 'winston';
 import fs from 'fs';
 import path from 'path';
+import { environment } from '../environment';
 
 const level = process.env.NODE_ENV !== 'production' ? 'debug' : 'info';
-const logDir = 'logs';
+const logDir = path.join(environment.appRoot, 'logs');
 const filename = path.join(logDir, 'results.log');
 
 if (!fs.existsSync(logDir)) {
@@ -53,6 +54,10 @@ export class ApiLogger {
         new transports.File({ filename })
       ]
     });
+    // make it log in 2 files if in development mode
+    // if (level === 'info') {
+    //   loggers.add('dev');
+    // }
   }
   write(text: string, level?: string): void {
     const eLevel = level || 'info';

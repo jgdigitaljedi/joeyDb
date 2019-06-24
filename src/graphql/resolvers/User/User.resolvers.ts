@@ -7,6 +7,10 @@ import { IContext } from '../../globalModels/context.model';
 import { Helpers } from '../../../util/helpers';
 import Platform from '../../../models/Platform';
 import AVDevice from '../../../models/AVDevice';
+import Clone from '../../../models/Clone';
+import Accessory from '../../../models/Accessory';
+import Collectible from '../../../models/Collectible';
+import Game from '../../../models/Game';
 
 const logger = Helpers.apiLogger;
 
@@ -92,6 +96,10 @@ export class UserClass {
               const removed = await usr.remove();
               const userPlatforms = await Platform.find({ userId: user.id }).remove().exec();
               const userAVDevices = await AVDevice.find({ userId: user.id }).remove().exec();
+              const userClones = await Clone.find({ userId: user.id }).remove().exec();
+              const userAcc = await Accessory.find({ userId: user.id }).remove().exec();
+              const userColl = await Collectible.find({ userId: user.id }).remove().exec();
+              const userGames = await Game.find({ userId: user.id }).remove().exec();
               return removed;
             } else {
               throw new ForbiddenError(Helpers.forbiddenMessage);

@@ -23,3 +23,11 @@ export interface ICollectibleDocument extends Document, ICollBasic {
   created?: string;
   updated?: string;
 }
+
+interface ICollReqBasic extends ICollBasic {
+  id?: string;
+}
+
+export interface ICollReq {
+  coll: ICollReqBasic;
+}

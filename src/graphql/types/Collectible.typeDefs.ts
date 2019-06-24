@@ -9,7 +9,7 @@ type Collectible {
   image: String
   type: String
   notes: String
-  forPlatforms: [String]
+  forPlatforms: [UserPlatform]
   associatedGame: String
   character: String
   quantity: Int

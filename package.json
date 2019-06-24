@@ -6,9 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "tsc": "tsc || echo done.",
+    "copy:log": "cp -r ./logs/ ./dist/logs/",
     "tsc:prod": "tsc -p tsconfig.production.json || echo done.",
-    "build": "npm-run-all clean tsc",
-    "build:prod": "npm-run-all clean tsc:prod",
+    "build": "npm-run-all clean tsc copy:log",
+    "build:prod": "npm-run-all clean tsc:prod copy:log",
     "start": "nodemon --watch src -e ts,ejs --exec npm run dev:start",
     "start:env": "NODE_ENV=development node --require dotenv/config dist/main JoeyDB",
     "start:prod": "NODE_ENV=production node dist/main JoeyDB",

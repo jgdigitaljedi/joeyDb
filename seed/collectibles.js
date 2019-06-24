@@ -18,7 +18,7 @@
       user: joey.id,
       name: coll.name,
       company: coll.company === '' ? null : coll.company,
-      forPlatforms: [platform._id],
+      forPlatforms: platform && platform.length ? [platform[0]._id] : null,
       associatedGame: coll.associatedGame === '' ? null : coll.associatedGame,
       character: coll.character === '' ? null : coll.character,
       image: coll.image,

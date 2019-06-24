@@ -5,7 +5,8 @@ interface Environment {
     introspection: boolean,
     playground: boolean
   },
-  port: number | string;
+  port: number | string,
+  appRoot: string;
 }
 
 export const environment: Environment = {
@@ -13,5 +14,6 @@ export const environment: Environment = {
     introspection: process.env.APOLLO_INTROSPECTION === 'true',
     playground: process.env.APOLLO_PLAYGROUND === 'true'
   },
-  port: process.env.PORT || defaultPort
+  port: process.env.PORT || defaultPort,
+  appRoot: __dirname
 };
