@@ -13,12 +13,12 @@
   const Collectible = mongoose.model('Collectible');
   const Platform = mongoose.model('Platform');
 
-  function makeColl(coll, joey, wl) {
+  function makeColl(coll, joey, platform, wl) {
     return {
       user: joey.id,
       name: coll.name,
       company: coll.company === '' ? null : coll.company,
-      forPlatforms: coll.associatedConsoles.map(p => p.id),
+      forPlatforms: [platform._id],
       associatedGame: coll.associatedGame === '' ? null : coll.associatedGame,
       character: coll.character === '' ? null : coll.character,
       image: coll.image,
@@ -34,7 +34,15 @@
     };
   }
 
-  function seedAcc() {
+  function getPlatforms() {
+    return new Promise((resolve) => {
+      Platform.find({}, (err, platforms) => {
+        resolve(platforms);
+      });
+    });
+  }
+
+  function seedAcc(platforms) {
     return new Promise((resolve, reject) => {
       helpers.joey.then(result => {
         const joey = result;
@@ -44,7 +52,8 @@
             throw new Error(err.message);
           } else {
             collectibles.forEach((coll, index) => {
-              const mColl = makeColl(coll, joey, false);
+              const plat = platforms.filter(p => p.igdbId === coll.associatedConsoles[0].id);
+              const mColl = makeColl(coll, joey, plat, false);
               const newColl = new Collectible(mColl);
               newColl.createdTimestamp();
               newColl.updatedTimestamp();
@@ -58,7 +67,8 @@
               });
             });
             wlCollectibles.forEach((coll, index) => {
-              const mColl = makeColl(coll, joey, true);
+              const plat = platforms.filter(p => p.igdbId === coll.associatedConsoles[0].id);
+              const mColl = makeColl(coll, joey, plat, true);
               const newColl = new Collectible(mColl);
               newColl.createdTimestamp();
               newColl.updatedTimestamp();
@@ -78,12 +88,14 @@
     });
   }
 
-  seedAcc()
-    .then(result => {
-      helpers.killProcess();
-      process.exit();
-    })
-    .catch(error => {
-      throw new Error(error);
-    });
+  getPlatforms().then(platforms => {
+    seedAcc(platforms)
+      .then(result => {
+        helpers.killProcess();
+        process.exit();
+      })
+      .catch(error => {
+        throw new Error(error);
+      });
+  });
 })();
