@@ -6,14 +6,16 @@ import { Helpers } from '../util/helpers';
 const GameSchema = new Schema({
   user: {
     type: Schema.Types.ObjectId,
-    ref: 'User'
+    ref: 'User',
+    required: true
   },
   igdbId: {
     type: Number,
     default: 9999
   },
   name: {
-    type: String
+    type: String,
+    required: true
   },
   ageRating: {
     type: String,

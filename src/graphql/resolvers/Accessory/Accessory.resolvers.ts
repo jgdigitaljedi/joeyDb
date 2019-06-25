@@ -2,7 +2,7 @@ import { ForbiddenError, UserInputError, ApolloError } from 'apollo-server-expre
 import { IContext, IGetReq, IId } from '../../globalModels/context.model';
 import { Helpers } from '../../../util/helpers';
 import Accessory from '../../../models/Accessory';
-import { IAccessoryDocument } from './Accessory.model';
+import { IAccessoryDocument, IAccReq } from './Accessory.model';
 
 const logger = Helpers.apiLogger;
 
@@ -46,7 +46,7 @@ export class AccessoryClass {
     };
 
     this._mutations = {
-      async addAcc(_, { acc }, { user }: IContext): Promise<IAccessoryDocument> {
+      async addAcc(_, { acc }: IAccReq, { user }: IContext): Promise<IAccessoryDocument> {
         if (!user) {
           throw new ForbiddenError(Helpers.forbiddenMessage);
         }
@@ -62,7 +62,7 @@ export class AccessoryClass {
           throw new ApolloError(err);
         }
       },
-      async editAcc(_, { acc }, { user }: IContext): Promise<IAccessoryDocument> {
+      async editAcc(_, { acc }: IAccReq, { user }: IContext): Promise<IAccessoryDocument> {
         if (!user) {
           throw new ForbiddenError(Helpers.forbiddenMessage);
         }

@@ -5,10 +5,12 @@ import { Helpers } from '../util/helpers';
 const AccessorySchema = new Schema({
   user: {
     type: Schema.Types.ObjectId,
-    ref: 'User'
+    ref: 'User',
+    required: true
   },
   name: {
-    type: String
+    type: String,
+    required: [true, 'A NAME IS REQUIRED FOR AN ACCESSORY!']
   },
   company: {
     type: String,
@@ -28,11 +30,38 @@ const AccessorySchema = new Schema({
   ],
   image: {
     type: String,
-    default: null
+    default: null,
+    validate: {
+      validator: function (v: string) {
+        return v ? /[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/gi.test(v) : true;
+      },
+      message: props => `${props.value}: 'image' FIELD MUST BE VALID URL FORMAT; eg. www.example.com or example.com`
+    }
   },
   type: {
     type: String,
-    default: null
+    enum: [
+      'Controller',
+      'Controller Charger',
+      'Controller Battery',
+      'Controller Addon',
+      'Console Charger',
+      'Console Case',
+      'Console Addon',
+      'Console Stand',
+      'Console Cover',
+      'Console Mod',
+      'Stand/Dock',
+      'Headset',
+      'Microphone',
+      'Storage',
+      'Networking',
+      'Cable',
+      'Video Adapter',
+      'Games Storage',
+      'Other'
+    ],
+    required: true
   },
   notes: {
     type: String,

@@ -5,10 +5,12 @@ import { Helpers } from '../util/helpers';
 const CollectibleSchema = new Schema({
   user: {
     type: Schema.Types.ObjectId,
-    ref: 'User'
+    ref: 'User',
+    required: true
   },
   name: {
-    type: String
+    type: String,
+    required: true
   },
   company: {
     type: String,

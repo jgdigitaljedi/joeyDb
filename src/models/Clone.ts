@@ -5,7 +5,8 @@ import { Helpers } from '../util/helpers';
 const CloneSchema = new Schema({
   user: {
     type: Schema.Types.ObjectId,
-    ref: 'User'
+    ref: 'User',
+    required: true
   },
   platformsEmulated: [
     {
@@ -18,7 +19,8 @@ const CloneSchema = new Schema({
     }
   ],
   name: {
-    type: String
+    type: String,
+    required: true
   },
   company: {
     type: String,

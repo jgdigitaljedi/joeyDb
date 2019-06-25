@@ -23,3 +23,11 @@ export interface IAccessoryDocument extends Document, IAccBasic {
   created: string;
   updated: string;
 }
+
+interface IAccReqId extends IAccBasic {
+  id: string;
+}
+
+export interface IAccReq {
+  acc: IAccReqId;
+}

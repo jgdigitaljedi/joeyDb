@@ -3,7 +3,7 @@ import { gql } from 'apollo-server-express';
 const schema = gql`
 input AccReq {
   name: String
-  _id: String
+  id: String
   company: String
   forPlatforms: [String]
   forClones: [String]
@@ -36,9 +36,9 @@ extend type Query {
   userAcc(id: String, wl: Boolean, platform: String): [Acc]
 }
 extend type Mutation {
-  addAcc(clone: AccReq!): Acc
-  editAcc(clone: AccReq): Acc
-  deleteAcc(id: String): Int
+  addAcc(acc: AccReq!): Acc
+  editAcc(acc: AccReq!): Acc
+  deleteAcc(id: String!): Int
 }
 `;
 
