@@ -18,8 +18,26 @@ const coll = new CollectibleClass();
 const util = new UtilityClass();
 
 const Resolvers = {
-  Query: { ...users.queries, ...games.queries, ...avDevices.queries, ...platforms.queries, ...clones.queries, ...acc.queries, ...coll.queries, ...util.queries },
-  Mutation: { ...users.mutations, ...games.mutations, ...avDevices.mutations, ...platforms.mutations, ...clones.mutations, ...acc.mutations, ...coll.mutations, ...util.mutations }
+  Query: {
+    ...users.queries,
+    ...games.queries,
+    ...avDevices.queries,
+    ...platforms.queries,
+    ...clones.queries,
+    ...acc.queries,
+    ...coll.queries,
+    ...util.queries
+  },
+  Mutation: {
+    ...users.mutations,
+    ...games.mutations,
+    ...avDevices.mutations,
+    ...platforms.mutations,
+    ...clones.mutations,
+    ...acc.mutations,
+    ...coll.mutations,
+    ...util.mutations
+  }
 }
 
 const resolvers: IResolvers = Resolvers;

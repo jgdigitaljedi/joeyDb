@@ -1,5 +1,5 @@
 import { ForbiddenError, UserInputError, ApolloError } from 'apollo-server-express';
-import { IContext, IId, IGetReq } from '../../globalModels/context.model';
+import { IContext, IGetReq, IId } from '../../globalModels/context.model';
 import { Helpers } from '../../../util/helpers';
 import Accessory from '../../../models/Accessory';
 import { IAccessoryDocument } from './Accessory.model';
@@ -12,15 +12,23 @@ export class AccessoryClass {
 
   constructor() {
     this._queries = {
-      async userAcc(_, { id, wl }, { user }: IContext): Promise<IAccessoryDocument[]> {
+      async userAcc(_, { id, wl, platform }: IGetReq, { user }: IContext): Promise<IAccessoryDocument[]> {
         if (!user) {
           throw new ForbiddenError(Helpers.forbiddenMessage);
         }
         try {
           if (id) {
-            // return 1 accessory
+            // return 1 accessory by _id
             const acc = await Accessory.findOne({ user: user.id, _id: id }).populate('forPlatforms').exec();
             return [acc];
+          } else if (platform && wl !== undefined) {
+            // return accessories for platform for either owned or wishlist
+            const acc = await Accessory.find({ user: user.id, wishlist: wl, forPlatforms: { $in: [platform] } }).populate('forPlatforms').exec();
+            return acc;
+          } else if (platform && wl === undefined) {
+            // return all accessories for platform both owned and on wishlist
+            const acc = await Accessory.find({ user: user.id, forPlatforms: { $in: [platform] } }).populate('forPlatforms').exec();
+            return acc;
           } else if (wl) {
             // return accessories wishlist or owned; wl must be passed as string
             const accs = await Accessory.find({ user: user.id, wishlist: JSON.parse(wl) }).populate('forPlatforms').exec();
@@ -38,7 +46,7 @@ export class AccessoryClass {
     };
 
     this._mutations = {
-      async addAcc(_, { acc }, { user }: IContext) {
+      async addAcc(_, { acc }, { user }: IContext): Promise<IAccessoryDocument> {
         if (!user) {
           throw new ForbiddenError(Helpers.forbiddenMessage);
         }
@@ -54,7 +62,7 @@ export class AccessoryClass {
           throw new ApolloError(err);
         }
       },
-      async editAcc(_, { acc }, { user }: IContext) {
+      async editAcc(_, { acc }, { user }: IContext): Promise<IAccessoryDocument> {
         if (!user) {
           throw new ForbiddenError(Helpers.forbiddenMessage);
         }
@@ -87,7 +95,7 @@ export class AccessoryClass {
           throw new ApolloError(err);
         }
       },
-      async deleteAcc(_, { id }, { user }: IContext) {
+      async deleteAcc(_, { id }: IId, { user }: IContext) {
         if (!user) {
           throw new ForbiddenError(Helpers.forbiddenMessage);
         }

@@ -26,7 +26,8 @@
       pricePaid: acc.pricePaid,
       purchaseDate: acc.purchaseDate,
       howAcquired: acc.howAcquired,
-      officialLicensed: acc.officialLicensed
+      officialLicensed: acc.officialLicensed,
+      wishlist: wl
     };
   }
 

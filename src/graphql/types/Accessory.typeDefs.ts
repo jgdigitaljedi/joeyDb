@@ -28,11 +28,12 @@ type Acc {
   purchaseDate: String
   howAcquired: String
   officialLicensed: Boolean
+  wishlist: Boolean
   created: String
   updated: String
 }
 extend type Query {
-  userAcc(id: String, wl: Boolean): [Acc]
+  userAcc(id: String, wl: Boolean, platform: String): [Acc]
 }
 extend type Mutation {
   addAcc(clone: AccReq!): Acc

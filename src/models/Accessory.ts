@@ -54,6 +54,10 @@ const AccessorySchema = new Schema({
     type: Boolean,
     default: false
   },
+  wishlist: {
+    type: Boolean,
+    default: false
+  },
   created: {
     type: String,
     default: null

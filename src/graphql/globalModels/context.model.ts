@@ -17,4 +17,5 @@ export interface IId {
 export interface IGetReq {
   id?: string;
   wl?: string;
+  platform?: string;
 }
