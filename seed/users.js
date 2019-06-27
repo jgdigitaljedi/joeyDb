@@ -19,7 +19,7 @@ function hashPassword(password) {
   };
   User.findOne({ email: me.email }).then(result => {
     if (!result) {
-      hashPassword('8675309')
+      hashPassword('Jg8675309!')
         .then(hash => {
           me.password = hash;
           const user = new User(me);

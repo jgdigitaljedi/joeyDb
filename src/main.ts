@@ -90,7 +90,7 @@ SERVER.applyMiddleware({
 // give the process a title for npm stop
 process.title = process.argv[2];
 
-// statt the server
+// start the server
 const server = app.listen(PORT, () => {
   log(chalk.cyan(`Server is running at PORT ${PORT}`));
 });

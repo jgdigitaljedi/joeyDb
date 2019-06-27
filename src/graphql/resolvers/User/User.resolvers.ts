@@ -56,6 +56,10 @@ export class UserClass {
             const usr = await User.findOne({ _id: user.id });
             const keys = Object.keys(args);
             if (keys.indexOf('password') >= 0) {
+              const passwordValid = Helpers.passwordTest(args.password);
+              if (!passwordValid) {
+                throw new UserInputError(Helpers.passwordMessage);
+              }
               usr.password = await that._changePassword(args.password);
             }
             keys.forEach(key => {
@@ -113,6 +117,10 @@ export class UserClass {
         }
       },
       async signup(_, { name, email, password }: IUser): Promise<String> {
+        const passwordValid = Helpers.passwordTest(password);
+        if (!passwordValid) {
+          throw new UserInputError(Helpers.passwordMessage)
+        }
         try {
           const usr = new User();
           usr.name = name;

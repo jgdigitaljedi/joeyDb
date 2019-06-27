@@ -50,12 +50,6 @@ While running any start task (even in production mode), the api runs at http://l
 
 
 ## TODOS
-- finish everything needed for games to work
-- seed games
-- create accessory models and methods
-- create clone models and methods
-- create collectibles models and methods
-- create hardware models and methods
 - hookup to homeControl app to use instead of diskDB implementation
 - security
 - deploy to DO droplet CICD
