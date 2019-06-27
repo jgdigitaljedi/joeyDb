@@ -18,4 +18,5 @@ export interface IGetReq {
   id?: string;
   wl?: string;
   platform?: string;
+  clone?: string;
 }

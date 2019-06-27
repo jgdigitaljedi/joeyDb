@@ -10,17 +10,20 @@
   const mongoose = helpers.mongoose;
   require('../dist/models/Accessory');
   require('../dist/models/Platform');
+  require('../dist/models/Clone');
   const Accessory = mongoose.model('Accessory');
   const Platform = mongoose.model('Platform');
+  const Clone = mongoose.model('Clone');
 
-  function makeAcc(acc, plat, joey, wl) {
+  function makeAcc(acc, plat, clone, joey, wl) {
+    const imageTest = acc.image ? /[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/gi.test(acc.image) : false;
     return {
       user: joey.id,
       name: acc.name,
       company: acc.company,
       forPlatforms: plat.map(p => p._id),
-      forClones: null,
-      image: acc.image,
+      forClones: clone ? clone.map(c => c._id) : null,
+      image: imageTest ? acc.image : null,
       type: acc.type,
       notes: acc.notes,
       pricePaid: acc.pricePaid,
@@ -31,7 +34,11 @@
     };
   }
 
-  function seedAcc() {
+  async function getClones() {
+    return await Clone.find({});
+  }
+
+  function seedAcc(clones) {
     return new Promise((resolve, reject) => {
       helpers.joey.then(result => {
         const joey = result;
@@ -43,7 +50,8 @@
             Platform.find({}, (err, platforms) => {
               accessories.forEach((acc, index) => {
                 const plat = platforms.filter(plat => plat.igdbId === acc.forConsoleId);
-                const mAcc = makeAcc(acc, plat, joey, false);
+                const clone = acc.forClone ? clones.filter(c => c.name === acc.forConsoleName) : null;
+                const mAcc = makeAcc(acc, plat, clone, joey, false);
                 const newAcc = new Accessory(mAcc);
                 newAcc.createdTimestamp();
                 newAcc.updatedTimestamp();
@@ -58,7 +66,8 @@
               });
               wlAccessories.forEach((acc, index) => {
                 const plat = platforms.filter(plat => plat.igdbId === acc.forConsoleId);
-                const mAcc = makeAcc(acc, plat, joey, true);
+                const clone = acc.forClone ? clones.filter(c => c.name === acc.forConsoleName) : null;
+                const mAcc = makeAcc(acc, plat, clone, joey, true);
                 const newAcc = new Accessory(mAcc);
                 newAcc.createdTimestamp();
                 newAcc.updatedTimestamp();
@@ -80,12 +89,15 @@
     });
   }
 
-  seedAcc()
-    .then(result => {
-      helpers.killProcess();
-      process.exit();
-    })
-    .catch(error => {
-      throw new Error(error);
+  getClones()
+    .then(clones => {
+      seedAcc(clones)
+        .then(result => {
+          helpers.killProcess();
+          process.exit();
+        })
+        .catch(error => {
+          throw new Error(error);
+        });
     });
 })();

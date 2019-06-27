@@ -45,6 +45,7 @@
 
   function makeGame(game, platId, joey, wishlist) {
     const bkwd = xboxBkwdLookup({ id: game.igdb.id, platform: { id: platId[0].igdbId } });
+    const imageTest = game.gb.image ? /[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/gi.test(game.gb.image) : false;
     return {
       user: joey.id,
       igdbId: game.igdb.id,
@@ -55,7 +56,7 @@
       alternativeNames: game.gb.aliases,
       series: null,
       box: false,
-      cover: game.gb.image,
+      cover: imageTest ? game.gb.image : null,
       summary: game.gb.deck,
       platform: platId && platId.length ? platId[0]._id : null,
       genres: game.igdb.genres,

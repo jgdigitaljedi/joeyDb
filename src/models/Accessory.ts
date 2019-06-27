@@ -33,7 +33,7 @@ const AccessorySchema = new Schema({
     default: null,
     validate: {
       validator: function (v: string) {
-        return v ? /[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/gi.test(v) : true;
+        return Helpers.urlTest(v);
       },
       message: props => `${props.value}: 'image' FIELD MUST BE VALID URL FORMAT; eg. www.example.com or example.com`
     }

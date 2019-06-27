@@ -33,7 +33,7 @@ type Acc {
   updated: String
 }
 extend type Query {
-  userAcc(id: String, wl: Boolean, platform: String): [Acc]
+  userAcc(id: String, wl: Boolean, platform: String, clone: String): [Acc]
 }
 extend type Mutation {
   addAcc(acc: AccReq!): Acc

@@ -7,6 +7,12 @@ export class Helpers {
   public static getTimestamp = function () {
     return moment().format(process.env.DATE_FORMAT);
   }
+  public static urlTest = function (url) {
+    return url ? /[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/gi.test(url) : true;
+  }
+  public static emailTest = function (email) {
+    return email ? /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email) : false;
+  }
 
   private static _apiLogger = new ApiLogger();
 

@@ -4,6 +4,8 @@ This repo is a backend I am throwing up to store my video game collection and, e
 
 ## Setup
 
+<b>set MYEMAILS env variable to a comma delimited string with email address to be used for admin users.</b>
+
 clone the project, then:
 
 ```

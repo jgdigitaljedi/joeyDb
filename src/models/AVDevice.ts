@@ -18,7 +18,13 @@ const AVDeviceSchema = new Schema({
   },
   image: {
     type: String,
-    default: null
+    default: null,
+    validate: {
+      validator: function (v: string) {
+        return Helpers.urlTest(v);
+      },
+      message: props => `${props.value}: 'image' FIELD MUST BE VALID URL FORMAT; eg. www.example.com or example.com`
+    }
   },
   channels: [{
     type: String,

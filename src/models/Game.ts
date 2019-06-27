@@ -39,7 +39,13 @@ const GameSchema = new Schema({
   },
   cover: {
     type: String,
-    default: null
+    default: null,
+    validate: {
+      validator: function (v: string) {
+        return Helpers.urlTest(v);
+      },
+      message: props => `${props.value}: 'cover' FIELD MUST BE VALID URL FORMAT; eg. www.example.com or example.com`
+    }
   },
   summary: {
     type: String,

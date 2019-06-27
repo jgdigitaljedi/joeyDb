@@ -9,7 +9,7 @@ type Clone {
   _id: String
   user: String!
   platformsEmulated: [ClonePlatforms]
-  name: String!
+  name: String
   company: String
   image: String
   type: String

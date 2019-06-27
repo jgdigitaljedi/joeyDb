@@ -11,7 +11,13 @@ const UserSchema = new Schema({
   email: {
     type: String,
     required: true,
-    unique: true
+    unique: true,
+    validate: {
+      validator: function (v: string) {
+        return Helpers.emailTest(v);
+      },
+      message: props => `${props.value}: 'email' FIELD MUST BE VALID EMAIL ADDRESS FORMAT; eg. test@test.com`
+    }
   },
   password: {
     type: String,
