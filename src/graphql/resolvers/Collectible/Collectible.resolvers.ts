@@ -28,7 +28,6 @@ export class CollectibleClass {
           } else {
             // return all user collectibles both from wishlist and owned
             const coll = await Collectible.find({ user: user.id }).populate('forPlatforms');
-            console.log('coll', coll);
             return coll;
           }
         } catch (err) {
