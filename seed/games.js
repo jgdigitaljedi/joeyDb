@@ -73,7 +73,7 @@
       maxLocalPlayerNumber: parseInt(game.multiplayerNumber) > 0 ? parseInt(game.multiplayerNumber) : null,
       datePurchased: game.datePurchased,
       howAcquired: game.howAcquired,
-      region: 'US',
+      region: game.notes.toLowerCase().indexOf('japan') >= 0 || game.notes.toLowerCase().indexOf('japanese') >= 0 ? 'Japan' : 'US',
       notes: game.notes,
       wishlist
     };
