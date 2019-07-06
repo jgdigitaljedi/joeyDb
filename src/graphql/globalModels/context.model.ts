@@ -8,6 +8,7 @@ interface IUserContext {
 
 export interface IContext {
   user: IUserContext;
+  guest: string;
 }
 
 export interface IId {

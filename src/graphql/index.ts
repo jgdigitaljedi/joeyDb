@@ -20,9 +20,12 @@ const SERVER: ApolloServer = new ApolloServer({
   resolvers,
   introspection: environment.apollo.introspection,
   playground: playgroundDev,
-  context: ({ req }) => ({
-    user: req['user']
-  })
+  context: ({ req }) => {
+    return {
+      user: req['user'],
+      guest: req.headers['guest'] ? req.headers['guest'] : null
+    };
+  }
 });
 
 export default SERVER;

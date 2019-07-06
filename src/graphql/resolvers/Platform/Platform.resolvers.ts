@@ -56,8 +56,9 @@ export class PlatformClass {
           new ApolloError(error);
         }
       },
-      async myPlatforms(_, { wl }, { user }: IContext): Promise<IPlatformDocument[]> {
-        if (!user) {
+      async myPlatforms(_, { wl }, { user, guest }: IContext): Promise<IPlatformDocument[]> {
+        console.log('guest', guest);
+        if (!user && !guest) {
           throw new ForbiddenError(Helpers.forbiddenMessage);
         }
         try {
