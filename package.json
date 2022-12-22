@@ -73,7 +73,7 @@
     "graphql-s2s": "^0.20.0",
     "graphql-tools": "^4.0.5",
     "helmet": "^3.18.0",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "lodash": "^4.17.11",
     "moment": "^2.24.0",
     "mongoose": "^5.6.1",
